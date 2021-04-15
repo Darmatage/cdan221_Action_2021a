@@ -432,6 +432,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 35.741196, y: 5.6790905}
   m_EdgeRadius: 0
+--- !u!1 &684225401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100711463135441385, guid: 3438f4e63214a3b418d8045f2888ea0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5445919716683463565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705209456
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,12 +583,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
     type: 3}
   m_PrefabInstance: {fileID: 1991804142226822621}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1086229936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6096596766886517619, guid: 273d1a8984ed91542a22516f1fa1fdc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6096596765823096515}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1086229937 stripped
 RectTransform:
@@ -1033,11 +1033,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2726511075600525848, guid: 3438f4e63214a3b418d8045f2888ea0e,
+        type: 3}
+      propertyPath: m_Name
+      value: BubbleCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 5445919715005765541, guid: 3438f4e63214a3b418d8045f2888ea0e,
         type: 3}
       propertyPath: dialogueBox
       value: 
-      objectReference: {fileID: 1086229936}
+      objectReference: {fileID: 684225401}
     - target: {fileID: 5445919715005765541, guid: 3438f4e63214a3b418d8045f2888ea0e,
         type: 3}
       propertyPath: dialogueText
@@ -1112,6 +1117,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884898639451327214, guid: 3438f4e63214a3b418d8045f2888ea0e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6941823346188556887, guid: 3438f4e63214a3b418d8045f2888ea0e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740092460987457441, guid: 3438f4e63214a3b418d8045f2888ea0e,
+        type: 3}
+      propertyPath: m_Name
+      value: BubbleImage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3438f4e63214a3b418d8045f2888ea0e, type: 3}
@@ -1275,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: 6096596766886517619, guid: 273d1a8984ed91542a22516f1fa1fdc0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6096596766964935027, guid: 273d1a8984ed91542a22516f1fa1fdc0,
         type: 3}

@@ -28,7 +28,7 @@ public class GameHandler : MonoBehaviour{
         //        scoreTemp.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("Scene1");
+                SceneManager.LoadScene("HallwayTest_NPCs");
         }
 
         public void RestartGame(){
