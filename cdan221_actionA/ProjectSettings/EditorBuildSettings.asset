@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TitleScreen.unity
     guid: bc22775f60dd504468e38772a9a80e42
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b78015c8542d7b94e8aa684da7427676
   - enabled: 1
     path: Assets/Scenes/HallwayTest_NPCs.unity
     guid: 4c22e1b71c4e7c9498d8d0ff48992f96

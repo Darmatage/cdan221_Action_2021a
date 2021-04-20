@@ -22,6 +22,7 @@ private bool isPlayerSpeaking = false;
 
        void Start () {
               dialogueBox.SetActive(false);
+			  dialogueText.gameObject.SetActive(false);
               //anim.SetBool("Chat", false)
 			  face1.SetActive(false);
 			  face2.SetActive(true);
@@ -37,7 +38,8 @@ private bool isPlayerSpeaking = false;
                         //anim.SetBool("Chat", false);
 
                    } else {
-                        dialogueText.text = dialogue0;
+                        dialogueText.gameObject.SetActive(true);
+						dialogueText.text = dialogue0;
                         dialogueBox.SetActive(true);
                         //anim.SetBool("Chat", true);
                    }
@@ -89,6 +91,7 @@ private bool isPlayerSpeaking = false;
 			  
 			  if (primeInt == 6){
                      dialogueBox.SetActive(false);
+					 dialogueText.gameObject.SetActive(false);
               }
 			  
        }
@@ -105,6 +108,7 @@ private bool isPlayerSpeaking = false;
              if (other.gameObject.tag == "Player") {
                    playerInRange = false;
                    dialogueBox.SetActive(false);
+				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
              }
        }

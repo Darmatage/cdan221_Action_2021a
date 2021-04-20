@@ -11,6 +11,7 @@ TagManager:
   - sceneClimbRight
   - sceneStairLeft
   - sceneStairRight
+  - PauseMenuSlider
   layers:
   - Default
   - TransparentFX

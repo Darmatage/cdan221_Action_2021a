@@ -11,11 +11,6 @@ public class GameHandler : MonoBehaviour{
 
         //void Start () { UpdateScore (); }
 
-        void Update(){
-                if (Input.GetKey("escape")){
-                        Application.Quit();
-                }
-        }
 
         public void AddPlayerStat(int amount){
                 playerStat += amount;
