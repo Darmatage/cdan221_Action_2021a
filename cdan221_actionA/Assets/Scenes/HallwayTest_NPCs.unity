@@ -672,12 +672,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 6096596765823096515}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1095153984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6096596766883901315, guid: 273d1a8984ed91542a22516f1fa1fdc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6096596765823096515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384443859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3210030099690925046, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
@@ -1099,8 +1093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1789439075}
   dialogueText: {fileID: 1588351391}
-  face1: {fileID: 1095153984}
-  face2: {fileID: 1793797906}
+  switchvalue: 1
   playerInRange: 0
   primeInt: 0
 --- !u!224 &1749974186 stripped
@@ -1195,12 +1188,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1793797906 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6096596767594609105, guid: 273d1a8984ed91542a22516f1fa1fdc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6096596765823096515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1938791919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1859,8 +1846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 686382887}
   dialogueText: {fileID: 1596490375}
-  face1: {fileID: 1095153984}
-  face2: {fileID: 1793797906}
+  switchvalue: 2
   playerInRange: 0
   primeInt: 0
 --- !u!1001 &6096596765823096515
