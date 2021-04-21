@@ -5,13 +5,15 @@ using UnityEngine;
 public class MoveSystem : MonoBehaviour
 {
     public GameObject correctForm;
-    private bool moving;
-    private bool finish;
+    private bool moving = false;
+    private bool finish = false;
 
     private float startPosX;
     private float startPosY;
 
     private Vector3 resetPosition;
+	
+	private float finishRange = 0.5f;
 
     void Start()
     {
@@ -53,8 +55,8 @@ public class MoveSystem : MonoBehaviour
     {
         moving = false;
 
-        if(Mathf.Abs(this.transform.localPosition.x - correctForm.transform.localPosition.x) <= 0.5f &&
-           Mathf.Abs(this.transform.localPosition.y - correctForm.transform.localPosition.y) <= 0.5f)
+        if(Mathf.Abs(this.transform.localPosition.x - correctForm.transform.localPosition.x) <= finishRange &&
+           Mathf.Abs(this.transform.localPosition.y - correctForm.transform.localPosition.y) <= finishRange)
         {
             this.transform.position = new Vector3(correctForm.transform.position.x, correctForm.transform.position.y, correctForm.transform.position.z);
             finish = true;
@@ -64,4 +66,13 @@ public class MoveSystem : MonoBehaviour
             this.transform.localPosition = new Vector3(resetPosition.x, resetPosition.y, resetPosition.z);
         }
     }
+	
+	
+      //NOTE: to help see the attack sphere in editor:
+      void OnDrawGizmosSelected(){
+           
+            Gizmos.DrawWireSphere(transform.position, finishRange);
+      }	
+	
+	
 }
