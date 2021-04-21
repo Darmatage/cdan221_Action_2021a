@@ -512,12 +512,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 6096596765823096515}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1095153984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6096596766883901315, guid: 273d1a8984ed91542a22516f1fa1fdc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6096596765823096515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384443859
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,12 +702,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1793797906 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6096596767594609105, guid: 273d1a8984ed91542a22516f1fa1fdc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6096596765823096515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1834657076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1288,7 +1276,7 @@ PrefabInstance:
     - target: {fileID: 5329970132012722158, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: NextLevel
-      value: Level1Scene1
+      value: Level1Scene1b
       objectReference: {fileID: 0}
     - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
@@ -1717,17 +1705,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 7884172621311292887}
   dialogueText: {fileID: 7884172621646546987}
-  face1: {fileID: 1095153984}
-  face2: {fileID: 1793797906}
+  switchvalue: 0
   playerInRange: 0
   primeInt: 0
-  dialogue0: 'Oh, hey. '
-  dialogue1: How many characters can I fit in a line idk let's try it out and see
-    if it wraps blah blah blahbbajdlkfjsdlkfjsdlfksjdlkfjsdl
-  dialogue2: Can I make a /n new line?
-  dialogue3: Nope.
-  dialogue4: FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT
-  dialogue5: Ahem. That was weird.
 --- !u!224 &7884172621311292880
 RectTransform:
   m_ObjectHideFlags: 0
