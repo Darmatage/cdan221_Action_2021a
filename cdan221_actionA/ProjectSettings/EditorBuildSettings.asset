@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1Scene3.unity
     guid: 76893093c1aa5924faf526e93a10ec17
+  - enabled: 1
+    path: Assets/Scenes/CloseUp_Clicker.unity
+    guid: b7c6834bdde30b5459384280b5a75cf5
+  - enabled: 1
+    path: Assets/Scenes/Level1Scene1b.unity
+    guid: 8b8cc1abb04cae642bb620bdf2855c9c
   m_configObjects: {}
