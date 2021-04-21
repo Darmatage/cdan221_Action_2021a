@@ -211,6 +211,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537548123}
     m_Modifications:
+    - target: {fileID: 3210030099690925046, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3210030100004380120, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -229,7 +234,7 @@ PrefabInstance:
     - target: {fileID: 3210030100601452684, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3210030100601452687, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
@@ -556,7 +561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 1324180314}
-  finishRange: 0.5
 --- !u!224 &536036623 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6096596766886517618, guid: 273d1a8984ed91542a22516f1fa1fdc0,
@@ -774,7 +778,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 1181331276}
-  finishRange: 0.5
 --- !u!61 &676734674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -897,7 +900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 428250594}
-  finishRange: 0.5
 --- !u!61 &720776092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1163,7 +1165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 869527892}
-  finishRange: 0.5
 --- !u!1 &1181331276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1516,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 1739376640}
-  finishRange: 0.5
 --- !u!1 &1477535410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,7 +1993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 1897344699}
-  finishRange: 0.5
 --- !u!61 &1786764193
 BoxCollider2D:
   m_ObjectHideFlags: 0
