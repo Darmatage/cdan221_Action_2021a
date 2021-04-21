@@ -49,6 +49,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: SpeechBubble
+  - name: keyholes
     uniqueID: 1035650559
+    locked: 0
+  - name: keys
+    uniqueID: 2234155919
     locked: 0
