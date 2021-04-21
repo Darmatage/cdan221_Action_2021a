@@ -37,12 +37,12 @@ public class NPC_Dialogue_L1S1 : MonoBehaviour {
 			
 			
 			if (Input.GetButtonDown("Talk")){
-				NPCdialogue();
+				NPCdialogue_L1S1();
 			}
 			
        }
 
-       public void NPCdialogue (){
+       public void NPCdialogue_L1S1 (){
               switch (switchvalue){
 				case 1:
 					primeInt +=1;

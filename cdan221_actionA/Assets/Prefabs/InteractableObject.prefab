@@ -72,6 +72,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 0}
   dialogueText: {fileID: 0}
-  switchvalue: 2
+  switchvalue: 0
   playerInRange: 0
   primeInt: 0

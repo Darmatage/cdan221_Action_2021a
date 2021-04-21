@@ -78,6 +78,23 @@ public class NPC_Dialogue : MonoBehaviour {
 					 primeInt = 0;
 					}
 					break;
+				case 3:
+					primeInt +=1;
+
+					if (primeInt == 1){
+                    dialogueText.text = "FIVE.";
+					}
+
+					if (primeInt ==2){
+                     dialogueText.text = "SIX.";
+					}
+			  
+					if (primeInt == 3){
+                     dialogueBox.SetActive(false);
+					 dialogueText.gameObject.SetActive(false);
+					 primeInt = 0;
+					}
+					break;
 			  }
 
 			  
