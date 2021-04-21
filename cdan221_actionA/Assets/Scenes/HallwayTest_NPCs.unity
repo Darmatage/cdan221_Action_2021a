@@ -514,6 +514,12 @@ Transform:
   m_Father: {fileID: 1677831207}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &686382887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6096596767035930389, guid: 273d1a8984ed91542a22516f1fa1fdc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6096596765823096515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705209456
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +885,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588351389}
   m_CullTransparentMesh: 0
+--- !u!114 &1596490375 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6096596766964935026, guid: 273d1a8984ed91542a22516f1fa1fdc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6096596765823096515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1624253720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624253720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.582444, y: 1.8819323, z: -2.608899}
+  m_LocalPosition: {x: -11.53, y: 5.67, z: -2.608899}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1085,13 +1103,6 @@ MonoBehaviour:
   face2: {fileID: 1793797906}
   playerInRange: 0
   primeInt: 0
-  dialogue0: This is an example sentence.
-  dialogue1: How many characters can I fit in a line idk let's try it out and see
-    if it wraps blah blah blahbbajdlkfjsdlkfjsdlfksjdlkfjsdl
-  dialogue2: Can I make a /n new line?
-  dialogue3: Nope.
-  dialogue4: FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT
-  dialogue5: Ahem. That was weird.
 --- !u!224 &1749974186 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3210030100601452687, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
@@ -1776,6 +1787,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a69c4fbd8d901c44be1f1018d5e8426, type: 3}
+--- !u!1 &5426638135340353280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5426638135340353282}
+  - component: {fileID: 5426638135340353283}
+  - component: {fileID: 5426638135340353293}
+  m_Layer: 0
+  m_Name: InteractableObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5426638135340353282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426638135340353280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.35, y: -0.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5426638135340353283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426638135340353280}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.15, y: -0.3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 5.4}
+  m_EdgeRadius: 0
+--- !u!114 &5426638135340353293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426638135340353280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fcf5a44478c7c44b376615de7f3b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 686382887}
+  dialogueText: {fileID: 1596490375}
+  face1: {fileID: 1095153984}
+  face2: {fileID: 1793797906}
+  playerInRange: 0
+  primeInt: 0
 --- !u!1001 &6096596765823096515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1936,7 +2023,7 @@ PrefabInstance:
     - target: {fileID: 6096596766886517619, guid: 273d1a8984ed91542a22516f1fa1fdc0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6096596766964935027, guid: 273d1a8984ed91542a22516f1fa1fdc0,
         type: 3}
