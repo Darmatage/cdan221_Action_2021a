@@ -7,9 +7,9 @@ public class NPC_Dialogue : MonoBehaviour {
        //public Animator anim;
        public GameObject dialogueBox;
        public Text dialogueText;
-	   public int switchvalue;
        public bool playerInRange = false;
        public int primeInt = 0;
+	   public int startPoint = 1;
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -43,62 +43,54 @@ public class NPC_Dialogue : MonoBehaviour {
        }
 
        public void NPCdialogue (){
-              switch (switchvalue){
-				case 1:
-					primeInt +=1;
+			if (primeInt == 0){
+				primeInt += startPoint;
+			} else {
+				primeInt +=1;
+			}
 
-					if (primeInt == 1){
-                    dialogueText.text = "ONE.";
-					}
+			if (primeInt == 1){
+            dialogueText.text = "ONE.";
+			}
 
-					if (primeInt ==2){
-                     dialogueText.text = "TWO.";
-					}
+			if (primeInt ==2){
+            dialogueText.text = "TWO.";
+			}
 			  
-					if (primeInt == 3){
-                     dialogueBox.SetActive(false);
-					 dialogueText.gameObject.SetActive(false);
-					 primeInt = 0;
-					}
-					break;
-				case 2:
-					primeInt +=1;
+			if (primeInt == 3){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 4){
+            dialogueText.text = "THREE.";
+			}
 
-					if (primeInt == 1){
-                    dialogueText.text = "THREE.";
-					}
-
-					if (primeInt ==2){
-                     dialogueText.text = "FOUR.";
-					}
+			if (primeInt ==5){
+            dialogueText.text = "FOUR.";
+			}
 			  
-					if (primeInt == 3){
-                     dialogueBox.SetActive(false);
-					 dialogueText.gameObject.SetActive(false);
-					 primeInt = 0;
-					}
-					break;
-				case 3:
-					primeInt +=1;
+			if (primeInt == 6){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 7){
+            dialogueText.text = "FIVE.";
+			}
 
-					if (primeInt == 1){
-                    dialogueText.text = "FIVE.";
-					}
-
-					if (primeInt ==2){
-                     dialogueText.text = "SIX.";
-					}
+			if (primeInt ==8){
+            dialogueText.text = "SIX.";
+			}
 			  
-					if (primeInt == 3){
-                     dialogueBox.SetActive(false);
-					 dialogueText.gameObject.SetActive(false);
-					 primeInt = 0;
-					}
-					break;
-			  }
-
-			  
-       }
+			if (primeInt == 9){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+		}
 
        private void OnTriggerEnter2D(Collider2D other){
              if (other.gameObject.tag == "Player") {
