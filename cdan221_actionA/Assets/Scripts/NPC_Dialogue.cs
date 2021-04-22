@@ -64,7 +64,7 @@ public class NPC_Dialogue : MonoBehaviour {
 			}
 			
 			if (primeInt == 4){
-            dialogueText.text = "THREE.";
+            dialogueText.text = "THREE";
 			}
 
 			if (primeInt ==5){
