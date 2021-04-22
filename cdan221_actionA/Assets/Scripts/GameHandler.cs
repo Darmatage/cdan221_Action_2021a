@@ -12,11 +12,15 @@ public class GameHandler : MonoBehaviour{
         //void Start () { UpdateScore (); }
 
 
+		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
+
+
         public void AddPlayerStat(int amount){
                 playerStat += amount;
                 Debug.Log("Current Player Stat = " + playerStat);
         //      UpdateScore ();
         }
+
 
         //void UpdateScore () {
         //        Text scoreTemp = textGameObject.GetComponent<Text>();
