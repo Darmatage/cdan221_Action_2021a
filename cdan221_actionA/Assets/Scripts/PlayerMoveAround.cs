@@ -22,17 +22,18 @@ public class PlayerMoveAround : MonoBehaviour {
             Vector3 hvMove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
            if (isAlive == true){
                  
-                  transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
-            }
+                transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
+            
 
-            if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
-                  animator.SetBool ("Walk", true);
-             } else {animator.SetBool ("Walk", false);}
+				if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
+					animator.SetBool ("Walk", true);
+				} else {animator.SetBool ("Walk", false);}
 
             // NOTE: if input is moving the Player right and Player faces left, turn, and vice-versa
-           if ((hvMove.x >0 && !FaceRight) || (hvMove.x <0 && FaceRight)){
-                  playerTurn();
-            }
+				if ((hvMove.x >0 && !FaceRight) || (hvMove.x <0 && FaceRight)){
+					playerTurn();
+				}
+			}
       }
 
       private void playerTurn(){
