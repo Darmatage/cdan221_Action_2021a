@@ -65,11 +65,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 867e1e3575d6812448d924667f78bde2, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -253,7 +253,7 @@ SpriteRenderer:
   m_SortingLayerID: 1035650559
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e99dfddf365c42b49ad86012f383c860, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25ef5becc9a19f64ca387cbb7982f862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -338,17 +338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 3107167166044617391}
   dialogueText: {fileID: 3107167165172434771}
-  face1: {fileID: 0}
-  face2: {fileID: 0}
   playerInRange: 0
   primeInt: 0
-  dialogue0: This is an example sentence.
-  dialogue1: How many characters can I fit in a line idk let's try it out and see
-    if it wraps blah blah blahbbajdlkfjsdlkfjsdlfksjdlkfjsdl
-  dialogue2: Can I make a /n new line?
-  dialogue3: Nope.
-  dialogue4: FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT FILLER TEXT
-  dialogue5: Ahem. That was weird.
+  startPoint: 1
 --- !u!1 &3107167167194356878
 GameObject:
   m_ObjectHideFlags: 0
