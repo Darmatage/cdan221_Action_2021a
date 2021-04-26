@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPC_Dialogue_L1S1 : MonoBehaviour {
+public class NPC_Dialogue_L1S2 : MonoBehaviour {
        //public Animator anim;
        public GameObject dialogueBox;
        public Text dialogueText;
@@ -50,52 +50,34 @@ public class NPC_Dialogue_L1S1 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "It's a bed...";
+            dialogueText.text = "Oh, hey. You came out of 3A, right? You’ve got some guts breaking the matron’s rules so quickly. Not that it's hard, but be careful with that in the future.";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "Definitely not your own, though.";
+            dialogueText.text = "So? What are you in for?";
 			}
 			  
 			if (primeInt == 3){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
-			}
-			
-			if (primeInt == 4){
-            dialogueText.text = "There are some drawers on this bedside table. Stick your hand in there, girl!";
+            dialogueText.text = "(.....)";
 			}
 
-			if (primeInt ==5){
-            dialogueText.text = "...Nah. Feels like they're all empty.";
+			if (primeInt ==4){
+            dialogueText.text = "I'm just kidding. You don’t have to tell me. I know some patients don’t like to talk about their incidents.";
+			}
+			
+			if (primeInt == 5){
+            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
 			}
 			  
 			if (primeInt == 6){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
+            dialogueText.text = "I’m Lani, by the way. The annoying-voice girl in 3B is Savanna. In 3C, that’s Jack.";
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "It's a phone. Should you try calling for help?";
+            dialogueText.text = "I've been here the longest out of all of us, so feel free too... confide in me. Or something.";
 			}
 			  
 			if (primeInt == 8){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
-			}
-			
-			if (primeInt == 9){
-            dialogueText.text = "A glass panel. If it's a window, you should be able to see some light coming from it.";
-			}
-			
-			if (primeInt == 10){
-            dialogueText.text = "But you can't.";
-			}
-			  
-			if (primeInt == 11){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
