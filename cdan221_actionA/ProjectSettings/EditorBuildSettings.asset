@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Closeup_Poem.unity
     guid: cc9db3667b6aa3f47a3d8b425c3632a8
+  - enabled: 1
+    path: Assets/Scenes/CloseUp_Phone.unity
+    guid: 506a0b65c96579d4fb02452f6c3bdb95
+  - enabled: 1
+    path: Assets/Scenes/Level2Scene2.unity
+    guid: 94a533a1200eb7e49bb867f5662210d6
+  - enabled: 1
+    path: Assets/Scenes/Level2Scene1.unity
+    guid: 91ea67d1cf7ba29478564fd17fe6495c
   m_configObjects: {}

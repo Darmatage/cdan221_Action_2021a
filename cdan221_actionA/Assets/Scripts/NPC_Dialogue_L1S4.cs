@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPC_Dialogue_L1S2 : MonoBehaviour {
+public class NPC_Dialogue_L1S4 : MonoBehaviour {
        //public Animator anim;
        public GameObject dialogueBox;
        public Text dialogueText;
@@ -50,48 +50,68 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Oh, hey. You came out of 3A, right? You’ve got some guts breaking the matron’s rules so quickly. Not that it's hard, but be careful with that in the future.";
+            dialogueText.text = "Hey, new kid. Already out of your room without a supervisor?";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "So? What are you in for?";
+            dialogueText.text = "...Ema, huh? Well Ema, don't get too cocky just because you walked out an unlocked door. Let's see you get off the floor next.";
 			}
 			  
 			if (primeInt == 3){
-            dialogueText.text = "(.....)";
+            dialogueText.text = "Speakin of, I’ve been wondering when they were gonna fill that room again. You’re lucky you can’t see the state of the place.";
 			}
 
 			if (primeInt ==4){
-            dialogueText.text = "I'm just kidding. You don’t have to tell me. I know some patients don’t like to talk about their incidents.";
+            dialogueText.text = "If there’s one thing Aaron did well, it’s leaving messes that are impossible to clean.";
 			}
 			
 			if (primeInt == 5){
-            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
+            dialogueText.text = "Listen, if you like breaking rules, keep this in mind; You have the advantage here. You can't judge this place by it's looks, right? So they can't fool you.";
 			}
 			  
 			if (primeInt == 6){
-            dialogueText.text = "I’m Lani, by the way. The annoying-voice girl in 3B is Savanna. In 3C, that’s Jack.";
+            dialogueText.text = "Ah. Um... Ha, anyway... Nice to meet you.";
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "I've been here the longest out of all of us, so feel free too... confide in me. Or something.";
-			}
-			  
-			if (primeInt == 8){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
+			if (primeInt == 8){
+            dialogueText.text = "Do you dare give the metal door of this vent a little tug?";
+			}
+			
 			if (primeInt == 9){
-            dialogueText.text = "It's locked. Feels like there's a keypad on this door...";
+            dialogueText.text = "...Oh my stars! Could it be? The panel's loose! Will you finally crawl in that dusty little maze?";
 			}
 			
 			if (primeInt == 10){
-            dialogueText.text = "Surely there must be a way to get through.";
+            dialogueText.text = "No, absolutely not. You can feel around in there for good measure, though. Feels like more scratches!";
 			}
 			  
 			if (primeInt == 11){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 12){
+            dialogueText.text = "Still no light.";
+			}
+			  
+			if (primeInt == 13){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 14){
+            dialogueText.text = "Still no dice on getting that panel off. Do you really want to crawl in there?";
+			}
+			  
+			if (primeInt == 15){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

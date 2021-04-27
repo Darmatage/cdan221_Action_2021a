@@ -114,6 +114,20 @@ public class NPC_Dialogue_L1S1 : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 15){
+            dialogueText.text = "Some sort of remote? It feels like some of the buttons are damaged...";
+			}
+			
+			if (primeInt == 16){
+            dialogueText.text = "(press e to investigate!)";
+			}
+			  
+			if (primeInt == 17){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
