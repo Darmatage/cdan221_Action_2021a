@@ -846,6 +846,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 14
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &674069823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1136,6 +1139,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 8
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &949798469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1267,6 +1273,75 @@ RectTransform:
   m_AnchoredPosition: {x: 1, y: -243}
   m_SizeDelta: {x: 880, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1166750786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4642221683445823465, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_Name
+      value: GameHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 614.30286
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 259.3869
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -129.73029
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04490da04dc6e29459e1b016c3336656, type: 3}
 --- !u!1 &1247773380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,6 +1582,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 4
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &1558998503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2844,6 +2922,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &3585886471724095140
 BoxCollider2D:
   m_ObjectHideFlags: 0
