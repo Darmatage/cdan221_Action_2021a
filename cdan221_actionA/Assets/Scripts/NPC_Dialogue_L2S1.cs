@@ -87,7 +87,7 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 12){
-            dialogueText.text = "Still no light.";
+            dialogueText.text = "I can't turn back now.";
 			}
 			  
 			if (primeInt == 13){
