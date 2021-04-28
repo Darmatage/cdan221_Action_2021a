@@ -1216,6 +1216,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 20
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &771702231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2140,6 +2143,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 30
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &1664348238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2216,6 +2222,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 40
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &1665034320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2971,6 +2980,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  canPickUpFileLani: 0
+  canPickUpFileJack: 0
+  canPickUpDrMarkID: 0
 --- !u!61 &3585886471724095140
 BoxCollider2D:
   m_ObjectHideFlags: 0

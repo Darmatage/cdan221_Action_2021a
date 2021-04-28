@@ -28,26 +28,26 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			
 			if ((canPickUpFileLani == true)&& (Input.GetKeyDown(KeyCode.E))) {
 				GameHandler.itemFileLani = true;
+				Debug.Log("You Got Lani's File");
 			}else if ((canPickUpFileJack == true)&& (Input.GetKeyDown(KeyCode.E))) {
 				GameHandler.itemFileJack = true;
+				Debug.Log("You Got Jack's File");
 			}else if ((canPickUpDrMarkID == true)&& (Input.GetKeyDown(KeyCode.E))) {
 				GameHandler.itemIdDrMark = true;
+				Debug.Log("You Got Dr Mark's ID");
 			}
 			
-			if (Input.GetButtonDown("Talk") && playerInRange){ //can change teh key to
-                   if (dialogueBox.activeInHierarchy){
+			if (Input.GetButtonDown("Talk") && playerInRange){ //input manager talk = spacebar
+                if (dialogueBox.activeInHierarchy){
                         //dialogueBox.SetActive(false);
                         //anim.SetBool("Chat", false);
-
                    } else {
                         dialogueText.gameObject.SetActive(true);
 						dialogueText.text = "";
                         dialogueBox.SetActive(true);
                         //anim.SetBool("Chat", true);
-                   }
-				   
+                   } 
             }
-			
 			
 			if (Input.GetButtonDown("Talk")){
 				NPCdialogue();

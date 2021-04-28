@@ -357,6 +357,8 @@ Transform:
   - {fileID: 374593170}
   - {fileID: 1468361301}
   - {fileID: 2113052782}
+  - {fileID: 1599381369}
+  - {fileID: 647676656}
   - {fileID: 428010153}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -447,7 +449,7 @@ Transform:
   m_LocalScale: {x: 1.2523901, y: 1.1252102, z: 1}
   m_Children: []
   m_Father: {fileID: 69024920}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &428010154
 SpriteRenderer:
@@ -499,6 +501,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &479556248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4642221683445823465, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_Name
+      value: GameHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 614.30286
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 259.3869
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -129.73029
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491277369729177883, guid: 04490da04dc6e29459e1b016c3336656,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04490da04dc6e29459e1b016c3336656, type: 3}
 --- !u!1 &585261884
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,8 +638,8 @@ GameObject:
   - component: {fileID: 647676656}
   - component: {fileID: 647676655}
   m_Layer: 0
-  m_Name: Collider_Bed (1)
-  m_TagString: sceneClimbLeft
+  m_Name: Collider_Bed_R
+  m_TagString: sceneClimbRight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -586,7 +657,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.0383954, y: -1.6352654}
+  m_Offset: {x: 2.14, y: -1.6352654}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -597,7 +668,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4646635, y: 1.5787983}
+  m_Size: {x: 0.63, y: 1.5787983}
   m_EdgeRadius: 0
 --- !u!4 &647676656
 Transform:
@@ -606,12 +677,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647676654}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 69024920}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705209456
 GameObject:
@@ -707,7 +778,7 @@ GameObject:
   - component: {fileID: 897507106}
   - component: {fileID: 897507107}
   m_Layer: 0
-  m_Name: Collider_Wall
+  m_Name: Collider_Wall_Left
   m_TagString: sceneWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,7 +792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897507105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.54, z: 0}
+  m_LocalPosition: {x: 0, y: 1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 69024920}
@@ -764,7 +835,7 @@ GameObject:
   - component: {fileID: 999160655}
   - component: {fileID: 999160656}
   m_Layer: 0
-  m_Name: Collider_Wall (1)
+  m_Name: Collider_Wall_Right
   m_TagString: sceneWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -778,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999160654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.88, y: 1.54, z: 0}
+  m_LocalPosition: {x: 13.88, y: 1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 69024920}
@@ -833,7 +904,7 @@ GameObject:
   - component: {fileID: 1136558732}
   - component: {fileID: 1136558733}
   m_Layer: 0
-  m_Name: Collider_Wall (2)
+  m_Name: Collider_Wall_AboveBed
   m_TagString: sceneWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1043,8 +1114,8 @@ GameObject:
   - component: {fileID: 1599381369}
   - component: {fileID: 1599381368}
   m_Layer: 0
-  m_Name: Collider_Bed
-  m_TagString: sceneClimbRight
+  m_Name: Collider_Bed_L
+  m_TagString: sceneClimbLeft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1062,7 +1133,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.810515, y: -1.5778942}
+  m_Offset: {x: -2.83, y: -1.5778942}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1073,7 +1144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40289307, y: 1.5614681}
+  m_Size: {x: 0.63, y: 1.5614681}
   m_EdgeRadius: 0
 --- !u!4 &1599381369
 Transform:
@@ -1082,12 +1153,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599381367}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 69024920}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1739122098
 PrefabInstance:
@@ -1134,7 +1205,7 @@ PrefabInstance:
     - target: {fileID: 5329970132012722144, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5329970132012722144, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
@@ -1185,7 +1256,6 @@ GameObject:
   - component: {fileID: 1955703411}
   - component: {fileID: 1955703410}
   - component: {fileID: 1955703409}
-  - component: {fileID: 1955703413}
   m_Layer: 5
   m_Name: CanvasHUD
   m_TagString: Untagged
@@ -1274,20 +1344,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1955703413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955703408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b27a04ea872e3704085d0e34be8e36bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  mixer: {fileID: 0}
 --- !u!1 &2113052781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,7 +1355,7 @@ GameObject:
   - component: {fileID: 2113052782}
   - component: {fileID: 2113052783}
   m_Layer: 0
-  m_Name: Bed
+  m_Name: Bed_front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1332,7 +1388,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.37061882, y: -2.741447}
+  m_Offset: {x: -0.37061882, y: -3.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1343,7 +1399,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.459095, y: 1.597106}
+  m_Size: {x: 4.459095, y: 1.17}
   m_EdgeRadius: 0
 --- !u!1001 &1991804142226822621
 PrefabInstance:
