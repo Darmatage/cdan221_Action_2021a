@@ -50,11 +50,11 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "It's the stairs.";
+            dialogueText.text = "It's the stairs. You just came from there.";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text =  "I just came from there.";
+            dialogueText.text =  "But no shame in turning back if you need Lani's help. Or if you get too scared.";
 			}
 			  
 			
