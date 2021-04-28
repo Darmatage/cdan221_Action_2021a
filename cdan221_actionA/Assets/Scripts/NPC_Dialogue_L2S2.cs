@@ -50,11 +50,11 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "There are a bunch of folders here. I can't make out what any of them are.";
+            dialogueText.text = "There are a bunch of folders here. You can't make out what any of them are.";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text =  "They each have a labeled tab and some papers inside.";
+            dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
 			}
 			  
 			
@@ -64,26 +64,44 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 8){
-            dialogueText.text = "Do you dare give the metal door of this vent a little tug?";
+			if (primeInt == 4){
+            dialogueText.text = "It's a computer. It feels so familiar to you, and you're pretty sure that you could use it if you really tried.";
 			}
 			
-			if (primeInt == 9){
-            dialogueText.text = "...Oh my stars! Could it be? The panel's loose! Will you finally crawl in that dusty little maze?";
+			if (primeInt == 5){
+            dialogueText.text = "Problem is, you don't have a clue what the password could be. Or what you would even do once you're in there.";
 			}
 			
-			if (primeInt == 10){
-            dialogueText.text = "No, absolutely not. You can feel around in there for good measure, though. Feels like more scratches!";
+			if (primeInt == 6){
+            dialogueText.text = "But you keep the existence of the computer in mind.";
 			}
 			  
-			if (primeInt == 11){
+			if (primeInt == 7){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
+			if (primeInt == 8){
+            dialogueText.text = "It's a cool, metal box with a dial on it. You spin it and wiggle the door a couple of time, just for kicks.";
+			}
+			
+			if (primeInt == 9){
+            dialogueText.text = "What on earth does a doctor need a safe in their office for?";
+			}
+			  
+			if (primeInt == 10){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 11){
+            dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
+			}
+			
 			if (primeInt == 12){
-            dialogueText.text = "Still no light.";
+            dialogueText.text = "That could be handy if that's what you think it is..";
 			}
 			  
 			if (primeInt == 13){
@@ -93,9 +111,9 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 14){
-            dialogueText.text = "Still no dice on getting that panel off. Do you really want to crawl in there?";
+            dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
 			}
-			  
+			
 			if (primeInt == 15){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);

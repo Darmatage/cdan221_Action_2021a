@@ -30,14 +30,20 @@ EditorBuildSettings:
     path: Assets/Scenes/CloseUp_Clicker.unity
     guid: b7c6834bdde30b5459384280b5a75cf5
   - enabled: 1
-    path: Assets/Scenes/Level6Scene1.unity
+    path: Assets/Scenes/Level6/Level6Scene1.unity
     guid: 343ab7d64ee68dc42ab5a5c96c3b28ea
   - enabled: 1
-    path: Assets/Scenes/Level6Scene2.unity
+    path: Assets/Scenes/Level6/Level6Scene2.unity
     guid: ee6132b22ad817342bb36ee2e630940e
   - enabled: 1
-    path: Assets/Scenes/Level6Scene3.unity
+    path: Assets/Scenes/Level6/Level6Scene3.unity
     guid: 063112aedd970d741849e16e090873ae
+  - enabled: 1
+    path: Assets/Scenes/Level6/Level6Scene4.unity
+    guid: cc641237360bd66478fa2592b6dde896
+  - enabled: 1
+    path: Assets/Scenes/Level6/Level6Scene5.unity
+    guid: 5a3a0b248ee73d24798ebf987594ca89
   - enabled: 1
     path: Assets/Scenes/Level1Scene1b.unity
     guid: 8b8cc1abb04cae642bb620bdf2855c9c
@@ -53,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2Scene1.unity
     guid: 91ea67d1cf7ba29478564fd17fe6495c
+  - enabled: 1
+    path: Assets/Scenes/Level2Scene3.unity
+    guid: a7a89d94b48c410468df1d27c5db33e7
   m_configObjects: {}
