@@ -9,17 +9,57 @@ public class GameHandler : MonoBehaviour{
         public static int playerStat;
         //public GameObject textGameObject;
 
-        //void Start () { UpdateScore (); }
-
 
 		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
-
+		
+		public static bool itemFileLani = false; 
+		public static bool itemFileSavanna = false; 
+		public static bool itemFileJack = false; 
+		public static bool itemFileAaron = false; 
+		public static bool itemIdDrClaudia = false; 
+		public static bool itemIdDrMark = false; 
+		
+		
+		//void Start () { UpdateScore (); }
+		
+		void Update(){
+			if (Input.GetKeyDown(KeyCode.R)){
+				CheckInventory();
+			}
+		}
+		
 
         public void AddPlayerStat(int amount){
                 playerStat += amount;
                 Debug.Log("Current Player Stat = " + playerStat);
         //      UpdateScore ();
         }
+
+		public void CheckInventory(){
+			 Debug.Log("INVENTORY: \n");
+			if (itemFileLani == true){
+                Debug.Log("Lani Patient File \n");
+			}
+			if (itemFileSavanna == true){
+                Debug.Log("Sav Patient File \n");
+			}
+			if (itemFileJack == true){
+                Debug.Log("Jack Patient File \n");
+			}
+			if (itemFileAaron == true){
+                Debug.Log("Aaron Patient File \n");
+			}
+			if (itemIdDrClaudia == true){
+                Debug.Log("Dr Claudia ID \n");
+			}
+			if (itemIdDrMark == true){
+                Debug.Log("Dr Mark ID \n");
+			}
+        }
+
+
+
+
 
 
         //void UpdateScore () {

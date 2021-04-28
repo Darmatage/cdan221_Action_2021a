@@ -10,6 +10,12 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	   
+	   public bool canPickUpFileLani = false;
+	   public bool canPickUpFileJack = false;
+	   public bool canPickUpDrMarkID = false;
+	   
+	   
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -20,6 +26,13 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 
        void Update () {
 			
+			if ((canPickUpFileLani == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				GameHandler.itemFileLani = true;
+			}else if ((canPickUpFileJack == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				GameHandler.itemFileJack = true;
+			}else if ((canPickUpDrMarkID == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				GameHandler.itemIdDrMark = true;
+			}
 			
 			if (Input.GetButtonDown("Talk") && playerInRange){ //can change teh key to
                    if (dialogueBox.activeInHierarchy){
@@ -57,64 +70,75 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
             dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
 			}
 			  
-			
-			if (primeInt == 3){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
+			if (primeInt ==3){
+            dialogueText.text =  "(press e to pick up a file!)";
+			canPickUpFileLani = true;
 			}
 			
 			if (primeInt == 4){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			canPickUpFileLani = false;
+			primeInt = 0;
+			}
+			
+			if (primeInt == 20){
             dialogueText.text = "It's a computer. It feels so familiar to you, and you're pretty sure that you could use it if you really tried.";
 			}
 			
-			if (primeInt == 5){
+			if (primeInt == 21){
             dialogueText.text = "Problem is, you don't have a clue what the password could be. Or what you would even do once you're in there.";
 			}
 			
-			if (primeInt == 6){
+			if (primeInt == 22){
             dialogueText.text = "But you keep the existence of the computer in mind.";
 			}
 			  
-			if (primeInt == 7){
+			if (primeInt == 23){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
-			if (primeInt == 8){
+			if (primeInt == 30){
             dialogueText.text = "It's a cool, metal box with a dial on it. You spin it and wiggle the door a couple of time, just for kicks.";
 			}
 			
-			if (primeInt == 9){
+			if (primeInt == 31){
             dialogueText.text = "What on earth does a doctor need a safe in their office for?";
 			}
 			  
-			if (primeInt == 10){
+			if (primeInt == 32){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
-			if (primeInt == 11){
+			if (primeInt == 40){
             dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
 			}
 			
-			if (primeInt == 12){
+			if (primeInt == 41){
             dialogueText.text = "That could be handy if that's what you think it is..";
 			}
 			  
-			if (primeInt == 13){
+			 if (primeInt == 42){
+            dialogueText.text = "(press e to pick up the ID!)";
+			canPickUpDrMarkID = true;
+			}
+			  
+			if (primeInt == 43){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
+			canPickUpDrMarkID = false;
 			primeInt = 0;
 			}
 			
-			if (primeInt == 14){
+			if (primeInt == 50){
             dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
 			}
 			
-			if (primeInt == 15){
+			if (primeInt == 51){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
