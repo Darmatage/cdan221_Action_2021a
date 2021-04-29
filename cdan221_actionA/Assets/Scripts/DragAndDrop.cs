@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DragAndDrop : MonoBehaviour {
 
        private bool selected;
+	   public string ReturnLevel = "MainMenu";
 
        void Update () {
               if (selected == true) {
@@ -15,6 +17,9 @@ public class DragAndDrop : MonoBehaviour {
               if (Input.GetMouseButtonUp (0)) {
                      selected = false;
               }
+			  if (Input.GetKeyDown(KeyCode.E)){
+					GoBack();
+              }
        }
 
        void OnMouseOver(){
@@ -22,5 +27,9 @@ public class DragAndDrop : MonoBehaviour {
                      selected = true;
               }
        }
+	   
+	public void GoBack(){
+	SceneManager.LoadScene (ReturnLevel);
+	}
 
 }
