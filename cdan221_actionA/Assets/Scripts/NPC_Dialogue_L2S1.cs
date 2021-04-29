@@ -96,11 +96,11 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 14){
-            dialogueText.text = "Still no dice on getting that panel off. Do you really want to crawl in there?";
+			if (primeInt == 20){
+            dialogueText.text = "Kalani... That one's the cheerleader, right? Poor thing.";
 			}
 			  
-			if (primeInt == 15){
+			if (primeInt == 21){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

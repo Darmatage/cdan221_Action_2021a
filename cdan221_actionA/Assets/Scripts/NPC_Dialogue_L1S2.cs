@@ -96,6 +96,16 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 20){
+            dialogueText.text = "This must be Lani's room...";
+			}
+			  
+			if (primeInt == 21){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
