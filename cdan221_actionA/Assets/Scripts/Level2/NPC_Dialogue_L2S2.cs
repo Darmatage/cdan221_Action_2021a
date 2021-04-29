@@ -72,7 +72,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			 
 			if (primeInt ==3){
             dialogueText.text =  "(press e to pick up a file!)";
-				if (gameObject.tag == "LaniFilePickup"){
+				if (playerInRange == true){
 					canPickUpFileLani = true;
 				}
 			}
@@ -80,7 +80,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			if (primeInt == 4){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-				if (gameObject.tag == "LaniFilePickup"){
+				if (playerInRange == true){
 					canPickUpFileLani = false;
 				}
 			primeInt = 0;
@@ -128,7 +128,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			  
 			if (primeInt == 42){
             dialogueText.text = "(press e to pick up the ID!)";
-				if (gameObject.tag == "DrMarkIDPickup"){
+				if (playerInRange == true){
 					canPickUpDrMarkID = true;
 				}
 			}
@@ -136,7 +136,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			if (primeInt == 43){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-				if (gameObject.tag == "DrMarkIDPickup"){
+				if (playerInRange == true){
 					canPickUpDrMarkID = false;
 				}
 			primeInt = 0;
@@ -164,6 +164,8 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
        private void OnTriggerExit2D(Collider2D other){
              if (other.gameObject.tag == "Player") {
                    playerInRange = false;
+				   canPickUpFileLani = false;
+				   canPickUpDrMarkID = false;
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");

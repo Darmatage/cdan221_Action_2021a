@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RadioSlider : MonoBehaviour
 {
 	public Slider sliderInstance;
+	public string ReturnLevel = "MainMenu";
 	public GameObject radioSource0;
 	public GameObject radioSource1;
 	public GameObject radioSource2;
@@ -27,6 +29,11 @@ public class RadioSlider : MonoBehaviour
 	}
 	
 	void Update(){
+		
+		if (Input.GetKeyDown(KeyCode.E)){
+			GoBack();
+        }
+		
 		switch(sliderInstance.value){
 			case 0:
 				radioSource0.SetActive(true);
@@ -177,4 +184,9 @@ public class RadioSlider : MonoBehaviour
 	public void OnValueChanged(float value){
 		Debug.Log ("New Value " + value);
 	}
+	
+	public void GoBack(){
+		SceneManager.LoadScene (ReturnLevel);
+	}
+
 }
