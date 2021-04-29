@@ -69,20 +69,20 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			if (primeInt ==2){
             dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
 			}
-			
-			if (primeInt ==3){
-            dialogueText.text =  "dfjkdfkhjkjfhgjkfj";
-			} 
 			 
-			if (primeInt ==4){
+			if (primeInt ==3){
             dialogueText.text =  "(press e to pick up a file!)";
-			canPickUpFileLani = true;
+				if (gameObject.tag == "LaniFilePickup"){
+					canPickUpFileLani = true;
+				}
 			}
 			
-			if (primeInt == 5){
+			if (primeInt == 4){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-			canPickUpFileLani = false;
+				if (gameObject.tag == "LaniFilePickup"){
+					canPickUpFileLani = false;
+				}
 			primeInt = 0;
 			}
 			
@@ -128,13 +128,17 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			  
 			if (primeInt == 42){
             dialogueText.text = "(press e to pick up the ID!)";
-			canPickUpDrMarkID = true;
+				if (gameObject.tag == "DrMarkIDPickup"){
+					canPickUpDrMarkID = true;
+				}
 			}
 			  
 			if (primeInt == 43){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-			canPickUpDrMarkID = false;
+				if (gameObject.tag == "DrMarkIDPickup"){
+					canPickUpDrMarkID = false;
+				}
 			primeInt = 0;
 			}
 			
