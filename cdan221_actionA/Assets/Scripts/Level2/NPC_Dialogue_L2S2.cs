@@ -69,16 +69,20 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			if (primeInt ==2){
             dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
 			}
-			  
+			 
 			if (primeInt ==3){
             dialogueText.text =  "(press e to pick up a file!)";
-			canPickUpFileLani = true;
+				if (playerInRange == true){
+					canPickUpFileLani = true;
+				}
 			}
 			
 			if (primeInt == 4){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-			canPickUpFileLani = false;
+				if (playerInRange == true){
+					canPickUpFileLani = false;
+				}
 			primeInt = 0;
 			}
 			
@@ -101,7 +105,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 30){
-            dialogueText.text = "It's a cool, metal box with a dial on it. You spin it and wiggle the door a couple of time, just for kicks.";
+            dialogueText.text = "It's a cool, metal box with a lock on it. You spin it and wiggle the door a couple of time, just for kicks.";
 			}
 			
 			if (primeInt == 31){
@@ -122,15 +126,19 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
             dialogueText.text = "That could be handy if that's what you think it is..";
 			}
 			  
-			 if (primeInt == 42){
+			if (primeInt == 42){
             dialogueText.text = "(press e to pick up the ID!)";
-			canPickUpDrMarkID = true;
+				if (playerInRange == true){
+					canPickUpDrMarkID = true;
+				}
 			}
 			  
 			if (primeInt == 43){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-			canPickUpDrMarkID = false;
+				if (playerInRange == true){
+					canPickUpDrMarkID = false;
+				}
 			primeInt = 0;
 			}
 			
@@ -156,6 +164,8 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
        private void OnTriggerExit2D(Collider2D other){
              if (other.gameObject.tag == "Player") {
                    playerInRange = false;
+				   canPickUpFileLani = false;
+				   canPickUpDrMarkID = false;
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");

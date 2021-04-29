@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveSystem : MonoBehaviour
 {
     public GameObject correctForm;
+	public string ReturnLevel = "MainMenu";
     private bool moving = false;
     private bool finish = false;
 
@@ -33,6 +35,10 @@ public class MoveSystem : MonoBehaviour
 
                 this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
             }
+        }
+		
+		if (Input.GetKeyDown(KeyCode.E)){
+		GoBack();
         }
     }
 
@@ -73,6 +79,8 @@ public class MoveSystem : MonoBehaviour
            
             Gizmos.DrawWireSphere(transform.position, finishRange);
       }	
-	
-	
+	  
+	public void GoBack(){
+	SceneManager.LoadScene (ReturnLevel);
+	}
 }
