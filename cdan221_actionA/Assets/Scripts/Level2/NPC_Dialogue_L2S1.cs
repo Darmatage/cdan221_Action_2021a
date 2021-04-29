@@ -10,12 +10,19 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	   public bool itemSensitive = false;
+	   
+	   public GameObject FileFolderLaniButton;
+	   public GameObject IDDrMarkButton;
+	   
 
        void Start () {
-              dialogueBox.SetActive(false);
-			  dialogueText.gameObject.SetActive(false);
-              //anim.SetBool("Chat", false)
-			  
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+            //anim.SetBool("Chat", false)
+			FileFolderLaniButton.SetActive(false);
+			IDDrMarkButton.SetActive(false);
+			
        }
 
        void Update () {
@@ -73,7 +80,11 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 6){
+				
             dialogueText.text = "In fact, you could name any patient and I could tell you, like... Anything about them! That's how diligent I am!";
+						if ((itemSensitive == true)&&((GameHandler.itemFileLani == true)||(GameHandler.itemIdDrMark == true))){
+							primeInt = 20;
+						}
 			}
 			
 			if (primeInt == 7){
@@ -96,15 +107,61 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
+			
 			if (primeInt == 20){
+            dialogueText.text = "(Slide an item under the door?)";
+			if (GameHandler.itemFileLani == true){
+				FileFolderLaniButton.SetActive(true);
+			}
+			if (GameHandler.itemIdDrMark == true){
+				IDDrMarkButton.SetActive(true);
+			}
+			
+			}
+			
+			if (primeInt == 30){
+            dialogueText.text = "Placeholder.";
+			}
+			
+			if (primeInt == 31){
             dialogueText.text = "Kalani... That one's the cheerleader, right? Poor thing.";
 			}
 			  
-			if (primeInt == 21){
+			if (primeInt == 32){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			
+			if (primeInt == 40){
+            dialogueText.text = "Placeholder.";
+			}
+			
+			if (primeInt == 41){
+            dialogueText.text = "Write the Dr. Mark text here.";
+			}
+			  
+			if (primeInt == 42){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+		}
+		
+		public void LaniItemButton(){
+			primeInt = 30;
+			NPCdialogue();
+			FileFolderLaniButton.SetActive(false);
+			IDDrMarkButton.SetActive(false);
+		}
+		
+		public void DrMarkItemButton(){
+			primeInt = 40;
+			NPCdialogue();
+			FileFolderLaniButton.SetActive(false);
+			IDDrMarkButton.SetActive(false);
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
@@ -117,9 +174,11 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
                         
        private void OnTriggerExit2D(Collider2D other){
              if (other.gameObject.tag == "Player") {
-                   playerInRange = false;
-                   dialogueBox.SetActive(false);
-				   dialogueText.gameObject.SetActive(false);
+                playerInRange = false;
+                dialogueBox.SetActive(false);
+				dialogueText.gameObject.SetActive(false);
+				FileFolderLaniButton.SetActive(false);
+				IDDrMarkButton.SetActive(false);
                    //Debug.Log("Player left range");
              }
        }
