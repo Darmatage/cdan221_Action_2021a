@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPC_Dialogue_L1S2 : MonoBehaviour {
+public class NPC_Dialogue_L2S1 : MonoBehaviour {
        //public Animator anim;
        public GameObject dialogueBox;
        public Text dialogueText;
@@ -50,31 +50,34 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Oh, hey. You came out of 3A, right? You’ve got some guts breaking the matron’s rules so quickly. Not that it's hard, but be careful with that in the future.";
+            dialogueText.text = "It's the stairs. You just came from there.";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "So? What are you in for?";
+            dialogueText.text =  "But no shame in turning back if you need Lani's help. Or if you get too scared.";
 			}
 			  
+			
 			if (primeInt == 3){
-            dialogueText.text = "(.....)";
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
 			}
-
-			if (primeInt ==4){
-            dialogueText.text = "I'm just kidding. You don’t have to tell me. I know some patients don’t like to talk about their incidents.";
+			
+			if (primeInt == 4){
+            dialogueText.text = "D-Doctor Claudia? Is that you?";
 			}
 			
 			if (primeInt == 5){
-            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
+            dialogueText.text = "Ahaha, no worries! I'm definitely hard at work in here! Just like always!";
 			}
-			  
+			
 			if (primeInt == 6){
-            dialogueText.text = "I’m Lani, by the way. The annoying-voice girl in 3B is Savanna. In 3C, that’s Jack.";
+            dialogueText.text = "In fact, you could name any patient and I could tell you, like... Anything about them! That's how diligent I am!";
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "I've been here the longest out of all of us, so feel free too... confide in me. Or something.";
+            dialogueText.text = "Haha... ha...";
 			}
 			  
 			if (primeInt == 8){
@@ -83,15 +86,21 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 9){
-            dialogueText.text = "It's locked. Feels like there's a keypad on this door...";
-			}
-			
-			if (primeInt == 10){
-            dialogueText.text = "Surely there must be a way to get through.";
+			if (primeInt == 12){
+            dialogueText.text = "I can't turn back now.";
 			}
 			  
-			if (primeInt == 11){
+			if (primeInt == 13){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 20){
+            dialogueText.text = "Kalani... That one's the cheerleader, right? Poor thing.";
+			}
+			  
+			if (primeInt == 21){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
