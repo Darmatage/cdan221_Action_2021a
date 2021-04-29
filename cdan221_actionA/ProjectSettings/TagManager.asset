@@ -12,6 +12,7 @@ TagManager:
   - sceneStairLeft
   - sceneStairRight
   - PauseMenuSlider
+  - PlayerScaleBottom
   layers:
   - Default
   - TransparentFX
