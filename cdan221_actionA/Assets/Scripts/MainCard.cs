@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class MainCard : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private SceneController controller;
+    [SerializeField] private GameObject Card_Back;
+
+    public void OnMouseDown()
     {
-        
+        if (Card_Back.activeSelf && controller.canReveal)
+        {
+            Card_Back.SetActive(false);
+            controller.CardRevealed(this);
+        }
+    }
+    private int _id;
+    public int id
+    {
+        get { return _id; }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeSprite(int id, Sprite image)
     {
-        
+        _id = id;
+        GetComponent<SpriteRenderer>().sprite = image;
     }
+
+    public void Unreveal()
+    {
+        Card_Back.SetActive(true);
+    }
+
+
 }
