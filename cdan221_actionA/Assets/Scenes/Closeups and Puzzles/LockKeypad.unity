@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &137670044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -339,6 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &366118162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -461,6 +463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &630751002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -583,6 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &680830015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -648,17 +652,19 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750412914}
-  m_Text: TestPhrase
+  m_Text: '123456
+
+'
   m_OffsetZ: 0
   m_CharacterSize: 0.15
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 64
+  m_FontSize: 90
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 867e1e3575d6812448d924667f78bde2, type: 3}
+  m_Font: {fileID: 12800000, guid: 7a483bb692c03f44f8cddd77c8d6a4a3, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -680,7 +686,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 867e1e3575d6812448d924667f78bde2, type: 3}
+  - {fileID: 2100000, guid: 7a483bb692c03f44f8cddd77c8d6a4a3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -709,7 +715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750412914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.64, y: 4.74, z: 0}
+  m_LocalPosition: {x: -1.98, y: 4.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -930,6 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &1118565626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1052,6 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &1179495586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1174,6 +1182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &1384388036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1296,6 +1305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &1644496853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1501,6 +1511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnLevel: Level1Scene2
+  SolvedLevel: Level2Scene1
 --- !u!61 &1904932008
 BoxCollider2D:
   m_ObjectHideFlags: 0
