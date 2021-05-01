@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraShake: {fileID: 634060156}
-  ReturnLevel: MainMenu
+  ReturnLevel: Return_GameOver
   primeInt: 0
   dialogueBox: {fileID: 3467662721879703821}
   dialogueText: {fileID: 3467662722752445681}
