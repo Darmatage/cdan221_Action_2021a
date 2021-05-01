@@ -10,6 +10,10 @@ public class GameOverScene : MonoBehaviour
 	public int primeInt = 0;
 	public GameObject dialogueBox;
     public Text dialogueText;
+	public GameObject dialogueBox2;
+    public Text dialogueText2;
+	public GameObject dialogueBox3;
+    public Text dialogueText3;
 	public bool allowSpace = false;
 	   
     // Start is called before the first frame update
@@ -17,7 +21,11 @@ public class GameOverScene : MonoBehaviour
     {
 		dialogueBox.SetActive(false);
 		dialogueText.gameObject.SetActive(false);
-		allowSpace = false;		
+		dialogueBox2.SetActive(false);
+		dialogueText2.gameObject.SetActive(false);
+		dialogueBox3.SetActive(false);
+		dialogueText3.gameObject.SetActive(false);
+		allowSpace = false;
 	    StartCoroutine(DialogueDelay());
     }
 	
@@ -43,20 +51,49 @@ public class GameOverScene : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "This is is just some placeholder text for the gameover event.";
+			dialogueText.text = "HEY!";
 		}
 
 		if (primeInt ==2){
-			dialogueText.text =  "I gotta replace it at some point...";
+			dialogueText.text =  "What are you doing down here?";
 		}
 		 
 		if (primeInt ==3){
+            dialogueBox2.SetActive(true);
+			dialogueText2.gameObject.SetActive(true);
+			dialogueText2.text = "Patients aren't allowed to leave their rooms, you know.";
+		}
+		if (primeInt ==4){
+            dialogueBox3.SetActive(true);
+			dialogueText3.gameObject.SetActive(true);
+			dialogueText3.text = "Come, now.";
+		}
+		if (primeInt ==5){
+			dialogueText3.text =  "We'll escort you back to your room immediately.";
+		}
+		if (primeInt ==6){
+			allowSpace = false;
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
-			SendBackToRoom();
+            dialogueBox2.SetActive(false);
+			dialogueText2.gameObject.SetActive(false);
+            dialogueBox3.SetActive(false);
+			dialogueText3.gameObject.SetActive(false);
+			StartCoroutine(BacktoRoomDelay());
 		}
 	}
+	public CameraShake cameraShake;
+	
+	public void BubbleShake(){
+		StartCoroutine(cameraShake.ShakeMe(0.1f, 0.2f));
+    }
+	
+	public IEnumerator BacktoRoomDelay()
+    {
+        yield return new WaitForSeconds(0.5F);
+		SendBackToRoom();
+		
+    }
 	
 	public void SendBackToRoom(){
 		SceneManager.LoadScene (ReturnLevel);
