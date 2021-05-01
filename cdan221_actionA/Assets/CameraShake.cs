@@ -7,9 +7,7 @@ public class CameraShake : MonoBehaviour{
 //when your shake is activated by another script, comment out this update function:
 
        void Update(){
-              if (Input.GetKeyDown(KeyCode.P)){
-                     StartCoroutine(ShakeMe(0.1f, 0.2f));
-              }
+
        }
 
        public IEnumerator ShakeMe(float durationTime, float magnitude){
