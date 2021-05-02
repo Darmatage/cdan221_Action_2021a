@@ -12,11 +12,14 @@ public class LockKeypadClickControl : MonoBehaviour
 	
 	public string ReturnLevel = "Level1Scene2";
 	public string SolvedLevel = "Level2Scene1";
+	public GameObject KeypadSoundWrong;
+	public GameObject KeypadSoundRight;
 	
     // Start is called before the first frame update
     void Start()
     {
-		
+		KeypadSoundWrong.SetActive(false);
+		KeypadSoundRight.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,11 +33,15 @@ public class LockKeypadClickControl : MonoBehaviour
 		if (totalDigits == 6){
 			if (playerCode == correctCode){
 				Debug.Log("Correct!");
-				SolvedKeypad();
+				KeypadSoundRight.SetActive(true);
+				StartCoroutine(RightDelay());
+				
 			} else {
 				playerCode = "";
 				totalDigits = 0;
 				Debug.Log("INCORRECT.");
+				KeypadSoundWrong.SetActive(true);
+				StartCoroutine(WrongDelay());
 			}
 		}
     }
@@ -42,6 +49,17 @@ public class LockKeypadClickControl : MonoBehaviour
 	void OnMouseUp(){
 		playerCode += gameObject.name;
 		totalDigits += 1;
+	}
+	
+	public IEnumerator WrongDelay(){
+        yield return new WaitForSeconds(0.5F);
+		KeypadSoundWrong.SetActive(false);
+	}
+	
+	public IEnumerator RightDelay(){
+        yield return new WaitForSeconds(0.5F);
+		KeypadSoundRight.SetActive(false);
+		SolvedKeypad();
 	}
 	
 	public void GoBack(){
