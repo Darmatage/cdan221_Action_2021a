@@ -14,12 +14,15 @@ public class LockKeypadClickControl : MonoBehaviour
 	public string SolvedLevel = "Level2Scene1";
 	public GameObject KeypadSoundWrong;
 	public GameObject KeypadSoundRight;
+	public GameObject KeypadSoundBeep;
 	
     // Start is called before the first frame update
     void Start()
     {
 		KeypadSoundWrong.SetActive(false);
 		KeypadSoundRight.SetActive(false);
+		KeypadSoundBeep.SetActive(false);
+		GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
     }
 
     // Update is called once per frame
@@ -49,6 +52,16 @@ public class LockKeypadClickControl : MonoBehaviour
 	void OnMouseUp(){
 		playerCode += gameObject.name;
 		totalDigits += 1;
+		KeypadSoundBeep.SetActive(true);
+		StartCoroutine(BeepDelay());
+	}
+	
+	void OnMouseOver(){
+		GetComponent<SpriteRenderer>().color = new Color(1,1,1);
+	}
+	
+	void OnMouseExit(){
+		GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
 	}
 	
 	public IEnumerator WrongDelay(){
@@ -60,6 +73,11 @@ public class LockKeypadClickControl : MonoBehaviour
         yield return new WaitForSeconds(0.5F);
 		KeypadSoundRight.SetActive(false);
 		SolvedKeypad();
+	}
+
+	public IEnumerator BeepDelay(){
+        yield return new WaitForSeconds(0.05F);
+		KeypadSoundBeep.SetActive(false);
 	}
 	
 	public void GoBack(){

@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Returns/Return_GameOver.unity
     guid: 5af5a59df7f76b9468fc870585e9771e
+  - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/LockKeypad.unity
+    guid: 5ebbb32c5b999294abfd8774ceaedceb
   m_configObjects: {}
