@@ -678,6 +678,7 @@ GameObject:
   - component: {fileID: 674069824}
   - component: {fileID: 674069823}
   - component: {fileID: 674069822}
+  - component: {fileID: 674069825}
   m_Layer: 0
   m_Name: InteractCloset
   m_TagString: Untagged
@@ -697,14 +698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f531ffaa2aef9014cb617e0116c60c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1894904176}
-  dialogueText: {fileID: 1814405924}
-  playerInRange: 0
-  primeInt: 0
-  startPoint: 50
-  canPickUpFileLani: 0
-  canPickUpFileJack: 0
-  canPickUpDrMarkID: 0
 --- !u!61 &674069823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -746,6 +739,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674069825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674069821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f13142d1f34f5418e749f16f73e1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1894904176}
+  dialogueText: {fileID: 1814405924}
+  playerInRange: 0
+  primeInt: 0
+  startPoint: 40
+  canPickUpFileAaron: 0
+  canPickUpFileSavanna: 0
+  canPickUpDrClaudiaID: 0
 --- !u!1 &705209456
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,6 +984,7 @@ GameObject:
   - component: {fileID: 949798470}
   - component: {fileID: 949798469}
   - component: {fileID: 949798468}
+  - component: {fileID: 949798471}
   m_Layer: 0
   m_Name: InteractSafe
   m_TagString: Untagged
@@ -990,14 +1004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f531ffaa2aef9014cb617e0116c60c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1700162101}
-  dialogueText: {fileID: 1130848291}
-  playerInRange: 0
-  primeInt: 0
-  startPoint: 30
-  canPickUpFileLani: 0
-  canPickUpFileJack: 0
-  canPickUpDrMarkID: 0
 --- !u!61 &949798469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1039,6 +1045,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949798471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949798467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f13142d1f34f5418e749f16f73e1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1700162101}
+  dialogueText: {fileID: 1130848291}
+  playerInRange: 0
+  primeInt: 0
+  startPoint: 30
+  canPickUpFileAaron: 0
+  canPickUpFileSavanna: 0
+  canPickUpDrClaudiaID: 0
 --- !u!4 &1023188097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
@@ -1408,6 +1434,7 @@ GameObject:
   - component: {fileID: 1558998504}
   - component: {fileID: 1558998503}
   - component: {fileID: 1558998502}
+  - component: {fileID: 1558998505}
   m_Layer: 0
   m_Name: InteractComp
   m_TagString: Untagged
@@ -1427,14 +1454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f531ffaa2aef9014cb617e0116c60c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1247773380}
-  dialogueText: {fileID: 404508825}
-  playerInRange: 0
-  primeInt: 0
-  startPoint: 20
-  canPickUpFileLani: 0
-  canPickUpFileJack: 0
-  canPickUpDrMarkID: 0
 --- !u!61 &1558998503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1476,6 +1495,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1558998505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558998501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f13142d1f34f5418e749f16f73e1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 1247773380}
+  dialogueText: {fileID: 404508825}
+  playerInRange: 0
+  primeInt: 0
+  startPoint: 20
+  canPickUpFileAaron: 0
+  canPickUpFileSavanna: 0
+  canPickUpDrClaudiaID: 0
 --- !u!1 &1566848212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,6 +2817,7 @@ GameObject:
   - component: {fileID: 3585886471724095143}
   - component: {fileID: 3585886471724095140}
   - component: {fileID: 3585886471724095139}
+  - component: {fileID: 3585886471724095141}
   m_Layer: 0
   m_Name: InteractTemplate
   m_TagString: Untagged
@@ -2797,14 +2837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f531ffaa2aef9014cb617e0116c60c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 3585886471270279694}
-  dialogueText: {fileID: 3585886470583724589}
-  playerInRange: 0
-  primeInt: 0
-  startPoint: 1
-  canPickUpFileLani: 0
-  canPickUpFileJack: 0
-  canPickUpDrMarkID: 0
 --- !u!61 &3585886471724095140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2831,6 +2863,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 1.12}
   m_EdgeRadius: 0
+--- !u!114 &3585886471724095141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3585886471724095138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f13142d1f34f5418e749f16f73e1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 3585886471270279694}
+  dialogueText: {fileID: 3585886470583724589}
+  playerInRange: 0
+  primeInt: 0
+  startPoint: 1
+  canPickUpFileAaron: 0
+  canPickUpFileSavanna: 0
+  canPickUpDrClaudiaID: 0
 --- !u!4 &3585886471724095143
 Transform:
   m_ObjectHideFlags: 0
