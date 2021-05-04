@@ -1487,6 +1487,8 @@ MonoBehaviour:
   itemSensitive: 0
   FileFolderLaniButton: {fileID: 0}
   IDDrMarkButton: {fileID: 0}
+  IDDrClaudiaButton: {fileID: 0}
+  FileFolderAaronButton: {fileID: 0}
 --- !u!4 &978188284495845396
 Transform:
   m_ObjectHideFlags: 0
@@ -1892,10 +1894,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6439975207479789714}
   - component: {fileID: 6439975207479789715}
-  - component: {fileID: 6439975207479789725}
   - component: {fileID: 6439975207479789713}
+  - component: {fileID: 6439975207479789716}
   m_Layer: 0
-  m_Name: NPCTemplate
+  m_Name: NPCMedStudent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1969,7 +1971,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 5.4}
   m_EdgeRadius: 0
---- !u!114 &6439975207479789725
+--- !u!114 &6439975207479789716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1978,7 +1980,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6439975207479789712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fcf5a44478c7c44b376615de7f3b1b, type: 3}
+  m_Script: {fileID: 11500000, guid: cce0abb49f68fe44f9a366138d401255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 6439975207318767830}
@@ -1986,6 +1988,9 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  itemSensitive: 1
+  canPickUpCake: 0
+  NPCMedStudent: {fileID: 6439975207479789712}
 --- !u!223 &6439975207760466901
 Canvas:
   m_ObjectHideFlags: 0

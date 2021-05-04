@@ -10,6 +10,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	   public bool itemSensitive = false;
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -106,6 +107,29 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			  
 			if (primeInt == 32){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 40){
+            dialogueText.text = "PLACEHOLDER NORMAL."; //Lani Level 2
+			if ((itemSensitive == true)&&(GameHandler.itemFileLani == true)) {
+						primeInt = 50;
+					}
+			}
+			
+			if (primeInt == 41){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 50){
+            dialogueText.text = "You... you got my file? How'd you pull that off?";
+			}
+			
+			if (primeInt == 51){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

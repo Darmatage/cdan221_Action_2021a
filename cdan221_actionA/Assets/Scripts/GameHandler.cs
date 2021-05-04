@@ -12,12 +12,15 @@ public class GameHandler : MonoBehaviour{
 
 		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
 		
+		public static bool MedStudentGone = false;
+		
 		public static bool itemFileLani = false; 
 		public static bool itemFileSavanna = false; 
 		public static bool itemFileJack = false; 
 		public static bool itemFileAaron = false; 
 		public static bool itemIdDrClaudia = false; 
 		public static bool itemIdDrMark = false; 
+		public static bool itemCake = false; 
 		
 		
 		//void Start () { UpdateScore (); }
@@ -54,6 +57,9 @@ public class GameHandler : MonoBehaviour{
 			}
 			if (itemIdDrMark == true){
                 Debug.Log("Dr Mark ID \n");
+			}
+			if (itemCake == true){
+                Debug.Log("Cake\n");
 			}
         }
 

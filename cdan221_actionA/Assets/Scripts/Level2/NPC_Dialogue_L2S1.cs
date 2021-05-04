@@ -14,6 +14,8 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 	   
 	   public GameObject FileFolderLaniButton;
 	   public GameObject IDDrMarkButton;
+	   public GameObject IDDrClaudiaButton;
+	   public GameObject FileFolderAaronButton;
 	   
 
        void Start () {
@@ -22,7 +24,8 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
             //anim.SetBool("Chat", false)
 			FileFolderLaniButton.SetActive(false);
 			IDDrMarkButton.SetActive(false);
-			
+			FileFolderAaronButton.SetActive(false);
+			IDDrClaudiaButton.SetActive(false);
        }
 
        void Update () {
@@ -82,7 +85,7 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			if (primeInt == 6){
 				
             dialogueText.text = "In fact, you could name any patient and I could tell you, like... Anything about them! That's how diligent I am!";
-						if ((itemSensitive == true)&&((GameHandler.itemFileLani == true)||(GameHandler.itemIdDrMark == true))){
+						if ((itemSensitive == true)&&((GameHandler.itemFileLani == true)||(GameHandler.itemIdDrMark == true)||(GameHandler.itemFileAaron == true)||(GameHandler.itemIdDrClaudia == true))){
 							primeInt = 20;
 						}
 			}
@@ -115,6 +118,14 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 			if (GameHandler.itemIdDrMark == true){
 				IDDrMarkButton.SetActive(true);
+			}
+			
+			if (GameHandler.itemIdDrClaudia == true){
+				IDDrClaudiaButton.SetActive(true);
+			}
+			
+			if (GameHandler.itemFileAaron == true){
+				FileFolderAaronButton.SetActive(true);
 			}
 			
 			}
@@ -172,6 +183,35 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
+			if (primeInt == 50){
+            dialogueText.text = "PLACEHOLDER";
+			}
+			
+			if (primeInt == 51){
+            dialogueText.text = "djvjdk";
+			}
+			
+			if (primeInt == 52){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 60){
+            dialogueText.text = "Placeholder";
+			}
+			
+			if (primeInt == 61){
+            dialogueText.text = "jkdfhkjf";
+			}
+			
+			
+			if (primeInt == 62){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
 		}
 		
 		public void LaniItemButton(){
@@ -179,6 +219,8 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			NPCdialogue();
 			FileFolderLaniButton.SetActive(false);
 			IDDrMarkButton.SetActive(false);
+			IDDrClaudiaButton.SetActive(false);
+			FileFolderAaronButton.SetActive(false);
 		}
 		
 		public void DrMarkItemButton(){
@@ -186,6 +228,26 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			NPCdialogue();
 			FileFolderLaniButton.SetActive(false);
 			IDDrMarkButton.SetActive(false);
+			IDDrClaudiaButton.SetActive(false);
+			FileFolderAaronButton.SetActive(false);
+		}
+		
+		public void DrClaudiaItemButton(){
+			primeInt = 50;
+			NPCdialogue();
+			FileFolderLaniButton.SetActive(false);
+			IDDrMarkButton.SetActive(false);
+			IDDrClaudiaButton.SetActive(false);
+			FileFolderAaronButton.SetActive(false);
+		}
+		
+		public void AaronItemButton(){
+			primeInt = 60;
+			NPCdialogue();
+			FileFolderLaniButton.SetActive(false);
+			IDDrMarkButton.SetActive(false);
+			IDDrClaudiaButton.SetActive(false);
+			FileFolderAaronButton.SetActive(false);
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
@@ -203,6 +265,8 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 				dialogueText.gameObject.SetActive(false);
 				FileFolderLaniButton.SetActive(false);
 				IDDrMarkButton.SetActive(false);
+				IDDrClaudiaButton.SetActive(false);
+				FileFolderAaronButton.SetActive(false);
                    //Debug.Log("Player left range");
              }
        }
