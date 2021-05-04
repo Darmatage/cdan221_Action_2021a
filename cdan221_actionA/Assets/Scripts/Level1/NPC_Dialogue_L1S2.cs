@@ -106,6 +106,26 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 30){
+            dialogueText.text = "This is Jack's room. There's no reason to go in right now.";
+			}
+			  
+			if (primeInt == 31){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 40){
+            dialogueText.text = "This is Savanna's room. There's no reason to go in right now.";
+			}
+			  
+			if (primeInt == 41){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){

@@ -50,31 +50,31 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "The offices? Wait, don't tell me you actually intend on snooping around down there.";
+            dialogueText.text = "Hey, you alright? I heard you got caught sneaking around."; //Lani Game Over
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "So? What are you in for?";
+            dialogueText.text = "I tried to warn you. They really don't want us out of our rooms without supervision.";
 			}
 			  
 			if (primeInt == 3){
-            dialogueText.text = "(.....)";
+            dialogueText.text = "They're probably going to go easy on you because you're new, but... they might not go so easy on you in the future.";
 			}
 
 			if (primeInt ==4){
-            dialogueText.text = "I'm just kidding. You don’t have to tell me. I know some patients don’t like to talk about their incidents.";
+            dialogueText.text = "Especially if the matron finds you.";
 			}
 			
 			if (primeInt == 5){
-            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
+            dialogueText.text = "I know this isn't what you want to hear, but all this is a bad idea. You should quit while you're ahead.";
 			}
 			  
 			if (primeInt == 6){
-            dialogueText.text = "I’m Lani, by the way. The annoying-voice girl in 3B is Savanna. In 3C, that’s Jack.";
+            dialogueText.text = "It's not that bad here, right? We have eachother, and... we're safe. Safer than we were outside.";
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "I've been here the longest out of all of us, so feel free too... confide in me. Or something.";
+            dialogueText.text = "...Just be careful, okay?";
 			}
 			  
 			if (primeInt == 8){
@@ -84,11 +84,11 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 20){
-            dialogueText.text = "Hi Ema! It's so great to see you again! I wasn't sure if you were ever gonna come back to us.";
+            dialogueText.text = "Ema! It's so great to see you again! I wasn't sure if you were ever gonna come back to us."; //Sav Game Over
 			}
 			
 			if (primeInt == 21){
-            dialogueText.text = "So, how was it? Did you make it to the cafeteria yet? I heard they sell whole cakes down there!";
+            dialogueText.text = "";
 			}
 			  
 			if (primeInt == 22){
@@ -97,11 +97,15 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 20){
-            dialogueText.text = "This must be Lani's room...";
+			if (primeInt == 30){
+            dialogueText.text = "You--!! You're okay?! I mean, um. Of course you're okay! I wasn't worried at all."; //Jack Game Over
 			}
 			  
-			if (primeInt == 21){
+			if (primeInt == 31){
+            dialogueText.text = "Man, I can't believe you got yourself! Listen, if you hear doctors, just run away from there! Got it?!";
+			}
+			  
+			if (primeInt == 32){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
