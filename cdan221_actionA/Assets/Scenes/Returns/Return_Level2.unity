@@ -2616,7 +2616,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 60
-  itemSensitive: 0
+  itemSensitive: 1
 --- !u!61 &1650405848
 BoxCollider2D:
   m_ObjectHideFlags: 0
