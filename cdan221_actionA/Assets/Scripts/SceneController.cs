@@ -16,7 +16,7 @@ public class SceneController : MonoBehaviour
     {
         Vector3 startPos = originalCard.transform.position;
 
-        int[] numbers = { 0, 01, 1, 2, 2, 3, 3, 4, 4, 5, 5 };
+        int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 };
         numbers = ShuffleArray(numbers);
 
         for (int i = 0; i < gridCols; i++)
