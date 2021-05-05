@@ -3,14 +3,13 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPC_Dialogue_Return : MonoBehaviour {
+public class NPC_Dialogue_L6 : MonoBehaviour {
        //public Animator anim;
        public GameObject dialogueBox;
        public Text dialogueText;
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
-	   public bool itemSensitive = false;
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -51,31 +50,31 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Hey, you alright? I heard you got caught sneaking around."; //Lani Game Over
+            dialogueText.text = "You hear breathing. There's nobody else it could be."; 
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "I tried to warn you. They really don't want us out of our rooms without supervision.";
+            dialogueText.text = "Maybe you would be like this too if you were less lucky.";
 			}
 			  
 			if (primeInt == 3){
-            dialogueText.text = "They're probably going to go easy on you because you're new, but... they might not go so easy on you in the future.";
+            dialogueText.text = "'I'm the in the same boat as you were. Thank you for all the help.' That's the kind of thing you should be saying right now, but...";
 			}
 
 			if (primeInt ==4){
-            dialogueText.text = "Especially if the matron finds you.";
+            dialogueText.text = "...It's too unfair.";
 			}
 			
 			if (primeInt == 5){
-            dialogueText.text = "I know this isn't what you want to hear, but all this is a bad idea. You should quit while you're ahead.";
+            dialogueText.text = "The others should be here instead of you. Even though you've been picking up the pieces of what he left behind, at the end of the day, you're a stranger.";
 			}
 			  
 			if (primeInt == 6){
-            dialogueText.text = "It's not that bad here, right? We have eachother, and... we're safe. Safer than we were outside.";
+            dialogueText.text = "No, you don't have time to feel guilty about that sort of thing. It's good that you're here.";
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "...Just be careful, okay?";
+            dialogueText.text = "It's nice to finally meet eachother.";
 			}
 			  
 			if (primeInt == 8){
@@ -85,11 +84,11 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 20){
-            dialogueText.text = "Ema! It's so great to see you again! I wasn't sure if you were ever gonna come back to us."; //Sav Game Over
+            dialogueText.text = "It's light out."; 
 			}
 			
 			if (primeInt == 21){
-            dialogueText.text = "";
+            dialogueText.text = "........Haha!";
 			}
 			  
 			if (primeInt == 22){
@@ -112,71 +111,11 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 40){
-            dialogueText.text = "PLACEHOLDER NORMAL."; //Lani Level 2
-			if ((itemSensitive == true)&&(GameHandler.itemFileLani == true)) {
-						primeInt = 50;
-					}
-			}
-			
-			if (primeInt == 41){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
-			}
-			
 			if (primeInt == 50){
             dialogueText.text = "You... you got my file? How'd you pull that off?";
 			}
 			
 			if (primeInt == 51){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
-			}
-		
-			if (primeInt == 60){
-            dialogueText.text = "PLACEHOLDER NORMAL."; //Jack Level 2
-			if ((itemSensitive == true)&&(GameHandler.itemFileAaron == true)) {
-						primeInt = 70;
-					}
-			}
-			
-			if (primeInt == 61){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
-			}
-			
-			if (primeInt == 70){
-            dialogueText.text = "What? You found Aaron's file?!";
-			}
-			
-			if (primeInt == 71){
-            dialogueText.text = "W-Well? What did it say?!";
-			}
-			
-			if (primeInt == 72){
-            dialogueText.text = "...Oh. Right. Let me see it!";
-			}
-			
-			if (primeInt == 73){
-            dialogueText.text = "....murmermurmerJune, no.....medications......mumblemumble.....allergies....";
-			}
-			
-			if (primeInt == 74){
-            dialogueText.text = "Ugh! I already know all this stuff! What gives?!";
-			}
-			
-			if (primeInt == 75){
-            dialogueText.text = "At- At least this means he's alive...right? If he died, they'd have to document it... Don't you think so?";
-			}
-			
-			if (primeInt == 76){
-            dialogueText.text = "So you do agree! Hahaha, agh-- aha. Thanks, Ema. Where ever he is we'll find him, I'm sure of it.";
-			}
-			
-			if (primeInt == 76){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
