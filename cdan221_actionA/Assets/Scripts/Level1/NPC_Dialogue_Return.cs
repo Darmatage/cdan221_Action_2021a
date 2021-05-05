@@ -85,11 +85,11 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 20){
-            dialogueText.text = "Ema! It's so great to see you again! I wasn't sure if you were ever gonna come back to us."; //Sav Game Over
+            dialogueText.text = "Ema! It's so great to see you again! I wasn't sure if you were ever gonna come back."; //Sav Game Over
 			}
 			
 			if (primeInt == 21){
-            dialogueText.text = "";
+            dialogueText.text = "Don't forget, we have plans to partyyyy together once we're discharged. So don't go leaving without us, 'kay?";
 			}
 			  
 			if (primeInt == 22){
@@ -136,13 +136,29 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 		
 			if (primeInt == 60){
-            dialogueText.text = "PLACEHOLDER NORMAL."; //Jack Level 2
+            dialogueText.text = "Wow, Ema. I was right about you, you're a real natural!"; //Jack Level 2
 			if ((itemSensitive == true)&&(GameHandler.itemFileAaron == true)) {
 						primeInt = 70;
 					}
 			}
 			
 			if (primeInt == 61){
+            dialogueText.text = "So? Did you find anything good?";
+			}
+			
+			if (primeInt == 62){
+            dialogueText.text = "A... 'Lazy Door Doctor'? Uh. Interesting?";
+			}
+			
+			if (primeInt == 63){
+            dialogueText.text = "Hey, make sure you don't get caught, though! You can never know which staff are actually stupid or not.";
+			}
+			
+			if (primeInt == 64){
+            dialogueText.text = "But... If you *can* find a way to get information out of them... that might be good. Don't tell Lani I said that. If she asks, I said to play it COMPLETELY safe!";
+			}
+			
+			if (primeInt == 65){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -176,7 +192,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
             dialogueText.text = "So you do agree! Hahaha, agh-- aha. Thanks, Ema. Where ever he is we'll find him, I'm sure of it.";
 			}
 			
-			if (primeInt == 76){
+			if (primeInt == 77){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
