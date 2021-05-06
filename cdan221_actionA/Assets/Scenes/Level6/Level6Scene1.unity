@@ -978,7 +978,7 @@ PrefabInstance:
     - target: {fileID: 5329970132012722158, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: NextLevel
-      value: Level1Scene4
+      value: GameOverScene
       objectReference: {fileID: 0}
     - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
@@ -1413,6 +1413,8 @@ MonoBehaviour:
   itemSensitive: 0
   FileFolderLaniButton: {fileID: 0}
   IDDrMarkButton: {fileID: 0}
+  IDDrClaudiaButton: {fileID: 0}
+  FileFolderAaronButton: {fileID: 0}
 --- !u!4 &978188284495845396
 Transform:
   m_ObjectHideFlags: 0

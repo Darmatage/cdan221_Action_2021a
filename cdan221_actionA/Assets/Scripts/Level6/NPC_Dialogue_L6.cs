@@ -66,7 +66,7 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 5){
-            dialogueText.text = "The others should be here instead of you. Even though you've been picking up the pieces of what he left behind, at the end of the day, you're a stranger.";
+            dialogueText.text = "The others should be here instead of you. Regardless of your feelings, at the end of the day, you're a stranger.";
 			}
 			  
 			if (primeInt == 6){
@@ -88,7 +88,7 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 21){
-            dialogueText.text = "........Haha!";
+            dialogueText.text = "Haha.";
 			}
 			  
 			if (primeInt == 22){
@@ -98,24 +98,40 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 30){
-            dialogueText.text = "You--!! You're okay?! I mean, um. Of course you're okay! I wasn't worried at all."; //Jack Game Over
+            dialogueText.text = "It's a stuffed rabbit. It's fur is so soft... After the day you've had, you can't stop yourself from giving it a squeeze."; 
 			}
 			  
 			if (primeInt == 31){
-            dialogueText.text = "Man, I can't believe you got yourself! Listen, if you hear doctors, just run away from there! Got it?!";
+            dialogueText.text = "It's not as squishy as you thought. There's something... hard inside?";
+			}
+			
+			if (primeInt == 32){
+            dialogueText.text = "And its back has a noticeable scar of crude sewing, strings every which way. Rather than a normal seam, it's as if someone had cut it open.";
+			}
+			
+			if (primeInt == 33){
+            dialogueText.text = "You should probably tear apart this soft little fellow and get at his insides. Sorry.";
 			}
 			  
-			if (primeInt == 32){
+			if (primeInt == 34){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
 			if (primeInt == 50){
-            dialogueText.text = "You... you got my file? How'd you pull that off?";
+            dialogueText.text = "There are so many flowers here. It seems typical for a hospital room of someone well-beloved.";
 			}
 			
 			if (primeInt == 51){
+            dialogueText.text = "Of course, you know that this boy *is* beloved. But friends and family don't visit patients at this hospital. And his friends upstairs think he's dead.";
+			}
+			
+			if (primeInt == 52){
+            dialogueText.text = "So... Who put these here?";
+			}
+			
+			if (primeInt == 53){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
