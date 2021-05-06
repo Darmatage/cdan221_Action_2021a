@@ -118,8 +118,11 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			if (primeInt == 34){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
+					if (playerInRange == true){
+					GoToTape ();
+					}
 			primeInt = 0;
-			GoToTape ();
+			
 			}
 			
 			if (primeInt == 50){
