@@ -2115,7 +2115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.73, y: 4.15}
+  m_Size: {x: 2.73, y: 4.39}
   m_EdgeRadius: 0
 --- !u!4 &6439975207479789714
 Transform:
@@ -2157,7 +2157,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 5.4}
+  m_Size: {x: 3.5, y: 5.87}
   m_EdgeRadius: 0
 --- !u!114 &6439975207479789716
 MonoBehaviour:
@@ -2179,6 +2179,7 @@ MonoBehaviour:
   itemSensitive: 1
   canPickUpCake: 0
   NPCMedStudent: {fileID: 6439975207479789712}
+  MatchCard: MatchCard
 --- !u!223 &6439975207760466901
 Canvas:
   m_ObjectHideFlags: 0
