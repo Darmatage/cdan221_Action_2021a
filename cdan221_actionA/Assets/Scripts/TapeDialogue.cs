@@ -11,11 +11,18 @@ public class TapeDialogue : MonoBehaviour
 	public GameObject dialogueBox;
     public Text dialogueText;
 	
+	public GameObject TapeStartAudio;
+	public GameObject TapeLoopAudio;
+	public GameObject TapeEndAudio;
+	
     // Start is called before the first frame update
     void Start()
     {
 		dialogueBox.SetActive(false);
 		dialogueText.gameObject.SetActive(false);
+		TapeStartAudio.SetActive(false);
+		TapeLoopAudio.SetActive(false);
+		TapeEndAudio.SetActive(false);
 		allowSpace = false;
 		allowP = true;
 		primeInt = 0;
@@ -26,6 +33,9 @@ public class TapeDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P) && allowP){
 			StartCoroutine(DialogueDelay());
+			TapeStartAudio.SetActive(true);
+			TapeLoopAudio.SetActive(true);
+			TapeEndAudio.SetActive(false);
 			allowP = false;
 		}
 		
@@ -62,6 +72,9 @@ public class TapeDialogue : MonoBehaviour
 			allowSpace = false;
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
+			TapeStartAudio.SetActive(false);
+			TapeEndAudio.SetActive(true);
+			TapeLoopAudio.SetActive(false);
 			allowP = true;
 			primeInt = 0;
 		}
