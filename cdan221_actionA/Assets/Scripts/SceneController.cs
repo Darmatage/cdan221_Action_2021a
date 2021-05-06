@@ -140,9 +140,9 @@ public class SceneController : MonoBehaviour
 		}
 		if (primeInt == 4){
 			allowSpace = false;
-			SendBackToRoom();
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
+			SendBackToRoom();
 		}
 	}
 	
