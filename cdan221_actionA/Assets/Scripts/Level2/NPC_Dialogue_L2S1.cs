@@ -181,6 +181,7 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			GameHandler.SafeUnlock = true;
 			}
 			
 			if (primeInt == 50){
@@ -188,10 +189,18 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 51){
-            dialogueText.text = "djvjdk";
+            dialogueText.text = "So it is you! Umm.. so yes, like I said. I'm organizing files, putting in reports. Doctoring.";
 			}
 			
 			if (primeInt == 52){
+            dialogueText.text = "How are *you* doing, Ma'am? It's been a while since I've seen you out and about. Probably not since like... Mid-July...?";
+			}
+			
+			if (primeInt == 53){
+            dialogueText.text = "N-Not to pry! I know I'm only your subordinate, I shouldn't be acting so casual! Sorry!";
+			}
+		
+			if (primeInt == 54){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -202,11 +211,22 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 61){
-            dialogueText.text = "jkdfhkjf";
+            dialogueText.text = "Aaron's file..? Wh-What do I need this for?";
 			}
 			
-			
 			if (primeInt == 62){
+            dialogueText.text = "Are you really Claudia? Or is this some sort of prank?!";
+			}
+			
+			if (primeInt == 63){
+            dialogueText.text = "I mean, I don't have to say anything, right? I'm really not supposed to know anything. I'm not even allowed near his room...";
+			}
+			
+			if (primeInt == 64){
+            dialogueText.text = "S-So that was a trick question, right? Did I do good? If you were just trying to make me feel guilty for slacking then it worked, okay!";
+			}
+			
+			if (primeInt == 65){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

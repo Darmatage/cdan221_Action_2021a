@@ -97,7 +97,7 @@ public class NPC_Dialogue_L1S4 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
-			FeelVent ();
+			//FeelVent ();
 			}
 			
 			if (primeInt == 12){

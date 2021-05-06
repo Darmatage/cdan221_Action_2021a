@@ -22,6 +22,7 @@ public class GameHandler : MonoBehaviour{
 		public static bool itemIdDrMark = false; 
 		public static bool itemCake = false; 
 		
+		public static bool SafeUnlock = false;
 		
 		//void Start () { UpdateScore (); }
 		
@@ -73,7 +74,7 @@ public class GameHandler : MonoBehaviour{
         //        scoreTemp.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("HallwayTest_NPCs");
+                SceneManager.LoadScene("Level1Scene1");
         }
 
         public void RestartGame(){
