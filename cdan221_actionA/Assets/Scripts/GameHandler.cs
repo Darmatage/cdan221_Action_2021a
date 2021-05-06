@@ -23,6 +23,7 @@ public class GameHandler : MonoBehaviour{
 		public static bool itemCake = false; 
 		
 		public static bool SafeUnlock = false;
+		public static bool HasKey = false;
 		
 		//void Start () { UpdateScore (); }
 		

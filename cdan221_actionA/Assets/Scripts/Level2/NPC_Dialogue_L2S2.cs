@@ -106,6 +106,9 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			
 			if (primeInt == 30){
             dialogueText.text = "It's a cool, metal box with a lock on it. You spin it and wiggle the door a couple of time, just for kicks.";
+				if (GameHandler.SafeUnlock == true) {
+						primeInt = 60;
+					}
 			}
 			
 			if (primeInt == 31){
@@ -142,14 +145,27 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 50){
-            dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
+			if (primeInt == 60){
+            dialogueText.text = "You unlock the safe. Nice!";
 			}
 			
-			if (primeInt == 51){
+			if (primeInt == 61){
+            dialogueText.text = "There's some valuables in here, but you don't really have any use for those.";
+			}
+			
+			if (primeInt == 62){
+            dialogueText.text = "There is also a loose card in here... The lazy doctor mentioned something about Dr. Mark locking himself off the floor often, didn't they?";
+			}
+			
+			if (primeInt == 63){
+            dialogueText.text = "Guess it's worth a shot to see if it's a key card. You pocket it. Sorry Mark!";
+			}
+			
+			if (primeInt == 64){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			GameHandler.HasKey = true;
 			}
 		}
 

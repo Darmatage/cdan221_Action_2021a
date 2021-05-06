@@ -11,7 +11,7 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
        public int primeInt = 0;
 	   public int startPoint = 1;
 	   public bool itemSensitive = false;
-	   
+	   public GameObject DoorLock;
 	   public GameObject FileFolderLaniButton;
 	   public GameObject IDDrMarkButton;
 	   public GameObject IDDrClaudiaButton;
@@ -45,6 +45,9 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 				   
             }
 			
+			if (GameHandler.HasKey == true) {
+				  DoorLock.SetActive(false);
+			  }
 			
 			if (Input.GetButtonDown("Talk")){
 				NPCdialogue();
