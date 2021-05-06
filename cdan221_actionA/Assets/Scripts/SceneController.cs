@@ -130,12 +130,15 @@ public class SceneController : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "LineOne";
+			dialogueText.text = "There's a piece of paper at the bottom of the bottle.";
 		}
 		if (primeInt == 2){
-			dialogueText.text = "LineTwo";
+			dialogueText.text = "It's a note.";
 		}
 		if (primeInt == 3){
+			dialogueText.text = "DOOR CODE: F3X7F8";
+		}
+		if (primeInt == 4){
 			allowSpace = false;
 			SendBackToRoom();
 			dialogueBox.SetActive(false);

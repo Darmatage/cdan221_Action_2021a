@@ -274,6 +274,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ff4042b0678467dbab2ca14890ea6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  primeInt: 0
+  dialogueBox: {fileID: 9178824759571365301}
+  dialogueText: {fileID: 9178824760232754582}
+  allowSpace: 0
+  ReturnLevel: Level3Scene4
   originalCard: {fileID: 35807884}
   images:
   - {fileID: 21300000, guid: cb70612e566224b41b4aad97abe17d7d, type: 3}
@@ -877,7 +882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9178824759184474396}
   - component: {fileID: 9178824759184474399}
-  - component: {fileID: 9178824759184474398}
   m_Layer: 0
   m_Name: InteractTemplate
   m_TagString: Untagged
@@ -900,23 +904,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9178824759184474398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9178824759184474393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6fcf5a44478c7c44b376615de7f3b1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 9178824759571365301}
-  dialogueText: {fileID: 9178824760232754582}
-  playerInRange: 0
-  primeInt: 0
-  startPoint: 7
 --- !u!61 &9178824759184474399
 BoxCollider2D:
   m_ObjectHideFlags: 0
