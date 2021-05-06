@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NPC_Dialogue_L1S4 : MonoBehaviour {
        //public Animator anim;
@@ -10,6 +11,7 @@ public class NPC_Dialogue_L1S4 : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	   public string CloseUp_Vent = "CloseUp_Vent";
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -95,6 +97,7 @@ public class NPC_Dialogue_L1S4 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			FeelVent ();
 			}
 			
 			if (primeInt == 12){
@@ -125,6 +128,10 @@ public class NPC_Dialogue_L1S4 : MonoBehaviour {
 				   Debug.Log("Hit Space to talk");
                   }
              }
+			 
+		  public void FeelVent(){
+		   SceneManager.LoadScene(CloseUp_Vent);
+	}
                         
        private void OnTriggerExit2D(Collider2D other){
              if (other.gameObject.tag == "Player") {

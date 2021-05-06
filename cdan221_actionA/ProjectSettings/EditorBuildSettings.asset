@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Closeups and Puzzles/CloseUp_Clicker.unity
     guid: b7c6834bdde30b5459384280b5a75cf5
   - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/Closeup_Vent.unity
+    guid: b91265e167b3e4a0d8da5e510f6c892c
+  - enabled: 1
     path: Assets/Scenes/Level6/Level6Scene1.unity
     guid: 343ab7d64ee68dc42ab5a5c96c3b28ea
   - enabled: 1

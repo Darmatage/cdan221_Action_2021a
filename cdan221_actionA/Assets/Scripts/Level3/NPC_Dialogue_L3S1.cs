@@ -216,6 +216,34 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 80){
+            dialogueText.text = "There are a looot of pill bottles here. Like... nothin' but bottles.";
+			}
+			
+			if (primeInt == 81){
+            dialogueText.text = "What did he think you were going to do in here..?";
+			}
+			  
+			if (primeInt == 82){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 90){
+            dialogueText.text = "You really can't tell what pill bottles are for what sort of medicine. Though with your memory, you might be able to tell some of them by shape...";
+			}
+			
+			if (primeInt == 91){
+            dialogueText.text = "Would it be worth it to investigate?";
+			}
+			  
+			if (primeInt == 92){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
