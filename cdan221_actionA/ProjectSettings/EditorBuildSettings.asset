@@ -125,6 +125,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Closeups and Puzzles/MatchCard.unity
     guid: 669686c1cc92c4b13ae85917e2fd7e9a
+  - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/TapeRecorderScene.unity
+    guid: 4085895dbdebb1043bfc07ea60246115
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

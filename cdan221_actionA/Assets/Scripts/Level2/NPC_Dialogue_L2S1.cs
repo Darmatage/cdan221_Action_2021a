@@ -116,18 +116,18 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			
 			if (primeInt == 20){
             dialogueText.text = "(Slide an item under the door?)";
-			if (GameHandler.itemFileLani == true){
+			if (GameHandler.itemFileLani == true && playerInRange){
 				FileFolderLaniButton.SetActive(true);
 			}
-			if (GameHandler.itemIdDrMark == true){
+			if (GameHandler.itemIdDrMark == true && playerInRange){
 				IDDrMarkButton.SetActive(true);
 			}
 			
-			if (GameHandler.itemIdDrClaudia == true){
+			if (GameHandler.itemIdDrClaudia == true && playerInRange){
 				IDDrClaudiaButton.SetActive(true);
 			}
 			
-			if (GameHandler.itemFileAaron == true){
+			if (GameHandler.itemFileAaron == true && playerInRange){
 				FileFolderAaronButton.SetActive(true);
 			}
 			
