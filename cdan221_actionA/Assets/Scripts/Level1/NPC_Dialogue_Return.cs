@@ -278,14 +278,74 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 95){
-            dialogueText.text = "But you're you. Quiet, curious, photographic-memory blindfold girl.";
+            dialogueText.text = "But you're you. You're a normal patient just like us, and you haven't even healed yet.";
 			}
 			  
 			if (primeInt == 96){
-            dialogueText.text = ".";
+            dialogueText.text = "...You should really go back to your room, Ema.";
 			}
 			   
 			if (primeInt == 97){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 100){
+            dialogueText.text = "...Be honest. Lani is trying to screw us over, isn't she?"; //Jack Level 4
+			}
+			
+			if (primeInt == 101){
+            dialogueText.text = "You could be so close to finding Aaron, and she doesn't seem excited at all. It's like she doesn't even care!";
+			}
+			
+			if (primeInt == 102){
+            dialogueText.text = "And what about us, too?! Don't we deserve to get out of here? That greedy, egotistical matron is keeping us prisoner, and for what?";
+			}
+					
+			if (primeInt == 103){
+            dialogueText.text = "Damn it... Damn it, damn it. I know Lani cares about us. But keeping somebody trapped isn't protecting them.";
+			}
+			
+			if (primeInt == 104){
+            dialogueText.text = "...Hey, Ema. You said your memory is really good, yeah? Mine is really bad. Sometimes the others write things down for me.";
+			}
+			  	
+			if (primeInt == 105){
+            dialogueText.text = "I always thought it was funny, that somebody could help me in the future with a problem I don't even know I'm going to have yet.";
+			}
+			
+			if (primeInt == 106){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 110){
+            dialogueText.text = "Everyone is acting super down right now... I don't get it. Shouldn't they be happy?"; //Sav Level 4
+			}
+			
+			if (primeInt == 111){
+            dialogueText.text = "You could be so close to finding Aaron, and she doesn't seem excited at all. It's like she doesn't even care!";
+			}
+			
+			if (primeInt == 112){
+            dialogueText.text = "And what about us, too?! Don't we deserve to get out of here? That greedy, egotistical matron is keeping us prisoner, and for what?";
+			}
+					
+			if (primeInt == 113){
+            dialogueText.text = "Damn it... Damn it, damn it. I know Lani cares about us. But keeping somebody trapped isn't protecting them.";
+			}
+			
+			if (primeInt == 114){
+            dialogueText.text = "...Hey, Ema. You said your memory is really good, yeah? Mine is really bad. Sometimes the others write things down for me.";
+			}
+			  	
+			if (primeInt == 115){
+            dialogueText.text = "I always thought it was funny, that somebody could help me in the future with a problem I don't even know I'm going to have yet.";
+			}
+			
+			if (primeInt == 116){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
