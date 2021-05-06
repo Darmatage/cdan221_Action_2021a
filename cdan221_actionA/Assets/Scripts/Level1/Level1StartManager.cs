@@ -10,6 +10,7 @@ public class Level1StartManager : MonoBehaviour
 	public GameObject wakeUpSprite;
 	public float narrateDelay = 2f;
 	
+	
     // Start is called before the first frame update
     void Start(){
 		thePlayer = GameObject.FindWithTag("Player");

@@ -63,7 +63,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "There are a bunch of folders here. You can't make out what any of them are.";
+            dialogueText.text = "There are a bunch of folders neatly filed away on the desk.";
 			}
 
 			if (primeInt ==2){
@@ -122,11 +122,11 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 40){
-            dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
+            dialogueText.text = "It's a closet. Inside, you feel a jacket and a little plastic card on a lanyard.";
 			}
 			
 			if (primeInt == 41){
-            dialogueText.text = "That could be handy if that's what you think it is..";
+            dialogueText.text = "That could be useful.";
 			}
 			  
 			if (primeInt == 42){

@@ -1229,7 +1229,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1803648362}
   playerInRange: 0
   primeInt: 0
-  startPoint: 11
+  startPoint: 30
 --- !u!61 &1022445119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1213316489}
   playerInRange: 0
   primeInt: 0
-  startPoint: 13
+  startPoint: 35
 --- !u!61 &1229292214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   dialogueText: {fileID: 2370145446183572708}
   playerInRange: 0
   primeInt: 0
-  startPoint: 8
+  startPoint: 20
 --- !u!61 &2370145445116897389
 BoxCollider2D:
   m_ObjectHideFlags: 0

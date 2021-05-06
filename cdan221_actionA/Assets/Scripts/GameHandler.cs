@@ -12,6 +12,8 @@ public class GameHandler : MonoBehaviour{
 
 		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
 		
+		public static bool KnowSav = false;
+		
 		public static bool MedStudentGone = false;
 		
 		public static bool itemFileLani = false; 

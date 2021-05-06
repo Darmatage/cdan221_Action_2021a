@@ -50,27 +50,30 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Oh, hey. You came out of 3A, right? You’ve got some guts breaking the matron’s rules so quickly. Not that it's hard, but be careful with that in the future.";
+            dialogueText.text = "Oh, hey. You came out of 3A, right? I’m Lani. The annoying-voice girl in 3B is Savanna, and in 3C, that’s Jack.";
+				if (playerInRange == true){
+				GameHandler.KnowSav = true;
+				}
 			}
-
-			if (primeInt ==2){
+			
+			if (primeInt == 2){
+            dialogueText.text = "You’ve got some guts breaking the matron’s rules so quickly. Not that it's hard, but be careful with that in the future.";
+			}
+			
+			if (primeInt ==3){
             dialogueText.text = "So? What are you in for?";
 			}
 			  
-			if (primeInt == 3){
+			if (primeInt == 4){
             dialogueText.text = "(.....)";
 			}
 
-			if (primeInt ==4){
+			if (primeInt ==5){
             dialogueText.text = "I'm just kidding. You don’t have to tell me. I know some patients don’t like to talk about their incidents.";
 			}
 			
-			if (primeInt == 5){
-            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
-			}
-			  
 			if (primeInt == 6){
-            dialogueText.text = "I’m Lani, by the way. The annoying-voice girl in 3B is Savanna. In 3C, that’s Jack.";
+            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
 			}
 			
 			if (primeInt == 7){

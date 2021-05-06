@@ -120,7 +120,7 @@ public class NPC_Dialogue_L1S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 16){
-            dialogueText.text = "(press e to investigate!)";
+            dialogueText.text = "(press e to investigate! drag your hand around with the mouse to unveil what you're feeling.)";
 			}
 			  
 			if (primeInt == 17){

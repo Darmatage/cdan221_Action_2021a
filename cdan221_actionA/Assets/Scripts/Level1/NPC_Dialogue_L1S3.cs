@@ -50,64 +50,93 @@ public class NPC_Dialogue_L1S3 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "A new face! Are you from 3A?! That’s so crazy! My friend lived there too! He graffitied those walls so much, it feels like the room never stopped being his";
+            dialogueText.text = "A new face! Are you from 3A?! That’s so crazy! My friend lived there too! He graffitied those walls so much, it feels like the room never stopped being his.";
+				if (GameHandler.KnowSav == true) {
+						primeInt = 12;
+					}
 			}
-
-			if (primeInt ==2){
-            dialogueText.text = "...Huh? I must be Savanna?";
+			
+			if (primeInt == 2){
+            dialogueText.text = "Soo, tell me about yourself! What's your favorite season? Color? Animal? Subject in school??";
 			}
-			  
+			
 			if (primeInt == 3){
-            dialogueText.text = "Oh. My. Gosh. How did you know?! Don't tell me you're psychic or something!";
+            dialogueText.text = "Well, not that that matters~ While you're admitted here, you never have to go to school! It's true!";
 			}
-
-			if (primeInt ==4){
-            dialogueText.text = "I saw that in a movie once! Going blind can open up your third eye! I wish I got some sort of arm-loss super power.";
+			
+			if (primeInt == 4){
+            dialogueText.text = "Buuut, you do also have *literally* no contact with the outside world... Siiigh, I wonder how many instagram followers I've lost.";
 			}
 			
 			if (primeInt == 5){
-            dialogueText.text = "Though, I did lose like, a ton of weight! You've got super cute and slender legs, too, new girl! Let's go to the beach together once we get discharged!";
+            dialogueText.text = "Now that my arm's all healed up and not grody anymore, I think I could take some really cute selfies again. The Doctor says I'm not all better, still, though...";
 			}
-			  
+			
 			if (primeInt == 6){
-            dialogueText.text = "Oh, your name is Ema? That's sooo cute! I hope I see you around lots!";
+            dialogueText.text = "What do you think, blindfold girl? You're super pretty, so I want to take lots of pictures with you, too...";
 			}
 			
 			if (primeInt == 7){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
+            dialogueText.text = "Oh, your name is Ema? That's sooo cute! I hope I see you around lots!";
 			}
 			
 			if (primeInt == 8){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+
+			if (primeInt ==12){
+            dialogueText.text = "...Huh? You think my name must be Savanna?";
+			}
+			  
+			if (primeInt == 13){
+            dialogueText.text = "Oh. My. Gosh. How did you know?! Don't tell me you're psychic or something!";
+			}
+
+			if (primeInt == 14){
+            dialogueText.text = "I saw that in a movie once! Going blind can open up your third eye! I wish I got some sort of arm-loss super power.";
+			}
+			
+			if (primeInt == 15){
+            dialogueText.text = "Though, I did lose like, a ton of weight! You've got super cute and slender legs, too, new girl! Let's go to the beach together once we get discharged!";
+			}
+			
+			if (primeInt == 16){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 20){
             dialogueText.text = "Huh? Something feels off about this...";
 			}
 			
-			if (primeInt == 9){
+			if (primeInt == 21){
             dialogueText.text = "(press e to investigate!)";
 			}
 			  
-			if (primeInt == 10){
+			if (primeInt == 22){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
-			if (primeInt == 11){
+			if (primeInt == 30){
             dialogueText.text = "Still no light.";
 			}
 			  
-			if (primeInt == 12){
+			if (primeInt == 31){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
-			if (primeInt == 13){
+			if (primeInt == 35){
             dialogueText.text = "Still no dice on getting that panel off. Do you really want to crawl in there?";
 			}
 			  
-			if (primeInt == 14){
+			if (primeInt == 36){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
