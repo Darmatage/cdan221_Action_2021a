@@ -92,22 +92,18 @@ public class NPC_Dialogue_L4S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 20){
-            dialogueText.text = "No way! You really got it!";
+            dialogueText.text = "You feel like you're getting further and further towards the answer.";
 			}
 			
 			if (primeInt == 21){
-            dialogueText.text = "Oh, I'm so pumped. I totally owe you one for this!";
+            dialogueText.text = "Once you get through this door... who knows what you'll find?";
 			}
 			
 			if (primeInt == 22){
-            dialogueText.text = "You can head on into the pharmacy if you want, and we'll both keep quiet about this. Alright?";
-			}
-			
-			if (primeInt == 23){
-            dialogueText.text = "Good luck, blindfold girl!";
+            dialogueText.text = "You may not like it. But it will all be worth it. Have faith, Ema.";
 			}
 			  
-			if (primeInt == 24){
+			if (primeInt == 23){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

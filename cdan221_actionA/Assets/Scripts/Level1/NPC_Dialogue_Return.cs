@@ -256,6 +256,40 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 90){
+            dialogueText.text = "Oh, hey. It's been a while since you've checked in."; //Lani Level 4
+			}
+			
+			if (primeInt == 91){
+            dialogueText.text = "You're pretty serious about this, huh? But...Why?";
+			}
+			
+			if (primeInt == 92){
+            dialogueText.text = "You only just got here recently. You have no reason to want to save us. You really... don't even know us.";
+			}
+			
+			if (primeInt == 93){
+            dialogueText.text = "And if something bad happens to you, then we'll never know eachother for real. And that sucks. Because I really would like to!";
+			}
+			
+			if (primeInt == 94){
+            dialogueText.text = "I don't think the others understand that you aren't Aaron. They're throwing you into danger because they think you can finish what he started.";
+			}
+			
+			if (primeInt == 95){
+            dialogueText.text = "But you're you. Quiet, curious, photographic-memory blindfold girl.";
+			}
+			  
+			if (primeInt == 96){
+            dialogueText.text = ".";
+			}
+			   
+			if (primeInt == 97){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){

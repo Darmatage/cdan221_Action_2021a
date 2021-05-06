@@ -47,16 +47,16 @@ public class TapeDialogue : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "A";
+			dialogueText.text = "Thanks for playing the demo!";
 		}
 		if (primeInt == 2){
-			dialogueText.text = "B";
+			dialogueText.text = "...What, did you think I was just going to spoil the ending before the game is even finished?";
 		}
 		if (primeInt == 3){
-			dialogueText.text = "C";
+			dialogueText.text = "I mean. The mysteries aren't all that complex. You could probably figure it out with the information everyone gave you already.";
 		}
 		if (primeInt == 4){
-			dialogueText.text = "D";
+			dialogueText.text = "Still, I hope that you'll be interested enough to come back for more. See you then, Ema!";
 		}
 		if (primeInt == 5){
 			allowSpace = false;
