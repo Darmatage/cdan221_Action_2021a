@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LockKeypadClickControl : MonoBehaviour
 {
-	public static string correctCode = "J97EKF";
+	public string correctCode = "J97EKF";
 	public static string playerCode = "";
 	
 	public static int totalDigits = 0;

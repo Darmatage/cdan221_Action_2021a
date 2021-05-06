@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -342,6 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -595,6 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -848,6 +851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -1292,6 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -1418,6 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -1544,6 +1550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -1797,6 +1804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}
@@ -2006,6 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce0ccc3de76424d8837b1746017bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correctCode: J97EKF
   ReturnLevel: Level1Scene2
   SolvedLevel: Level2Scene1
   KeypadSoundWrong: {fileID: 521502017}

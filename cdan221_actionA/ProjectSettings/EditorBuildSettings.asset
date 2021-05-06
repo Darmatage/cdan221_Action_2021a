@@ -96,6 +96,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3/Level3Scene3.unity
     guid: 090f8c2488636a244898ffe41eb9e3be
   - enabled: 1
+    path: Assets/Scenes/Level3/Level3Scene4.unity
+    guid: e3e3d33236e49af4fba7038589339715
+  - enabled: 1
     path: Assets/Scenes/Level4/Level4Scene1.unity
     guid: d382c06930316704ba0d09da99d5163c
   - enabled: 1
@@ -113,6 +116,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Closeups and Puzzles/RadioScene.unity
     guid: f84eabed16eb98b4e904a4ae532e5515
+  - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/LockKeypadLevel3.unity
+    guid: 908dc4fd74b5e8a4cac931a0160af051
+  - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/LockKeypadLevel4.unity
+    guid: a70f8623b80c00c4296ff8d7071a16eb
+  - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/MatchCard.unity
+    guid: 669686c1cc92c4b13ae85917e2fd7e9a
+  - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/TapeRecorderScene.unity
+    guid: 4085895dbdebb1043bfc07ea60246115
+  - enabled: 1
+    path: Assets/Scenes/Returns/Return_Level4.unity
+    guid: eb518c1179f0ad24e898ce4e6542807f
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

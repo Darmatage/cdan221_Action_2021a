@@ -113,13 +113,21 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 40){
-            dialogueText.text = "PLACEHOLDER NORMAL."; //Lani Level 2
+            dialogueText.text = "The offices? Come on, don't tell me you really plan on snooping around down there."; //Lani Level 2
 			if ((itemSensitive == true)&&(GameHandler.itemFileLani == true)) {
 						primeInt = 50;
 					}
 			}
 			
 			if (primeInt == 41){
+            dialogueText.text = "You're not going to find much other than paperwork. Maybe somebody will have left an ID down there if your lucky. But like, what you going to do with those?";
+			}
+			
+			if (primeInt == 42){
+            dialogueText.text = "Hey, what's with that face? I'm not trying to call you stupid or anything...";
+			}
+			
+			if (primeInt == 43){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -130,6 +138,26 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 51){
+            dialogueText.text = "Heh. Well, be honest. Are you surprised I was a cheerleader? Something like that would suit Savanna a lot more than me.";
+			}
+			
+			if (primeInt == 52){
+            dialogueText.text = "I wasn't very popular or anything. But I was the tiniest girl on the team, so I always got to be the flyer.";
+			}
+			
+			if (primeInt == 53){
+            dialogueText.text = "A lot of other girls who were a lot more passionate about it, they would have killed to be front and venter like that. So, you know.. ";
+			}
+			
+			if (primeInt == 54){
+            dialogueText.text = "..Dropping me on purpose was probably the perfect crime for them. Hahaha.";
+			}
+			
+			if (primeInt == 55){
+            dialogueText.text = "But no, it's not like I have proof or anything. But I don't think they'd miss me either. And the feeling is mutual, honestly. Good riddance.";
+			}
+			
+			if (primeInt == 56){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -177,7 +205,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 73){
-            dialogueText.text = "....murmermurmerJune, no.....medications......mumblemumble.....allergies....";
+            dialogueText.text = "....murmermurmerJuly, no.....medications......mumblemumble.....allergies....";
 			}
 			
 			if (primeInt == 74){
@@ -193,6 +221,131 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 77){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			
+			if (primeInt == 80){
+            dialogueText.text = " It's Ema! My new 3A bestie, hehehe! How has your adventure been going?"; //Sav Level 2
+			}
+			
+			if (primeInt == 81){
+            dialogueText.text = "Did you make it to the cafeteria yet? I heard they sell whole cakes down there! Like! What?! Omg.";
+			}
+			
+			if (primeInt == 82){
+            dialogueText.text = "But yeah, they brought Jack up one for his birthday last month, and he didn't even share! He threw it on the ground, actually. And he was all like;";
+			}
+			
+			if (primeInt == 83){
+            dialogueText.text = "IT'S PROBABLY POISONED! THEY'RE TRYING TO GET US MORE SICK SO WE CAN NEVER LEAVE! AAAAAAAAHHH!!";
+			}
+			
+			if (primeInt == 84){
+            dialogueText.text = "...Or something. I dunno, he's so funny like that.";
+			}
+			
+			if (primeInt == 85){
+            dialogueText.text = "At least he's seemed calmer since he talked to you! He never stays one way for long, but if exposing the hospital will make Jack happy then let's do it~ OK?";
+			}
+			  
+			if (primeInt == 86){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 90){
+            dialogueText.text = "Oh, hey. It's been a while since you've checked in."; //Lani Level 4
+			}
+			
+			if (primeInt == 91){
+            dialogueText.text = "You're pretty serious about this, huh? But...Why?";
+			}
+			
+			if (primeInt == 92){
+            dialogueText.text = "You only just got here recently. You have no reason to want to save us. You really... don't even know us.";
+			}
+			
+			if (primeInt == 93){
+            dialogueText.text = "And if something bad happens to you, then we'll never know eachother for real. And that sucks. Because I really would like to!";
+			}
+			
+			if (primeInt == 94){
+            dialogueText.text = "I don't think the others understand that you aren't Aaron. They're throwing you into danger because they think you can finish what he started.";
+			}
+			
+			if (primeInt == 95){
+            dialogueText.text = "But you're you. You're a normal patient just like us, and you haven't even healed yet.";
+			}
+			  
+			if (primeInt == 96){
+            dialogueText.text = "...You should really go back to your room, Ema.";
+			}
+			   
+			if (primeInt == 97){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 100){
+            dialogueText.text = "...Be honest. Lani is trying to screw us over, isn't she?"; //Jack Level 4
+			}
+			
+			if (primeInt == 101){
+            dialogueText.text = "You could be so close to finding Aaron, and she doesn't seem excited at all. It's like she doesn't even care!";
+			}
+			
+			if (primeInt == 102){
+            dialogueText.text = "And what about us, too?! Don't we deserve to get out of here? That greedy, egotistical matron is keeping us prisoner, and for what?";
+			}
+					
+			if (primeInt == 103){
+            dialogueText.text = "Damn it... Damn it, damn it. I know Lani cares about us. But keeping somebody trapped isn't protecting them.";
+			}
+			
+			if (primeInt == 104){
+            dialogueText.text = "...Hey, Ema. You said your memory is really good, yeah? Mine is really bad. Sometimes the others write things down for me.";
+			}
+			  	
+			if (primeInt == 105){
+            dialogueText.text = "I always thought it was funny, that somebody could help me in the future with a problem I don't even know I'm going to have yet.";
+			}
+			
+			if (primeInt == 106){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 110){
+            dialogueText.text = "Everyone is acting super down right now... I don't get it. Shouldn't they be happy?"; //Sav Level 4
+			}
+			
+			if (primeInt == 111){
+            dialogueText.text = "You could be so close to finding Aaron, and she doesn't seem excited at all. It's like she doesn't even care!";
+			}
+			
+			if (primeInt == 112){
+            dialogueText.text = "And what about us, too?! Don't we deserve to get out of here? That greedy, egotistical matron is keeping us prisoner, and for what?";
+			}
+					
+			if (primeInt == 113){
+            dialogueText.text = "Damn it... Damn it, damn it. I know Lani cares about us. But keeping somebody trapped isn't protecting them.";
+			}
+			
+			if (primeInt == 114){
+            dialogueText.text = "...Hey, Ema. You said your memory is really good, yeah? Mine is really bad. Sometimes the others write things down for me.";
+			}
+			  	
+			if (primeInt == 115){
+            dialogueText.text = "I always thought it was funny, that somebody could help me in the future with a problem I don't even know I'm going to have yet.";
+			}
+			
+			if (primeInt == 116){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

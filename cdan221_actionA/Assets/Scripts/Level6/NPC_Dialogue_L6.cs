@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NPC_Dialogue_L6 : MonoBehaviour {
        //public Animator anim;
@@ -10,6 +11,7 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	   public string TapeRecorderScene = "TapeRecorderScene";
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -110,13 +112,14 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 33){
-            dialogueText.text = "You should probably tear apart this soft little fellow and get at his insides. Sorry.";
+            dialogueText.text = "Sorry little guy... You tear open the loose stitches.";
 			}
 			  
 			if (primeInt == 34){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			GoToTape ();
 			}
 			
 			if (primeInt == 50){
@@ -132,6 +135,16 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 53){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 60){
+            dialogueText.text = "We can't turn back now.";
+			}
+			
+			if (primeInt == 61){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -154,4 +167,8 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
                    //Debug.Log("Player left range");
              }
        }
+	   
+	    public void GoToTape(){
+		   SceneManager.LoadScene(TapeRecorderScene);
+	}
 }

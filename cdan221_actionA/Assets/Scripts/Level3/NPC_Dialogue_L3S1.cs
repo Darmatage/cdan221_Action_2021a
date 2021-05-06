@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NPC_Dialogue_L3S1 : MonoBehaviour {
        //public Animator anim;
@@ -13,7 +14,7 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 	   public bool itemSensitive = false;
 	   public bool canPickUpCake = false;
 	   public GameObject NPCMedStudent;
-	   
+	   public string MatchCard = "MatchCard";
 
        void Start () {
               dialogueBox.SetActive(false);
@@ -236,13 +237,14 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 91){
-            dialogueText.text = "Would it be worth it to investigate?";
+            dialogueText.text = "Maybe you should investigate.";
 			}
 			  
 			if (primeInt == 92){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			GoToPills ();
 			}
 		}
 
@@ -263,4 +265,8 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
                    //Debug.Log("Player left range");
              }
        }
+	   
+	   	   public void GoToPills(){
+		   SceneManager.LoadScene(MatchCard);
+	}
 }

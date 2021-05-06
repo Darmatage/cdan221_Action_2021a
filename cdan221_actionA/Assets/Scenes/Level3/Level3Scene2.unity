@@ -295,6 +295,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &205254940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 205254941}
+  m_Layer: 0
+  m_Name: NPCMedStudent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205254941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205254940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.848078, y: -1.1511177, z: -614.7834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374593169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1415,7 @@ MonoBehaviour:
   startPoint: 40
   itemSensitive: 0
   canPickUpCake: 0
-  NPCMedStudent: {fileID: 0}
+  NPCMedStudent: {fileID: 205254940}
 --- !u!61 &1014466322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1987,7 +2017,7 @@ MonoBehaviour:
   startPoint: 50
   itemSensitive: 0
   canPickUpCake: 0
-  NPCMedStudent: {fileID: 0}
+  NPCMedStudent: {fileID: 205254940}
 --- !u!61 &2053794777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2641,7 +2671,7 @@ MonoBehaviour:
   startPoint: 30
   itemSensitive: 0
   canPickUpCake: 0
-  NPCMedStudent: {fileID: 0}
+  NPCMedStudent: {fileID: 205254940}
 --- !u!1 &7975107746821339132
 GameObject:
   m_ObjectHideFlags: 0
