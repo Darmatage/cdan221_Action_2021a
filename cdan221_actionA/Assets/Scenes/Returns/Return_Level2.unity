@@ -3187,14 +3187,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2005708960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 979700bafc86abb43a56afe96e4649c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2442f57d0d17acd4d874ecba64f54971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1552353866}
   dialogueText: {fileID: 30222180}
   playerInRange: 0
   primeInt: 0
-  startPoint: 1
+  startPoint: 80
+  itemSensitive: 0
 --- !u!61 &2005708962
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -113,13 +113,21 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 40){
-            dialogueText.text = "PLACEHOLDER NORMAL."; //Lani Level 2
+            dialogueText.text = "The offices? Come on, don't tell me you really plan on snooping around down there."; //Lani Level 2
 			if ((itemSensitive == true)&&(GameHandler.itemFileLani == true)) {
 						primeInt = 50;
 					}
 			}
 			
 			if (primeInt == 41){
+            dialogueText.text = "You're not going to find much other than paperwork. Maybe somebody will have left an ID down there if your lucky. But like, what you going to do with those?";
+			}
+			
+			if (primeInt == 42){
+            dialogueText.text = "Hey, what's with that face? I'm not trying to call you stupid or anything...";
+			}
+			
+			if (primeInt == 43){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -130,6 +138,26 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 51){
+            dialogueText.text = "Heh. Well, be honest. Are you surprised I was a cheerleader? Something like that would suit Savanna a lot more than me.";
+			}
+			
+			if (primeInt == 52){
+            dialogueText.text = "I wasn't very popular or anything. But I was the tiniest girl on the team, so I always got to be the flyer.";
+			}
+			
+			if (primeInt == 53){
+            dialogueText.text = "A lot of other girls who were a lot more passionate about it, they would have killed to be front and venter like that. So, you know.. ";
+			}
+			
+			if (primeInt == 54){
+            dialogueText.text = "..Dropping me on purpose was probably the perfect crime for them. Hahaha.";
+			}
+			
+			if (primeInt == 55){
+            dialogueText.text = "But no, it's not like I have proof or anything. But I don't think they'd miss me either. And the feeling is mutual, honestly. Good riddance.";
+			}
+			
+			if (primeInt == 56){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -193,6 +221,37 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 77){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			
+			if (primeInt == 80){
+            dialogueText.text = " It's Ema! My new 3A bestie, hehehe! How has your adventure been going?"; //Sav Level 2
+			}
+			
+			if (primeInt == 81){
+            dialogueText.text = "Did you make it to the cafeteria yet? I heard they sell whole cakes down there! Like! What?! Omg.";
+			}
+			
+			if (primeInt == 82){
+            dialogueText.text = "But yeah, they brought Jack up one for his birthday last month, and he didn't even share! He threw it on the ground, actually. And he was all like;";
+			}
+			
+			if (primeInt == 83){
+            dialogueText.text = "IT'S PROBABLY POISONED! THEY'RE TRYING TO GET US MORE SICK SO WE CAN NEVER LEAVE! AAAAAAAAHHH!!";
+			}
+			
+			if (primeInt == 84){
+            dialogueText.text = "...Or something. I dunno, he's so funny like that.";
+			}
+			
+			if (primeInt == 85){
+            dialogueText.text = "At least he's seemed calmer since he talked to you! He never stays one way for long, but if exposing the hospital will make Jack happy then let's do it~ OK?";
+			}
+			  
+			if (primeInt == 86){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
