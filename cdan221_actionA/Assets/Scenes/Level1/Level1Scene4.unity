@@ -1538,6 +1538,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 8
+  CloseUp_Vent: CloseUp_Vent
 --- !u!1001 &1991804142226822621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1987,6 +1988,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  CloseUp_Vent: 
 --- !u!1 &6359605353153264880
 GameObject:
   m_ObjectHideFlags: 0

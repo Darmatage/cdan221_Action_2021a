@@ -205,7 +205,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 73){
-            dialogueText.text = "....murmermurmerJune, no.....medications......mumblemumble.....allergies....";
+            dialogueText.text = "....murmermurmerJuly, no.....medications......mumblemumble.....allergies....";
 			}
 			
 			if (primeInt == 74){

@@ -214,15 +214,18 @@ public class RadioSlider : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "There's a piece of paper at the bottom of the bottle.";
+			dialogueText.text = "...think it was on July 3rd? But I haven't seen her around much since.";
 		}
 		if (primeInt == 2){
-			dialogueText.text = "It's a note.";
+			dialogueText.text = "It's scary. I mean, I get it, he's only 23. You've got to feel bad.";
 		}
 		if (primeInt == 3){
-			dialogueText.text = "DOOR CODE: F3X7F8";
+			dialogueText.text = "Still, she didn't have to drag the rest of us into it! I'm starting to feel insane here.";
 		}
 		if (primeInt == 4){
+			dialogueText.text = "..Oh, I've got a patient coming in. I've got to go. Don't tell anyone I said this stuff.";
+		}
+		if (primeInt == 5){
 			allowSpace = false;
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
