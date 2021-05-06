@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -8,12 +10,22 @@ public class SceneController : MonoBehaviour
     public const int gridCols = 4;
     public const float offsetX = 3.5f;
     public const float offsetY = 3.5f;
+	
+	public int primeInt = 0;
+	public GameObject dialogueBox;
+    public Text dialogueText;
+	public bool allowSpace = false;
+	public string ReturnLevel = "Level3Scene4";
 
     [SerializeField] private MainCard originalCard;
     [SerializeField] private Sprite[] images;
 
     private void Start()
     {
+		allowSpace = false;
+		dialogueBox.SetActive(false);
+		dialogueText.gameObject.SetActive(false);
+		
         Vector3 startPos = originalCard.transform.position;
 
         int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 };
@@ -44,6 +56,18 @@ public class SceneController : MonoBehaviour
 
         }
     }
+	
+	void Update()
+	{
+		if (Input.GetButtonDown("Talk") && allowSpace){
+			NPCDialogue();
+		}
+		if (_score == 6){
+			_score = 7;
+			StartCoroutine(DialogueDelay());
+		}
+	}
+	
     private int[] ShuffleArray(int[] numbers)
     {
         int[] newArray = numbers.Clone() as int[];
@@ -101,5 +125,35 @@ public class SceneController : MonoBehaviour
         _firstRevealed = null;
         _secondRevealed = null;
     }
+	
+	public void NPCDialogue(){
+		primeInt += 1;
+		
+		if (primeInt == 1){
+			dialogueText.text = "LineOne";
+		}
+		if (primeInt == 2){
+			dialogueText.text = "LineTwo";
+		}
+		if (primeInt == 3){
+			allowSpace = false;
+			SendBackToRoom();
+			dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+		}
+	}
+	
+    public IEnumerator DialogueDelay()
+    {
+        yield return new WaitForSeconds(0.3F);
+		allowSpace = true;
+		dialogueBox.SetActive(true);
+		dialogueText.gameObject.SetActive(true);
+		NPCDialogue();
+    }
+	
+	public void SendBackToRoom(){
+		SceneManager.LoadScene (ReturnLevel);
+	}
 }
 
