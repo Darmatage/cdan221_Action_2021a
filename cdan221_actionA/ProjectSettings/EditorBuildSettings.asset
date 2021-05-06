@@ -120,6 +120,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Closeups and Puzzles/LockKeypadLevel3.unity
     guid: 908dc4fd74b5e8a4cac931a0160af051
   - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/LockKeypadLevel4.unity
+    guid: a70f8623b80c00c4296ff8d7071a16eb
+  - enabled: 1
     path: Assets/Scenes/Closeups and Puzzles/MatchCard.unity
     guid: 669686c1cc92c4b13ae85917e2fd7e9a
   - enabled: 0
