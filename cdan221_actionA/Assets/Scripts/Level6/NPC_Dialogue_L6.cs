@@ -52,34 +52,14 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "You hear breathing. There's nobody else it could be."; 
+            dialogueText.text = "You hear breathing... There's only one person it could be."; 
 			}
 
-			if (primeInt ==2){
-            dialogueText.text = "Maybe you would be like this too if you were less lucky.";
+			if (primeInt == 2){
+            dialogueText.text = "Thank you for all the help. It's nice to finally meet eachother.";
 			}
 			  
 			if (primeInt == 3){
-            dialogueText.text = "'I'm the in the same boat as you were. Thank you for all the help.' That's the kind of thing you should be saying right now, but...";
-			}
-
-			if (primeInt ==4){
-            dialogueText.text = "...It's too unfair.";
-			}
-			
-			if (primeInt == 5){
-            dialogueText.text = "The others should be here instead of you. Regardless of your feelings, at the end of the day, you're a stranger.";
-			}
-			  
-			if (primeInt == 6){
-            dialogueText.text = "No, you don't have time to feel guilty about that sort of thing. It's good that you're here.";
-			}
-			
-			if (primeInt == 7){
-            dialogueText.text = "It's nice to finally meet eachother.";
-			}
-			  
-			if (primeInt == 8){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

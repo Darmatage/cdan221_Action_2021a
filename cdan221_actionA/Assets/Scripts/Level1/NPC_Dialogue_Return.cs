@@ -350,6 +350,74 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 120){
+            dialogueText.text = "Ema. You said you found Claudia’s office..?"; //Lani Level 5
+			}
+			
+			if (primeInt == 121){
+            dialogueText.text = "So she really wasn’t in there. All of this seems too easy, doesn’t it?";
+			}
+			
+			if (primeInt == 122){
+            dialogueText.text = "But I guess it makes sense. She hasn’t been around in months.";
+			}
+					
+			if (primeInt == 123){
+            dialogueText.text = "She doesn’t even come to check in on us patients anymore, even though she’s supposed to be our doctor. Even though…";
+			}
+			
+			if (primeInt == 124){
+            dialogueText.text = "One of us went missing, and we’re supposed to be safe here…";
+			}
+			  	
+			if (primeInt == 125){
+            dialogueText.text = "It really is hopeless, isn’t it?";
+			}
+			
+			if (primeInt == 126){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 130){
+            dialogueText.text = "'September 13th, 2019"; //Lani Level 5 if you found the journal
+			}
+			
+			if (primeInt == 131){
+            dialogueText.text = "It no longer seems possible to keep this facility running. Some of my colleagues have been urging me to give up and shut the hospital down. Ridiculous!";
+			}
+			
+			if (primeInt == 132){
+            dialogueText.text = "My program is legitimate. I'm not crazy. I'm just...' There are some sentences scratched out here.";
+			}
+					
+			if (primeInt == 133){
+            dialogueText.text = "'The only thing I require for more funding is more patients. I had considered it for a while, anyways. There are so many people who need my protection…'";
+			}
+			
+			if (primeInt == 134){
+            dialogueText.text = "2019 was the year she started getting more patients… So, I guess it’s actually been 2 years that I’ve been here. ";
+			}
+			  	
+			if (primeInt == 135){
+            dialogueText.text = "Since the beginning, I already knew she wanted to protect us. Back when she talked to us, she even told me. And I believed her.";
+			}
+			
+			if (primeInt == 136){
+            dialogueText.text = "Is it wrong that I felt that way? I mean… I could have used even one person there for me. If even one single person hadn’t stepped away before I hit the ground… I… ";
+			}
+			
+			if (primeInt == 137){
+            dialogueText.text = "But, I understand now. She failed to protect Aaron, and.. so did I. It won’t happen again.";
+			}
+			
+			if (primeInt == 138){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){

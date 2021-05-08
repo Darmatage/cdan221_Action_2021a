@@ -73,7 +73,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 6){
-            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed. ";
+            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed.";
 			}
 			
 			if (primeInt == 7){
