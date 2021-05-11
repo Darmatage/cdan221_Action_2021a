@@ -9,22 +9,22 @@ public class GameHandler_PlayerReturn : MonoBehaviour {
     public static Vector2 lastRoomPosition;       // where the Player entered a puzzle in a room
        
 	private string h1 = "Level1Scene2";
-	public static Vector2 HallPos1; 
+	public static Vector2 HallPos1 = new Vector2 (-13, -1); 
 	
 	private string h2 = "Level2Scene1";
-	public static Vector2 HallPos2; 
+	public static Vector2 HallPos2 = new Vector2 (-18, -1);
 	
 	private string h3 = "Level3Scene1";
-	public static Vector2 HallPos3; 
+	public static Vector2 HallPos3 = new Vector2 (-18, -1);
 	
 	private string h4 = "Level4Scene1";
-	public static Vector2 HallPos4;    
+	public static Vector2 HallPos4 = new Vector2 (-18, -1);   
 	
 	private string h5 = "Level5Scene1";
-	public static Vector2 HallPos5; 
+	public static Vector2 HallPos5 = new Vector2 (-18, -1); 
 	
 	private string h6 = "Level6Scene1";
-	public static Vector2 HallPos6;    
+	public static Vector2 HallPos6 = new Vector2 (-18, -1);   
 	    
 	private string thisLevel;
     private Transform player;

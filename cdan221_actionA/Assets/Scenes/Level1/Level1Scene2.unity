@@ -1002,32 +1002,37 @@ PrefabInstance:
     - target: {fileID: 1879816063940567052, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.499975
       objectReference: {fileID: 0}
     - target: {fileID: 1879816063940567052, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1879816064285859364, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.499975
       objectReference: {fileID: 0}
     - target: {fileID: 1879816064285859364, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.499975
       objectReference: {fileID: 0}
     - target: {fileID: 1879816064285859364, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3934496386702735083, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
       propertyPath: m_Name
       value: PauseMenuUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3934496386702735083, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3934496386702735087, guid: 488193af69ec8744ebd9bf4f8e8e22fe,
         type: 3}
@@ -1500,7 +1505,7 @@ GameObject:
   - component: {fileID: 1796695798}
   - component: {fileID: 1796695797}
   m_Layer: 0
-  m_Name: InteractTemplate (1)
+  m_Name: InteractTemplate_room3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1523,6 +1528,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 20
+  player: {fileID: 0}
 --- !u!61 &1796695798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1887,12 +1893,12 @@ PrefabInstance:
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.79
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.57
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
@@ -1957,7 +1963,7 @@ PrefabInstance:
     - target: {fileID: 1991804141340189913, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa003f433d3dcc42894b773cd60a39f, type: 3}
@@ -2297,7 +2303,7 @@ GameObject:
   - component: {fileID: 5263923939404810366}
   - component: {fileID: 5263923939404810361}
   m_Layer: 0
-  m_Name: InteractTemplate
+  m_Name: InteractTemplate_exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2320,6 +2326,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 9
+  player: {fileID: 0}
 --- !u!4 &5263923939404810365
 Transform:
   m_ObjectHideFlags: 0
@@ -2586,6 +2593,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  player: {fileID: 0}
 --- !u!4 &7884172622343590896
 Transform:
   m_ObjectHideFlags: 0
