@@ -15,27 +15,33 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 	   public bool canPickUpFileJack = false;
 	   public bool canPickUpDrMarkID = false;
 	   
-	   
+	   public GameObject buttonFiles;
+	   public GameObject buttonID;
+	   public bool canPressSpace = true;
+
+	public GameObject player; //MSG #1/4
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
               //anim.SetBool("Chat", false)
-			  
+			  buttonFiles.SetActive(false);
+			  buttonID.SetActive(false);
+			  player = GameObject.FindWithTag("Player"); //MSG #2/4
        }
 
        void Update () {
 			
-			if ((canPickUpFileLani == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemFileLani = true;
-				Debug.Log("You Got Lani's File");
-			}else if ((canPickUpFileJack == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemFileJack = true;
-				Debug.Log("You Got Jack's File");
-			}else if ((canPickUpDrMarkID == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemIdDrMark = true;
-				Debug.Log("You Got Dr Mark's ID");
-			}
+		// if ((canPickUpFileLani == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				// GameHandler.itemFileLani = true;
+				// Debug.Log("You Got Lani's File");
+			// }else if ((canPickUpFileJack == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				// GameHandler.itemFileJack = true;
+				// Debug.Log("You Got Jack's File");
+			// }else if ((canPickUpDrMarkID == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				// GameHandler.itemIdDrMark = true;
+				// Debug.Log("You Got Dr Mark's ID");
+		// }
 			
 			if (Input.GetButtonDown("Talk") && playerInRange){ //input manager talk = spacebar
                 if (dialogueBox.activeInHierarchy){
@@ -49,7 +55,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
                    } 
             }
 			
-			if (Input.GetButtonDown("Talk")){
+			if ((Input.GetButtonDown("Talk")) && (canPressSpace == true)){
 				NPCdialogue();
 			}
 			
@@ -63,28 +69,47 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "There are a bunch of folders neatly filed away on the desk.";
+				dialogueText.text = "There are a bunch of folders neatly filed away on the desk.";
+
 			}
 
 			if (primeInt ==2){
-            dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
-			}
-			 
-			if (primeInt ==3){
-            dialogueText.text =  "(press e to pick up a file!)";
+				dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
 				if (playerInRange == true){
-					canPickUpFileLani = true;
+					if (GameHandler.itemFileLani == true){
+						primeInt = 5;
+					}
 				}
 			}
+			 
+			if (primeInt == 3){
+            dialogueText.text =  "(click to pick up a file!)";
+				if (playerInRange == true){
+					canPickUpFileLani = true;
+					buttonFiles.SetActive(true);
+					canPressSpace = false;
+				}
+				
+			}
 			
-			if (primeInt == 4){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
+			if (primeInt ==4){
+				buttonFiles.SetActive(false);
+				dialogueText.text =  "You got a file!";
+			}
+			
+			if (primeInt == 5){
+				dialogueText.text =  "";
+			}
+			
+			if (primeInt == 6){
+				dialogueBox.SetActive(false);
+				dialogueText.gameObject.SetActive(false);
 				if (playerInRange == true){
 					canPickUpFileLani = false;
 				}
-			primeInt = 0;
+				primeInt = 0;
 			}
+			
 			
 			if (primeInt == 20){
             dialogueText.text = "It's a computer. It feels so familiar to you, and you're pretty sure that you could use it if you really tried.";
@@ -121,29 +146,54 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
+			
+			
 			if (primeInt == 40){
-            dialogueText.text = "It's a closet. Inside, you feel a jacket and a little plastic card on a lanyard.";
+            dialogueText.text = "It's a closet.";
 			}
 			
 			if (primeInt == 41){
+            dialogueText.text = "Inside, you feel a jacket and a little plastic card on a lanyard.";
+				if (playerInRange == true){
+					if (GameHandler.itemIdDrMark == true){
+						primeInt = 45;
+					}
+				}
+			}
+			
+			
+			if (primeInt == 42){
             dialogueText.text = "That could be useful.";
 			}
 			  
-			if (primeInt == 42){
-            dialogueText.text = "(press e to pick up the ID!)";
+			if (primeInt == 43){
+            dialogueText.text = "(Click to pick up the ID!)";
 				if (playerInRange == true){
 					canPickUpDrMarkID = true;
+					buttonID.SetActive(true);
+					canPressSpace = false;
 				}
 			}
+			
+			
+			if (primeInt ==44){
+				buttonID.SetActive(false);
+				dialogueText.text =  "You got an ID!";
+			}
+			
+			if (primeInt ==45){
+				dialogueText.text =  "";
+			}
 			  
-			if (primeInt == 43){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
+			if (primeInt == 46){
+				dialogueBox.SetActive(false);
+				dialogueText.gameObject.SetActive(false);
 				if (playerInRange == true){
 					canPickUpDrMarkID = false;
 				}
-			primeInt = 0;
+				primeInt = 0;
 			}
+			
 			
 			if (primeInt == 60){
             dialogueText.text = "You unlock the safe. Nice!";
@@ -174,17 +224,41 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
                    playerInRange = true;
                    primeInt = 0;
 				   Debug.Log("Hit Space to talk");
+				   player.GetComponent<PlayerMoveAround>().MSG_show(); //MSG #3/4
                   }
              }
                         
        private void OnTriggerExit2D(Collider2D other){
              if (other.gameObject.tag == "Player") {
-                   playerInRange = false;
+                   primeInt = 0;
+				   playerInRange = false;
 				   canPickUpFileLani = false;
 				   canPickUpDrMarkID = false;
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
+				   player.GetComponent<PlayerMoveAround>().MSG_hide(); //MSG #4/4
              }
        }
+	   
+	   
+	public void Button_PickUpFile(){
+		buttonFiles.SetActive(false);
+		NPCdialogue ();
+		canPressSpace = true;
+		
+		GameHandler.itemFileLani = true;
+		Debug.Log("You Got Lani's File");
+	}
+
+
+	public void Button_PickUpID(){
+		buttonID.SetActive(false);
+		NPCdialogue ();
+		canPressSpace = true;
+
+		GameHandler.itemIdDrMark = true;
+		Debug.Log("You Got Dr Mark's ID");
+	}
+	   
 }
