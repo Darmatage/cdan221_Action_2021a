@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class InteractableDoor : MonoBehaviour {
 
 	   public string NextLevel = "MainMenu";
+	   private GameHandler_PlayerReturn gh_PlayerReturn;
        //public GameObject pulseVFX;
        //public AudioSource pulseSFX;
        public GameObject msgPressE;
@@ -14,6 +15,7 @@ public class InteractableDoor : MonoBehaviour {
 
        void Start(){
               msgPressE.SetActive(false);
+			  gh_PlayerReturn = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerReturn>();
        }
 
        void Update(){
@@ -42,6 +44,8 @@ public class InteractableDoor : MonoBehaviour {
        }
 	   
 	   public void EnterDoor(){
+		   gh_PlayerReturn.UpdateLocation();
+		   Debug.Log("You entered a door");
 		   SceneManager.LoadScene (NextLevel);
 	   }
 	   
