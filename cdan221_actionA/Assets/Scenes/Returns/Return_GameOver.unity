@@ -500,6 +500,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 30
+  player: {fileID: 0}
 --- !u!61 &379092056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1376,6 +1377,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 40
+  player: {fileID: 0}
 --- !u!61 &886802118
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1583,7 +1585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.11, y: 0.31}
+  m_AnchoredPosition: {x: 0.11, y: 0.52}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &947917497
@@ -1625,7 +1627,7 @@ SpriteRenderer:
   m_SortingLayerID: 1035650559
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 25ef5becc9a19f64ca387cbb7982f862, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20ef2a447c110454896036145d7569b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1954,6 +1956,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 30
+  itemSensitive: 0
 --- !u!61 &1092715269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2440,6 +2443,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 20
+  itemSensitive: 0
 --- !u!1 &1408746983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,7 +2760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.11, y: 0.31}
+  m_AnchoredPosition: {x: 0.02, y: 0.55}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1685429805
@@ -2798,7 +2802,7 @@ SpriteRenderer:
   m_SortingLayerID: 1035650559
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 25ef5becc9a19f64ca387cbb7982f862, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20ef2a447c110454896036145d7569b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2899,7 +2903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.11, y: 0.31}
+  m_AnchoredPosition: {x: 0.11, y: 0.62}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1696416401
@@ -2941,7 +2945,7 @@ SpriteRenderer:
   m_SortingLayerID: 1035650559
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 25ef5becc9a19f64ca387cbb7982f862, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20ef2a447c110454896036145d7569b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3061,6 +3065,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 20
+  player: {fileID: 0}
 --- !u!61 &1796695798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3602,15 +3607,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 360255003726539259, guid: 6fa003f433d3dcc42894b773cd60a39f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -13.26
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.57
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
@@ -3671,6 +3681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991804141340189913, guid: 6fa003f433d3dcc42894b773cd60a39f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa003f433d3dcc42894b773cd60a39f, type: 3}
@@ -4033,6 +4048,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 9
+  player: {fileID: 0}
 --- !u!4 &5263923939404810365
 Transform:
   m_ObjectHideFlags: 0
@@ -4193,6 +4209,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactable_Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a69c4fbd8d901c44be1f1018d5e8426, type: 3}
 --- !u!1 &7884172621287765393
@@ -4299,6 +4320,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  itemSensitive: 0
 --- !u!4 &7884172622343590896
 Transform:
   m_ObjectHideFlags: 0

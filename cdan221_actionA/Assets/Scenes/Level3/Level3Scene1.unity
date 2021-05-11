@@ -1825,6 +1825,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  player: {fileID: 0}
 --- !u!4 &978188284495845396
 Transform:
   m_ObjectHideFlags: 0
@@ -2173,7 +2174,7 @@ SpriteRenderer:
   m_SortingLayerID: 1035650559
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 25ef5becc9a19f64ca387cbb7982f862, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20ef2a447c110454896036145d7569b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2200,7 +2201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.11, y: 0.31}
+  m_AnchoredPosition: {x: -0.09, y: 0.47}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6439975207318767830
