@@ -15,6 +15,8 @@ public class LockKeypadClickControl : MonoBehaviour
 	public GameObject KeypadSoundWrong;
 	public GameObject KeypadSoundRight;
 	public GameObject KeypadSoundBeep;
+	public GameObject DownStairsSprite;
+	public bool CanClick;
 	
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,8 @@ public class LockKeypadClickControl : MonoBehaviour
 		KeypadSoundWrong.SetActive(false);
 		KeypadSoundRight.SetActive(false);
 		KeypadSoundBeep.SetActive(false);
+		DownStairsSprite.SetActive(false);
+		CanClick = true;
 		GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
     }
 
@@ -36,7 +40,9 @@ public class LockKeypadClickControl : MonoBehaviour
 		if (totalDigits == 6){
 			if (playerCode == correctCode){
 				Debug.Log("Correct!");
+				CanClick = false;
 				KeypadSoundRight.SetActive(true);
+				DownStairsSprite.SetActive(true);
 				StartCoroutine(RightDelay());
 				
 			} else {
@@ -50,10 +56,12 @@ public class LockKeypadClickControl : MonoBehaviour
     }
 	
 	void OnMouseUp(){
-		playerCode += gameObject.name;
-		totalDigits += 1;
-		KeypadSoundBeep.SetActive(true);
-		StartCoroutine(BeepDelay());
+		if (CanClick = true){
+			playerCode += gameObject.name;
+			totalDigits += 1;
+			KeypadSoundBeep.SetActive(true);
+			StartCoroutine(BeepDelay());
+		}
 	}
 	
 	void OnMouseOver(){
@@ -70,7 +78,8 @@ public class LockKeypadClickControl : MonoBehaviour
 	}
 	
 	public IEnumerator RightDelay(){
-        yield return new WaitForSeconds(0.5F);
+        yield return new WaitForSeconds(1F);
+		CanClick = false;
 		KeypadSoundRight.SetActive(false);
 		SolvedKeypad();
 	}

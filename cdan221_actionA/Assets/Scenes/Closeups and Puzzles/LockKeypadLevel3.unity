@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &95738351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3457298520706157655, guid: 30a48472f9c9f394d8c812f739bd8374,
+    type: 3}
+  m_PrefabInstance: {fileID: 1860518215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &137670040
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +228,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &137670044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -349,6 +357,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &366118162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -603,6 +613,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &630751002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -857,6 +869,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &680830015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1302,6 +1316,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &1118565626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1429,6 +1445,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &1179495586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1556,6 +1574,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &1384388036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1810,6 +1830,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &1644496853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1836,6 +1858,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!1001 &1860518215
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3457298520706157655, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_Name
+      value: DownStairsSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457298520706157657, guid: 30a48472f9c9f394d8c812f739bd8374,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30a48472f9c9f394d8c812f739bd8374, type: 3}
 --- !u!1 &1890660032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2111,8 @@ MonoBehaviour:
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
+  DownStairsSprite: {fileID: 95738351}
+  CanClick: 0
 --- !u!61 &1904932008
 BoxCollider2D:
   m_ObjectHideFlags: 0
