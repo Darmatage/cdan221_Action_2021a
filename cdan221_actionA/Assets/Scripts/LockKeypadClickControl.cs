@@ -78,7 +78,7 @@ public class LockKeypadClickControl : MonoBehaviour
 	}
 	
 	public IEnumerator RightDelay(){
-        yield return new WaitForSeconds(1F);
+        yield return new WaitForSeconds(0.5F);
 		CanClick = false;
 		KeypadSoundRight.SetActive(false);
 		SolvedKeypad();
