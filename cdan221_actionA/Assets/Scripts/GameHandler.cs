@@ -8,7 +8,8 @@ public class GameHandler : MonoBehaviour{
 
         public static int playerStat;
         //public GameObject textGameObject;
-
+		
+		public static int gameProgression = 1;
 
 		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
 		
@@ -32,6 +33,9 @@ public class GameHandler : MonoBehaviour{
 		void Update(){
 			if (Input.GetKeyDown(KeyCode.R)){
 				CheckInventory();
+			}
+			if (Input.GetKeyDown(KeyCode.P)){
+				CheckProgression();
 			}
 		}
 		
@@ -66,10 +70,32 @@ public class GameHandler : MonoBehaviour{
                 Debug.Log("Cake\n");
 			}
         }
-
-
-
-
+		
+		public void CheckProgression(){
+			switch (gameProgression){
+				case 1:
+					Debug.Log("1");
+					break;
+				case 2:
+					Debug.Log("2");
+					break;
+				case 3:
+					Debug.Log("3");
+					break;
+				case 4:
+					Debug.Log("4");
+					break;
+				case 5:
+					Debug.Log("5");
+					break;
+				case 6:
+					Debug.Log("6");
+					break;
+				case 7:
+					Debug.Log("7");
+					break;
+			}
+		}
 
 
         //void UpdateScore () {
