@@ -10,12 +10,13 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	public GameObject player; //MSG #1/4
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
               //anim.SetBool("Chat", false)
-			  
+			  player = GameObject.FindWithTag("Player"); //MSG #2/4
        }
 
        void Update () {
@@ -136,6 +137,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
                    playerInRange = true;
                    primeInt = 0;
 				   Debug.Log("Hit Space to talk");
+				   player.GetComponent<PlayerMoveAround>().MSG_show();
                   }
              }
                         
@@ -145,6 +147,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
+				   player.GetComponent<PlayerMoveAround>().MSG_hide();
              }
        }
 }

@@ -19,6 +19,9 @@ public class PlayerMoveAround : MonoBehaviour {
 	private float scaleHeight = -5.6f;
 	private Vector3 startHeight;	
 
+	public GameObject pressMSGspace;
+
+
       void Start(){
            animator = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
@@ -28,6 +31,8 @@ public class PlayerMoveAround : MonoBehaviour {
 			   scaleHeight = GameObject.FindWithTag("PlayerScaleBottom").transform.position.y;
 		   }
 		   startHeight = transform.localScale;
+		   
+		   pressMSGspace.SetActive(false);
       }
 
       void Update(){
@@ -91,6 +96,9 @@ public class PlayerMoveAround : MonoBehaviour {
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
+			
+			pressMSGspace.transform.localScale = theScale; // so MSG does not appear backwards
+			
       }
 	  
 	  void OnCollisionEnter2D(Collision2D other){
@@ -108,4 +116,15 @@ public class PlayerMoveAround : MonoBehaviour {
       }
 	  
 	  
+	public void MSG_show(){
+		pressMSGspace.SetActive(true);
+		
+	}  
+	  
+	public void MSG_hide(){
+		pressMSGspace.SetActive(false);
+		
+	}  
+
+
 }

@@ -569,6 +569,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 7
+  player: {fileID: 0}
 --- !u!61 &277131508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -719,6 +720,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 12
+  player: {fileID: 0}
 --- !u!61 &327231310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1670,6 +1672,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 9
+  player: {fileID: 0}
 --- !u!61 &896273641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1803,6 +1806,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 4
+  player: {fileID: 0}
 --- !u!61 &951997187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3169,6 +3173,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 15
+  player: {fileID: 0}
 --- !u!61 &1779051186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3766,6 +3771,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
+  player: {fileID: 0}
 --- !u!223 &813335524673331514
 Canvas:
   m_ObjectHideFlags: 0
@@ -4083,12 +4089,12 @@ PrefabInstance:
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.02
+      value: 4.75
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.04
+      value: -1.17
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
@@ -4146,6 +4152,16 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826343, guid: 6fa003f433d3dcc42894b773cd60a39f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382295718340143623, guid: 6fa003f433d3dcc42894b773cd60a39f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658320486494657804, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_IsActive
       value: 1
