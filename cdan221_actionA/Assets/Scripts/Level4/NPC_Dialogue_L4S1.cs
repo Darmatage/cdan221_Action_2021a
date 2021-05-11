@@ -12,10 +12,12 @@ public class NPC_Dialogue_L4S1 : MonoBehaviour {
        public int primeInt = 0;
 	   public int startPoint = 1;
 	   public string HideoutLevel = "RadioScene";
+	   private GameHandler_PlayerReturn gh_PlayerReturn;
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
+			  gh_PlayerReturn = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerReturn>();
               //anim.SetBool("Chat", false)
 			  
        }
@@ -141,6 +143,7 @@ public class NPC_Dialogue_L4S1 : MonoBehaviour {
              }
        }
 	   public void GoToHideout(){
+		   gh_PlayerReturn.UpdateLocation();
 		   SceneManager.LoadScene(HideoutLevel);
 	}
 }

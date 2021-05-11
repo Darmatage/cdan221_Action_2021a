@@ -15,10 +15,12 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 	   public bool canPickUpCake = false;
 	   public GameObject NPCMedStudent;
 	   public string MatchCard = "MatchCard";
+	   private GameHandler_PlayerReturn gh_PlayerReturn;
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
+			  gh_PlayerReturn = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerReturn>();
               //anim.SetBool("Chat", false)
 			  
        }
@@ -267,6 +269,7 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
        }
 	   
 	   	   public void GoToPills(){
-		   SceneManager.LoadScene(MatchCard);
+			gh_PlayerReturn.UpdateLocation();
+			SceneManager.LoadScene(MatchCard);
 	}
 }

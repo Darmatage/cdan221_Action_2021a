@@ -1080,6 +1080,7 @@ MonoBehaviour:
   itemSensitive: 0
   canPickUpCake: 0
   NPCMedStudent: {fileID: 1785110786}
+  MatchCard: MatchCard
 --- !u!61 &561978903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1528,6 +1529,7 @@ MonoBehaviour:
   itemSensitive: 0
   canPickUpCake: 0
   NPCMedStudent: {fileID: 1785110786}
+  MatchCard: MatchCard
 --- !u!61 &820755162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2305,6 +2307,7 @@ MonoBehaviour:
   itemSensitive: 0
   canPickUpCake: 0
   NPCMedStudent: {fileID: 1785110786}
+  MatchCard: MatchCard
 --- !u!61 &2054340136
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2566,12 +2569,12 @@ PrefabInstance:
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 7.63
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.57
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
@@ -2632,6 +2635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991804141340189913, guid: 6fa003f433d3dcc42894b773cd60a39f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa003f433d3dcc42894b773cd60a39f, type: 3}

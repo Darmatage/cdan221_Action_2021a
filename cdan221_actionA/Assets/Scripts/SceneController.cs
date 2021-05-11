@@ -59,6 +59,10 @@ public class SceneController : MonoBehaviour
 	
 	void Update()
 	{
+		if (Input.GetKeyDown(KeyCode.E)){
+			SendBackToRoom();
+        }
+		
 		if (Input.GetButtonDown("Talk") && allowSpace){
 			NPCDialogue();
 		}

@@ -35,36 +35,41 @@ public class GameHandler_PlayerReturn : MonoBehaviour {
 			player = GameObject.FindWithTag("Player").GetComponent<Transform>();
         }
 		
-		if (lastRoom != null){
-			if (thisLevel == lastRoom){
-				player.position = lastRoomPosition;
-			}
-		}
-		
 		if ((thisLevel == h1) && (HallPos1 != null)){
+			Debug.Log("Checking.");
 			Vector3 playerReturn = new Vector3(HallPos1.x, HallPos1.y, player.position.z);
 			player.position = playerReturn;
 		} 
 		else if ((thisLevel == h2) && (HallPos2 != null)){
+			Debug.Log("Checking.");
 			Vector3 playerReturn = new Vector3(HallPos2.x, HallPos2.y, player.position.z);
 			player.position = playerReturn;
 		}
 		else if ((thisLevel == h3) && (HallPos3 != null)){
+			Debug.Log("Checking.");
 			Vector3 playerReturn = new Vector3(HallPos3.x, HallPos3.y, player.position.z);
 			player.position = playerReturn;
-		} 			
+		}			
 		else if ((thisLevel == h4) && (HallPos4 != null)){
+			Debug.Log("Checking.");
 			Vector3 playerReturn = new Vector3(HallPos4.x, HallPos4.y, player.position.z);
 			player.position = playerReturn;
 		}
 		else if ((thisLevel == h5) && (HallPos5 != null)){
+			Debug.Log("Checking.");
 			Vector3 playerReturn = new Vector3(HallPos5.x, HallPos5.y, player.position.z);
 			player.position = playerReturn;
-		} 
+		}
 		else if ((thisLevel == h6) && (HallPos6 != null)){
+			Debug.Log("Checking.");
 			Vector3 playerReturn = new Vector3(HallPos6.x, HallPos6.y, player.position.z);
 			player.position = playerReturn;
-		} 
+		}
+		else if (lastRoom != null){
+			if (thisLevel == lastRoom){
+				player.position = lastRoomPosition;
+			}
+		}
 			
 	}
 	
