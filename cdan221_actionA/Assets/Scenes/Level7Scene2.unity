@@ -403,6 +403,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &299422426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299422427}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &299422427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299422426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3551107, y: 1.688427, z: -9959.375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374593169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,7 +1464,7 @@ PrefabInstance:
     - target: {fileID: 1991804140232826338, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
       propertyPath: scaleByDepth
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1991804140232826339, guid: 6fa003f433d3dcc42894b773cd60a39f,
         type: 3}
@@ -1596,7 +1626,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
-  player: {fileID: 0}
+  player: {fileID: 299422426}
 --- !u!4 &3107167166282423546
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,12 +1783,17 @@ PrefabInstance:
     - target: {fileID: 5329970132012722158, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: NextLevel
-      value: Level1Scene2
+      value: Level7Scene1
       objectReference: {fileID: 0}
     - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: m_Name
       value: Interactable_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a69c4fbd8d901c44be1f1018d5e8426, type: 3}

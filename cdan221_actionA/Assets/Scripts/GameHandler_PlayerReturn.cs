@@ -24,7 +24,10 @@ public class GameHandler_PlayerReturn : MonoBehaviour {
 	public static Vector2 HallPos5 = new Vector2 (-18, -1); 
 	
 	private string h6 = "Level6Scene1";
-	public static Vector2 HallPos6 = new Vector2 (-18, -1);   
+	public static Vector2 HallPos6 = new Vector2 (-18, -1);
+
+	private string h7 = "Level7Scene1";
+	public static Vector2 HallPos7 = new Vector2 (-11, -1);
 	    
 	private string thisLevel;
     private Transform player;
@@ -65,6 +68,11 @@ public class GameHandler_PlayerReturn : MonoBehaviour {
 			Vector3 playerReturn = new Vector3(HallPos6.x, HallPos6.y, player.position.z);
 			player.position = playerReturn;
 		}
+		else if ((thisLevel == h7) && (HallPos7 != null)){
+			Debug.Log("Checking.");
+			Vector3 playerReturn = new Vector3(HallPos7.x, HallPos7.y, player.position.z);
+			player.position = playerReturn;
+		}
 		else if (lastRoom != null){
 			if (thisLevel == lastRoom){
 				player.position = lastRoomPosition;
@@ -83,6 +91,7 @@ public class GameHandler_PlayerReturn : MonoBehaviour {
 		else if (thisScene == h4){HallPos4 = player.position;} 
 		else if (thisScene == h5){HallPos5 = player.position;} 
 		else if (thisScene == h6){HallPos6 = player.position;} 
+		else if (thisScene == h7){HallPos7 = player.position;}
 		else {
 			lastRoom = thisScene;
 			//Vector2 playerPos = new Vector2(player.position.x, (player.position.y - 2))

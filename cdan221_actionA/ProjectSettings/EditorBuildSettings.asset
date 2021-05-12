@@ -114,6 +114,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level4/Level4Scene5.unity
     guid: a8b9cc01294392b48bf6e395d865c478
   - enabled: 1
+    path: Assets/Scenes/Level5/Level5Scene1.unity
+    guid: e805b6d4937407c428971f6a6559cd0f
+  - enabled: 1
+    path: Assets/Scenes/Level5/Level5Scene2.unity
+    guid: fa8fa3d3f0dfe0e479bc1314822f473f
+  - enabled: 1
+    path: Assets/Scenes/Level5/Level5Scene3.unity
+    guid: d4a4bc6fd7c9c454fbfb112826007ef4
+  - enabled: 1
+    path: Assets/Scenes/Level5/Level5Scene4.unity
+    guid: f8c4e8f757a191b42ba0df5eda50dbfd
+  - enabled: 1
     path: Assets/Scenes/Closeups and Puzzles/RadioScene.unity
     guid: f84eabed16eb98b4e904a4ae532e5515
   - enabled: 1
@@ -128,6 +140,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Closeups and Puzzles/TapeRecorderScene.unity
     guid: 4085895dbdebb1043bfc07ea60246115
+  - enabled: 1
+    path: Assets/Scenes/Level7Scene1.unity
+    guid: 6e9fcf65ba210f9498b31bbde9c6b301
+  - enabled: 1
+    path: Assets/Scenes/Level7Scene2.unity
+    guid: 757024fd6bf007a4f8f804606d365f27
   - enabled: 1
     path: Assets/Scenes/Returns/Return_Level4.unity
     guid: eb518c1179f0ad24e898ce4e6542807f
