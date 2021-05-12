@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LockKeypadClickControl1 : MonoBehaviour
+public class LockKeypadClickControlLevel3 : MonoBehaviour
 {
 	public string correctCode = "J97EKF";
 	public static string playerCode = "";
@@ -37,11 +37,11 @@ public class LockKeypadClickControl1 : MonoBehaviour
         }
 		
         Debug.Log(playerCode);
-		if (totalDigits == 4){
+		if (totalDigits == 6){
 			if (playerCode == correctCode){
 				Debug.Log("Correct!");
 				CanClick = false;
-				GameHandler.Level4Complete = true;
+				GameHandler.Level3Complete = true;
 				KeypadSoundRight.SetActive(true);
 				DownStairsSprite.SetActive(true);
 				StartCoroutine(RightDelay());
@@ -64,7 +64,6 @@ public class LockKeypadClickControl1 : MonoBehaviour
 			StartCoroutine(BeepDelay());
 		}
 	}
-	
 	
 	void OnMouseOver(){
 		GetComponent<SpriteRenderer>().color = new Color(1,1,1);
@@ -92,10 +91,10 @@ public class LockKeypadClickControl1 : MonoBehaviour
 	}
 	
 	public void GoBack(){
-		SceneManager.LoadScene (ReturnLevel);
+		SceneManager.LoadScene(ReturnLevel);
 	}
 	
 	public void SolvedKeypad(){
-		SceneManager.LoadScene (SolvedLevel);
+		SceneManager.LoadScene(SolvedLevel);
 	}
 }

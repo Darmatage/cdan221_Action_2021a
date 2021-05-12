@@ -147,8 +147,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Level7Scene2.unity
     guid: 757024fd6bf007a4f8f804606d365f27
   - enabled: 1
+    path: Assets/Scenes/Closeups and Puzzles/BasementPuzzle.unity
+    guid: a98de7339971f154684a21539568ebdc
+  - enabled: 1
     path: Assets/Scenes/Returns/Return_Level4.unity
     guid: eb518c1179f0ad24e898ce4e6542807f
+  - enabled: 1
+    path: Assets/Scenes/EndCutscene.unity
+    guid: 5e4e3738920e05d42bbe46528da57dee
+  - enabled: 1
+    path: Assets/Scenes/BeginningCutscene.unity
+    guid: 79ddaab8e3596cc429ae7eaf405ff685
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

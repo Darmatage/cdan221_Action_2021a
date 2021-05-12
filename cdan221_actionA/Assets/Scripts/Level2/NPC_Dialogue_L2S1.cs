@@ -16,7 +16,7 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 	   public GameObject IDDrMarkButton;
 	   public GameObject IDDrClaudiaButton;
 	   public GameObject FileFolderAaronButton;
-	   	public GameObject player; //MSG #1/4
+	   public GameObject player; //MSG #1/4
 
        void Start () {
             dialogueBox.SetActive(false);

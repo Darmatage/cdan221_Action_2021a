@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class BasementPuzzleClickControl : MonoBehaviour
 {
-	public static string correctCode = "J97EKF";
+	public static string correctCode = "654312";
 	public static string playerCode = "";
 	
 	public static int totalDigits = 0;
 	
-	public string ReturnLevel = "Level1Scene2";
-	public string SolvedLevel = "Level2Scene1";
+	public string ReturnLevel = "Level7Scene2";
+	public string EndCutsceneLevel = "EndCutscene";
 	public GameObject KeypadSoundWrong;
 	public GameObject KeypadSoundRight;
 	public GameObject NoteSound;
@@ -22,6 +23,8 @@ public class BasementPuzzleClickControl : MonoBehaviour
 	public GameObject Dot5;
 	public GameObject Dot6;
 	
+	public GameObject blackScreen;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -29,25 +32,29 @@ public class BasementPuzzleClickControl : MonoBehaviour
 		KeypadSoundWrong.SetActive(false);
 		KeypadSoundRight.SetActive(false);
 		NoteSound.SetActive(false);
+
+		blackScreen.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.E)){
+		if (Input.GetKeyDown(KeyCode.E) && totalDigits != 7){
 			GoBack();
         }
 		
-		if (Input.GetKeyDown(KeyCode.R)){
+		if (Input.GetKeyDown(KeyCode.R) && totalDigits != 7){
 			Reset();
         }
-		
+
         Debug.Log(playerCode);
 		if (totalDigits == 6){
 			if (playerCode == correctCode){
 				Debug.Log("Correct!");
+				blackScreen.SetActive(true);
 				KeypadSoundRight.SetActive(true);
-				StartCoroutine(RightDelay());
+				totalDigits = 7;
+				StartCoroutine(EndCutsceneDelay());
 				
 			} else {
 				playerCode = "";
@@ -125,18 +132,23 @@ public class BasementPuzzleClickControl : MonoBehaviour
     }
 	
 	void OnMouseUp(){
-		playerCode += gameObject.name;
-		totalDigits += 1;
-		NoteSound.SetActive(true);
-		StartCoroutine(NoteSoundDelay());
+		if (totalDigits != 7){
+			playerCode += gameObject.name;
+			totalDigits += 1;
+			NoteSound.SetActive(true);
+			StartCoroutine(NoteSoundDelay());
+		}
 	}
 	
 	void OnMouseOver(){
-		GetComponent<SpriteRenderer>().color = new Color(1,1,1);
+		if (totalDigits != 7){
+			GetComponent<SpriteRenderer>().color = new Color(1,1,1);
+		}
 	}
-	
 	void OnMouseExit(){
-		GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
+		if (totalDigits != 7){
+			GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
+		}
 	}
 	
 	public IEnumerator WrongDelay(){
@@ -144,23 +156,22 @@ public class BasementPuzzleClickControl : MonoBehaviour
 		KeypadSoundWrong.SetActive(false);
 	}
 	
-	public IEnumerator RightDelay(){
-        yield return new WaitForSeconds(0.5F);
-		KeypadSoundRight.SetActive(false);
-		SolvedKeypad();
-	}
-	
 	public IEnumerator NoteSoundDelay(){
         yield return new WaitForSeconds(0.1F);
 		NoteSound.SetActive(false);
+	}
+	
+	public IEnumerator EndCutsceneDelay(){
+        yield return new WaitForSeconds(1.5F);
+		SendToEndCutscene();
 	}
 	
 	public void GoBack(){
 		SceneManager.LoadScene (ReturnLevel);
 	}
 	
-	public void SolvedKeypad(){
-		SceneManager.LoadScene (SolvedLevel);
+	public void SendToEndCutscene(){
+		SceneManager.LoadScene (EndCutsceneLevel);
 	}
 	
 	public void Reset(){

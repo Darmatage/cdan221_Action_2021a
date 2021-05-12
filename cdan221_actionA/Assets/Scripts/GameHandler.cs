@@ -78,7 +78,7 @@ public class GameHandler : MonoBehaviour{
         //        scoreTemp.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("Level1Scene1");
+                SceneManager.LoadScene("BeginningCutscene");
         }
 
         public void RestartGame(){
