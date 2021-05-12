@@ -10,7 +10,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
-	public GameObject player; //MSG #1/4
+	   public GameObject player; //MSG #1/4
 
        void Start () {
               dialogueBox.SetActive(false);

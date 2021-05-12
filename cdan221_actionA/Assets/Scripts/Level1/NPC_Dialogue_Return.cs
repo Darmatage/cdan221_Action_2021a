@@ -11,12 +11,13 @@ public class NPC_Dialogue_Return : MonoBehaviour {
        public int primeInt = 0;
 	   public int startPoint = 1;
 	   public bool itemSensitive = false;
+	   public GameObject player; //MSG #1/4
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
               //anim.SetBool("Chat", false)
-			  
+			  player = GameObject.FindWithTag("Player"); //MSG #2/4
        }
 
        void Update () {
@@ -270,7 +271,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 93){
-            dialogueText.text = "And if something bad happens to you, then we'll never know eachother for real. And that sucks. Because I really would like to!";
+            dialogueText.text = "And if something bad happens to you, then we'll never know eachother for real. And that sucks.";
 			}
 			
 			if (primeInt == 94){
@@ -296,7 +297,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 101){
-            dialogueText.text = "You could be so close to finding Aaron, and she doesn't seem excited at all. It's like she doesn't even care!";
+            dialogueText.text = "You could be so close to getting us out of here, and she doesn't seem excited at all. It's like she doesn't even care!";
 			}
 			
 			if (primeInt == 102){
@@ -418,6 +419,33 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
+			
+			if (primeInt == 145){
+            dialogueText.text = "...Huh? You're asking *ME* for help??? You're stuck on a door code...?"; //Sav lvl 4
+			}
+			
+			if (primeInt == 146){
+            dialogueText.text = "Um... I'm not really that smart, and I haven't been here as long as the others... So I don't really know a lot, you know~?";
+			}
+			  	
+			if (primeInt == 147){
+            dialogueText.text = "";
+			}
+			
+			if (primeInt == 148){
+            dialogueText.text = "Is it wrong that I felt that way? I mean… I could have used even one person there for me. If even one single person hadn’t stepped away before I hit the ground… I… ";
+			}
+			
+			if (primeInt == 149){
+            dialogueText.text = "But, I understand now. She failed to protect Aaron, and.. so did I. It won’t happen again.";
+			}
+			
+			if (primeInt == 150){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
@@ -425,6 +453,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
                    playerInRange = true;
                    primeInt = 0;
 				   Debug.Log("Hit Space to talk");
+				   player.GetComponent<PlayerMoveAround>().MSG_show(); //MSG #3/4
                   }
              }
                         
@@ -434,6 +463,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
+				   player.GetComponent<PlayerMoveAround>().MSG_hide(); //MSG #4/4
              }
        }
 }
