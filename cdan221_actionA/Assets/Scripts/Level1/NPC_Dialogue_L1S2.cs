@@ -78,7 +78,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "I've been here the longest out of all of us, so feel free too... confide in me. Or something.";
+            dialogueText.text = "Anyway.. I've been here for a long while. The longest out of all of us...like, 8 months, I think. So feel free to confide in me. Or something.";
 			}
 			  
 			if (primeInt == 8){
@@ -92,7 +92,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 10){
-            dialogueText.text = "Surely there must be a way to get through.";
+            dialogueText.text = "You should get off this floor if you want to figure out what's going on. Surely there must be a way to get through.";
 			}
 			  
 			if (primeInt == 11){

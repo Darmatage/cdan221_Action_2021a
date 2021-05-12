@@ -57,18 +57,33 @@ public class TapeDialogue : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "Thanks for playing the demo!";
+			dialogueText.text = "Ba-da-daa-duuummm! Congratulations! You found my secret message!";
 		}
 		if (primeInt == 2){
-			dialogueText.text = "...What, did you think I was just going to spoil the ending before the game is even finished?";
+			dialogueText.text = "So, what did you think? I tried to leave behind as many clues as I could, but it’s hard. Sometimes you can't solve things through logic alone.";
 		}
 		if (primeInt == 3){
-			dialogueText.text = "I mean. The mysteries aren't all that complex. You could probably figure it out with the information everyone gave you already.";
+			dialogueText.text = "Whoever you are, if you’re hearing this it means you found me after Claudia hid me away. You probably came looking because you want to save everyone who's been trapped here.";
 		}
 		if (primeInt == 4){
-			dialogueText.text = "Still, I hope that you'll be interested enough to come back for more. See you then, Ema!";
+			dialogueText.text = "Well, the good news is this; you can break everyone out. It’s super easy.";
 		}
 		if (primeInt == 5){
+			dialogueText.text = "There’s a place in the basement that controls all the power in the building. It has a kill switch. Only Claudia knows the code. ";
+		}
+		if (primeInt == 6){
+			dialogueText.text = "Problem is...remember what I said about logic? I can tell you the what, and the where, but not the why or how.";
+		}
+		if (primeInt == 7){
+			dialogueText.text = "Everything Claudia does is motivated by her feelings, so it has to be something important. But the code... it doesn’t even have numbers. Or letters. I was completely stumped.";
+		}
+		if (primeInt == 8){
+			dialogueText.text = "It’s probably because I can’t understand her at all. What does she actually care about? I don’t know. I thought I did.";
+		}
+		if (primeInt == 9){
+			dialogueText.text = "Anyways. I think I’m out of time. Good luck, be safe, and take good care of them.";
+		}
+		if (primeInt == 10){
 			allowSpace = false;
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
