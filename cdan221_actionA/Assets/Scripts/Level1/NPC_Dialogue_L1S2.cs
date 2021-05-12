@@ -78,7 +78,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "Anyway.. I've been here for a long while. The longest out of all of us...like, 8 months, I think. So feel free to confide in me. Or something.";
+            dialogueText.text = "Anyway.. I've been here for a long while. The longest out of all of us...like, 8 months, I think. So feel free to confide in me if you ever need to. Or something.";
 			}
 			  
 			if (primeInt == 8){

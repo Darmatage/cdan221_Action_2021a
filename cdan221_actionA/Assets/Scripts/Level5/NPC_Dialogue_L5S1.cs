@@ -11,11 +11,13 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
     public int primeInt = 0;
 	public int startPoint = 1;
 	public GameObject player; //MSG #1/4
+	public GameObject MusicBox;
 
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
+			  MusicBox.SetActive(false);
               //anim.SetBool("Chat", false)
 			  player = GameObject.FindWithTag("Player"); //MSG #2/4
 			  
@@ -91,7 +93,7 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 9){
-            dialogueText.text = "There's a book in here...You run your fingers along the pages, indented by the hard press of a pen.";
+            dialogueText.text = "Huh? There's a book in one of the bags in here...You run your fingers along the pages, indented by the hard press of a pen.";
 			}
 			
 			if (primeInt == 10){
@@ -109,14 +111,17 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			
 			if (primeInt == 12){
             dialogueText.text = "It's a music box...";
+				if (playerInRange == true) {
+				MusicBox.SetActive(true);
+				}
 			}
 			
 			if (primeInt == 13){
-            dialogueText.text = "It plays a soft melody that could put a child to sleep. Or you to sleep, honestly.";
+            dialogueText.text = "It plays soft notes that could put a child to sleep. Or you to sleep, honestly.";
 			}
 			  
 			if (primeInt == 14){
-            dialogueText.text = "You listen to the nostalgic sound, entranced. The song seems unbefitting of the person keeping people prisoner here.";
+            dialogueText.text = "You listen to the simple, nostalgic melody a few times. The song seems unbefitting of the person keeping people prisoner here.";
 			}  
 			  
 			if (primeInt == 15){
@@ -127,6 +132,7 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			MusicBox.SetActive(false);
 			}
 			
 			if (primeInt == 25){
