@@ -405,22 +405,18 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 134){
-            dialogueText.text = "2019 was the year she started getting more patients… So, I guess it’s actually been 2 years that I’ve been here. ";
+            dialogueText.text = "2019 was the year she started getting more patients… So, I guess it’s actually been 2 years that I’ve been here.";
 			}
 			  	
 			if (primeInt == 135){
-            dialogueText.text = "Since the beginning, I already knew she wanted to protect us. Back when she talked to us, she even told me. And I believed her.";
+            dialogueText.text = "It was just two of us in the beginning, after all. Back then she showed up here pretty often, too. She cared for us diligently.";
 			}
 			
 			if (primeInt == 136){
-            dialogueText.text = "Is it wrong that I felt that way? I mean… I could have used even one person there for me. If even one single person hadn’t stepped away before I hit the ground… I… ";
+            dialogueText.text = "I guess you'd probably call it a gilded cage. But it felt like a home.";
 			}
-			
+
 			if (primeInt == 137){
-            dialogueText.text = "But, I understand now. She failed to protect Aaron, and.. so did I. It won’t happen again.";
-			}
-			
-			if (primeInt == 138){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

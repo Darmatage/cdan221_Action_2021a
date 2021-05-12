@@ -53,15 +53,15 @@ public class NPC_Dialogue_L1S4 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Hey, new kid. Already out of your room without a supervisor?";
+            dialogueText.text = "Hey, new girl. Already out of your room without a supervisor?";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "...Ema, huh? Well Ema, don't get too cocky just because you walked out an unlocked door. Let's see you get off the floor next.";
+            dialogueText.text = "...Ema, huh? Well Ema, don't get too cocky just because you walked out an unlocked door. Let's see you get off the floor next. Even I haven't cracked that stupid code..";
 			}
 			  
 			if (primeInt == 3){
-            dialogueText.text = "Speakin of, I’ve been wondering when they were gonna fill that room again. You’re lucky you can’t see the state of the place.";
+            dialogueText.text = "Speakin of your room, I’ve been wondering when they were gonna fill 3A again. You’re lucky you can’t see the state of the place.";
 			}
 
 			if (primeInt ==4){
