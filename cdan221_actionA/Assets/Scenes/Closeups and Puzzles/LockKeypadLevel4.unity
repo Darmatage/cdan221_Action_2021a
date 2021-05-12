@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -865,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -1895,7 +1895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCode: 7398
   ReturnLevel: Level4Scene1
-  SolvedLevel: Level6Scene1
+  SolvedLevel: Level5Scene1
   KeypadSoundWrong: {fileID: 521502017}
   KeypadSoundRight: {fileID: 638768573}
   KeypadSoundBeep: {fileID: 1487320282}

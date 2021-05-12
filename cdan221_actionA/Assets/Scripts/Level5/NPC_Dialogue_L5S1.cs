@@ -11,7 +11,9 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
     public int primeInt = 0;
 	public int startPoint = 1;
 	public GameObject player; //MSG #1/4
+	public bool itemSensitive = false;
 	public GameObject MusicBox;
+	public GameObject ClaudiasOfficeDoor;
 
 
        void Start () {
@@ -136,14 +138,18 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 25){
-            dialogueText.text = "The tv plays quietly.";
+            dialogueText.text = "The tv is playing quietly. You can hear it when you get close, though.";
 			}
 			
 			if (primeInt == 26){
-            dialogueText.text = "'If anybody knows the whereabouts of'";
+            dialogueText.text = "Happy sweet melodies play beneath the sound of static. It sounds like some sort of children's program.";
+			}
+			
+			if (primeInt == 27){
+            dialogueText.text = "'You have to go to bed now,' a woman's voice is saying. A child whines and protests. They want to go explore instead.";
 			}
 			  
-			if (primeInt == 27){
+			if (primeInt == 28){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -167,6 +173,19 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			
 			if (primeInt == 51){
             dialogueText.text = "Nobody probably ever has, because that would imply they came here willingly.";
+			}
+			  
+			if (primeInt == 52){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 51){
+            dialogueText.text = "This door can be unlocked with a key card...";
+				if ((itemSensitive == true)&&(GameHandler.itemIdDrClaudia == true)) {
+						ClaudiasOfficeDoor.SetActive(false);
+					}
 			}
 			  
 			if (primeInt == 52){
