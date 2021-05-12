@@ -216,6 +216,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			GameHandler.HasKey = true;
+			GameHandler.Level2Complete = true;
 			}
 		}
 
