@@ -13,13 +13,14 @@ public class NPC_Dialogue_L4S1 : MonoBehaviour {
 	   public int startPoint = 1;
 	   public string HideoutLevel = "RadioScene";
 	   private GameHandler_PlayerReturn gh_PlayerReturn;
+	   public GameObject player; //MSG #1/4
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
 			  gh_PlayerReturn = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerReturn>();
               //anim.SetBool("Chat", false)
-			  
+			  player = GameObject.FindWithTag("Player"); //MSG #2/4
        }
 
        void Update () {
@@ -132,6 +133,7 @@ public class NPC_Dialogue_L4S1 : MonoBehaviour {
                    playerInRange = true;
                    primeInt = 0;
 				   Debug.Log("Hit Space to talk");
+				   player.GetComponent<PlayerMoveAround>().MSG_show(); //MSG #3/4
                   }
        }  
        private void OnTriggerExit2D(Collider2D other){
@@ -140,6 +142,7 @@ public class NPC_Dialogue_L4S1 : MonoBehaviour {
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
+				   player.GetComponent<PlayerMoveAround>().MSG_hide(); //MSG #4/4
              }
        }
 	   public void GoToHideout(){

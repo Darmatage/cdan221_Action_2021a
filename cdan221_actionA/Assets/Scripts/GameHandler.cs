@@ -9,23 +9,23 @@ public class GameHandler : MonoBehaviour{
         public static int playerStat;
         //public GameObject textGameObject;
 		
-		public static int gameProgression = 1;
+		public static bool Level1Complete = false;
+		public static bool Level2Complete = false;
+		public static bool Level3Complete = false;
 
 		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
-		
-		public static bool KnowSav = false;
-		
 		public static bool BasementUnlock = false;
+		public static bool KnowSav = false;
 		
 		public static bool MedStudentGone = false;
 		
 		public static bool itemFileLani = false; 
+		public static bool itemFileSavanna = false; 
+		public static bool itemFileJack = false; 
 		public static bool itemFileAaron = false; 
 		public static bool itemIdDrClaudia = false; 
 		public static bool itemIdDrMark = false; 
 		public static bool itemCake = false; 
-		
-		public static bool HasJournal = false;
 		
 		public static bool SafeUnlock = false;
 		public static bool HasKey = false;
@@ -35,9 +35,6 @@ public class GameHandler : MonoBehaviour{
 		void Update(){
 			if (Input.GetKeyDown(KeyCode.R)){
 				CheckInventory();
-			}
-			if (Input.GetKeyDown(KeyCode.P)){
-				CheckProgression();
 			}
 		}
 		
@@ -53,6 +50,12 @@ public class GameHandler : MonoBehaviour{
 			if (itemFileLani == true){
                 Debug.Log("Lani Patient File \n");
 			}
+			if (itemFileSavanna == true){
+                Debug.Log("Sav Patient File \n");
+			}
+			if (itemFileJack == true){
+                Debug.Log("Jack Patient File \n");
+			}
 			if (itemFileAaron == true){
                 Debug.Log("Aaron Patient File \n");
 			}
@@ -66,33 +69,6 @@ public class GameHandler : MonoBehaviour{
                 Debug.Log("Cake\n");
 			}
         }
-		
-		public void CheckProgression(){
-			switch (gameProgression){
-				case 1:
-					Debug.Log("1");
-					break;
-				case 2:
-					Debug.Log("2");
-					break;
-				case 3:
-					Debug.Log("3");
-					break;
-				case 4:
-					Debug.Log("4");
-					break;
-				case 5:
-					Debug.Log("5");
-					break;
-				case 6:
-					Debug.Log("6");
-					break;
-				case 7:
-					Debug.Log("7");
-					break;
-			}
-		}
-
 
         //void UpdateScore () {
         //        Text scoreTemp = textGameObject.GetComponent<Text>();

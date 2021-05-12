@@ -257,6 +257,7 @@ MonoBehaviour:
   startPoint: 30
   TapeRecorderScene: TapeRecorderScene
   Level7Staircase: {fileID: 1056807258}
+  player: {fileID: 0}
 --- !u!61 &78827830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1507,6 +1508,7 @@ MonoBehaviour:
   startPoint: 20
   TapeRecorderScene: TapeRecorderScene
   Level7Staircase: {fileID: 1056807258}
+  player: {fileID: 0}
 --- !u!61 &1022445119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2096,6 +2098,7 @@ MonoBehaviour:
   startPoint: 50
   TapeRecorderScene: TapeRecorderScene
   Level7Staircase: {fileID: 1056807258}
+  player: {fileID: 0}
 --- !u!61 &1314082436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3277,6 +3280,7 @@ MonoBehaviour:
   startPoint: 1
   TapeRecorderScene: TapeRecorderScene
   Level7Staircase: {fileID: 1056807258}
+  player: {fileID: 0}
 --- !u!222 &3621896143611260325
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3583,6 +3587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Interactable_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a69c4fbd8d901c44be1f1018d5e8426, type: 3}
