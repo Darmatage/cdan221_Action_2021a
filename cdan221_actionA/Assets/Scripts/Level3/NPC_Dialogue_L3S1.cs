@@ -16,13 +16,17 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 	   public GameObject NPCMedStudent;
 	   public string MatchCard = "MatchCard";
 	   private GameHandler_PlayerReturn gh_PlayerReturn;
-	   public GameObject player; //MSG #1/4
+	   
+	public GameObject buttonCake;
+	public bool canPressSpace = true;
+	public GameObject player; //MSG #1/4
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
 			  gh_PlayerReturn = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerReturn>();
               //anim.SetBool("Chat", false)
+			  buttonCake.SetActive(false);
 			  player = GameObject.FindWithTag("Player"); //MSG #2/4
 			  
        }
@@ -30,10 +34,10 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
        void Update () {
 		   
 		   
-		    if ((canPickUpCake == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemCake = true;
-				Debug.Log("You Got Cake");
-			}
+		    // if ((canPickUpCake == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				// GameHandler.itemCake = true;
+				// Debug.Log("You Got Cake");
+			// }
 			
 			if (GameHandler.MedStudentGone == true) {
 				  NPCMedStudent.SetActive(false);
@@ -55,7 +59,7 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
             }
 			
 			
-			if (Input.GetButtonDown("Talk")){
+			if ((Input.GetButtonDown("Talk"))&&(canPressSpace == true)){
 				NPCdialogue();
 			}
 			
@@ -133,26 +137,49 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
+			
 			if (primeInt == 30){
-            dialogueText.text = "An icecream cake would probably be in the freezer. You get on your tiptoes and reach in there.";
+            dialogueText.text = "This is a fridge.";
 			}
 			
+			
 			if (primeInt == 31){
+				dialogueText.text = "An icecream cake would probably be in the freezer. You get on your tiptoes and reach in there.";
+				if (playerInRange == true){
+					if (GameHandler.itemCake == true){
+						primeInt = 36;
+					}
+				}
+			
+			}
+			
+			if (primeInt == 32){
             dialogueText.text = "Sure enough, there's a medium-sized cardboard box in there.";
 			}
 			  
-			if (primeInt == 32){
+			if (primeInt == 33){
             dialogueText.text = "It's probably definitely the cake. But you do make sure to get a taste of the frosting, juuust in case. Just in case!";
 			}
 			 
-			if (primeInt ==33){
-            dialogueText.text =  "(press e to take that cake with you now!)";
+			if (primeInt == 34){
+            dialogueText.text =  "(Click to take that cake with you now!)";
 				if (playerInRange == true){
 					canPickUpCake = true;
+					buttonCake.SetActive(true);
+					canPressSpace = false;
 				}
 			}
+			
+			if (primeInt == 35){
+				buttonCake.SetActive(false);
+				dialogueText.text =  "You got the Cake!";
+			}
 			 
-			if (primeInt == 34){
+			if (primeInt == 36){
+				dialogueText.text = "";
+			}
+			 
+			if (primeInt == 37){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 				if (playerInRange == true){
@@ -160,6 +187,8 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 				}
 			primeInt = 0;
 			}
+			
+			
 			
 			if (primeInt == 40){
             dialogueText.text = "It's a table. This place must be a kitchen or break room type of thing.";
@@ -276,4 +305,17 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
 			gh_PlayerReturn.UpdateLocation();
 			SceneManager.LoadScene(MatchCard);
 	}
+	
+
+	
+	public void Button_PickUpCake(){
+		buttonCake.SetActive(false);
+		NPCdialogue ();
+		canPressSpace = true;
+
+		GameHandler.itemCake = true;
+		Debug.Log("You Got Cake");
+	}
+	
+	
 }

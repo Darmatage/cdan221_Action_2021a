@@ -32,7 +32,7 @@ public class LockKeypadClickControl1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.E)){
+		if (Input.GetButtonDown("Enter")){
 			GoBack();
         }
 		

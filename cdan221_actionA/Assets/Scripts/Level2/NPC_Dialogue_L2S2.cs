@@ -4,33 +4,32 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class NPC_Dialogue_L2S2 : MonoBehaviour {
-       //public Animator anim;
-       public GameObject dialogueBox;
-       public Text dialogueText;
-       public bool playerInRange = false;
-       public int primeInt = 0;
-	   public int startPoint = 1;
+    //public Animator anim;
+    public GameObject dialogueBox;
+    public Text dialogueText;
+    public bool playerInRange = false;
+    public int primeInt = 0;
+	public int startPoint = 1;
 	   
-	   public bool canPickUpFileLani = false;
-	   public bool canPickUpFileJack = false;
-	   public bool canPickUpDrMarkID = false;
+	public bool canPickUpFileLani = false;
+	public bool canPickUpFileJack = false;
+	public bool canPickUpDrMarkID = false;
 	   
-	   public GameObject buttonFiles;
-	   public GameObject buttonID;
-	   public bool canPressSpace = true;
-
+	public GameObject buttonFiles;
+	public GameObject buttonID;
+	public bool canPressSpace = true;
 	public GameObject player; //MSG #1/4
 
-       void Start () {
-              dialogueBox.SetActive(false);
-			  dialogueText.gameObject.SetActive(false);
-              //anim.SetBool("Chat", false)
-			  buttonFiles.SetActive(false);
-			  buttonID.SetActive(false);
-			  player = GameObject.FindWithTag("Player"); //MSG #2/4
-       }
+    void Start () {
+        dialogueBox.SetActive(false);
+		dialogueText.gameObject.SetActive(false);
+        //anim.SetBool("Chat", false)
+		buttonFiles.SetActive(false);
+		buttonID.SetActive(false);
+		player = GameObject.FindWithTag("Player"); //MSG #2/4
+    }
 
-       void Update () {
+    void Update () {
 			
 		// if ((canPickUpFileLani == true)&& (Input.GetKeyDown(KeyCode.E))) {
 				// GameHandler.itemFileLani = true;
@@ -43,7 +42,7 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 				// Debug.Log("You Got Dr Mark's ID");
 		// }
 			
-			if (Input.GetButtonDown("Talk") && playerInRange){ //input manager talk = spacebar
+		if (Input.GetButtonDown("Talk") && playerInRange){ //input manager talk = spacebar
                 if (dialogueBox.activeInHierarchy){
                         //dialogueBox.SetActive(false);
                         //anim.SetBool("Chat", false);
@@ -53,15 +52,15 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
                         dialogueBox.SetActive(true);
                         //anim.SetBool("Chat", true);
                    } 
-            }
+        }
 			
-			if ((Input.GetButtonDown("Talk")) && (canPressSpace == true)){
+		if ((Input.GetButtonDown("Talk")) && (canPressSpace == true)){
 				NPCdialogue();
-			}
+		}
 			
-       }
+    }
 
-       public void NPCdialogue (){
+    public void NPCdialogue (){
 			if (primeInt == 0){
 				primeInt += startPoint;
 			} else {
@@ -218,19 +217,19 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 			GameHandler.HasKey = true;
 			GameHandler.Level2Complete = true;
 			}
-		}
+	}
 
-       private void OnTriggerEnter2D(Collider2D other){
-             if (other.gameObject.tag == "Player") {
+    private void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "Player") {
                    playerInRange = true;
                    primeInt = 0;
 				   Debug.Log("Hit Space to talk");
 				   player.GetComponent<PlayerMoveAround>().MSG_show(); //MSG #3/4
-                  }
-             }
+        }
+     }
                         
-       private void OnTriggerExit2D(Collider2D other){
-             if (other.gameObject.tag == "Player") {
+    private void OnTriggerExit2D(Collider2D other){
+        if (other.gameObject.tag == "Player") {
                    primeInt = 0;
 				   playerInRange = false;
 				   canPickUpFileLani = false;
@@ -239,8 +238,8 @@ public class NPC_Dialogue_L2S2 : MonoBehaviour {
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
 				   player.GetComponent<PlayerMoveAround>().MSG_hide(); //MSG #4/4
-             }
-       }
+        }
+    }
 	   
 	   
 	public void Button_PickUpFile(){

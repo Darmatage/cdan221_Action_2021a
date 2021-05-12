@@ -31,7 +31,7 @@ public class TapeDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && allowP){
+        if (Input.GetButtonDown("PlayTape") && allowP){
 			StartCoroutine(DialogueDelay());
 			TapeStartAudio.SetActive(true);
 			TapeLoopAudio.SetActive(true);

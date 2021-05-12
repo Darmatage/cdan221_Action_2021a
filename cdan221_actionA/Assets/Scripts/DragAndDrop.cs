@@ -17,7 +17,7 @@ public class DragAndDrop : MonoBehaviour {
               if (Input.GetMouseButtonUp (0)) {
                      selected = false;
               }
-			  if (Input.GetKeyDown(KeyCode.E)){
+			  if (Input.GetButtonDown("Enter")){
 					GoBack();
               }
        }

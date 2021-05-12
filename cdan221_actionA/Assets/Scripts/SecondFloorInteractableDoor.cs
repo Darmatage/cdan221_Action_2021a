@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SecondFloorInteractableDoor : MonoBehaviour {
 
-	   public string levelTwoReturnMap = "MainMenu";
-	   public string levelThreeReturnMap = "MainMenu";
-	   public string levelFourReturnMap = "MainMenu";
+	   public string levelTwoReturnMap = "Return_Level2";
+	   public string levelThreeReturnMap = "Return_Level3";
+	   public string levelFourReturnMap = "Return_Level4";
 	   private GameHandler_PlayerReturn gh_PlayerReturn;
        //public GameObject pulseVFX;
        //public AudioSource pulseSFX;
@@ -21,9 +21,9 @@ public class SecondFloorInteractableDoor : MonoBehaviour {
        }
 
        void Update(){
-              if ((canPressE == true) && (Input.GetKeyDown(KeyCode.E))){
+              if ((canPressE == true) && (Input.GetButtonDown("Enter"))){
                      //Put code here for getting a result, like revealing a message or secret door
-                     Debug.Log("You pressed E and get a thing!");
+                     //Debug.Log("You pressed E and get a thing!");
 					 EnterDoor();
               }
        }
@@ -58,7 +58,7 @@ public class SecondFloorInteractableDoor : MonoBehaviour {
 				SceneManager.LoadScene (levelThreeReturnMap);
 		   } else if (GameHandler.Level1Complete){
 				SceneManager.LoadScene (levelTwoReturnMap);
-		   }
+		   } else {SceneManager.LoadScene (levelTwoReturnMap);}
 	   }
 	   
 	   

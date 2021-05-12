@@ -19,7 +19,7 @@ public class InteractableDoor : MonoBehaviour {
        }
 
        void Update(){
-              if ((canPressE == true) && (Input.GetKeyDown(KeyCode.E))){
+              if ((canPressE == true) && (Input.GetButtonDown("Enter"))){
                      //Put code here for getting a result, like revealing a message or secret door
                      Debug.Log("You pressed E and get a thing!");
 					 EnterDoor();

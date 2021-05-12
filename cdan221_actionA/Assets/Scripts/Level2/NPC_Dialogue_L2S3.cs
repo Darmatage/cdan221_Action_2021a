@@ -14,24 +14,29 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
 	   public bool canPickUpFileAaron = false;
 	   public bool canPickUpDrClaudiaID = false;
 	   
-	   	public GameObject player; //MSG #1/4
+	public GameObject buttonFiles;
+	public GameObject buttonID;
+	public bool canPressSpace = true;
+	public GameObject player; //MSG #1/4
 
-       void Start () {
+    void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
               //anim.SetBool("Chat", false)
-			  player = GameObject.FindWithTag("Player"); //MSG #2/4
-       }
+		buttonFiles.SetActive(false);
+		buttonID.SetActive(false);
+		player = GameObject.FindWithTag("Player"); //MSG #2/4
+    }
 
        void Update () {
 			
-			if ((canPickUpFileAaron == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemFileAaron = true;
-				Debug.Log("You Got Aaron's File");
-			}else if ((canPickUpDrClaudiaID == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemIdDrClaudia = true;
-				Debug.Log("You Got Dr Claudia's ID");
-			}
+			// if ((canPickUpFileAaron == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				// GameHandler.itemFileAaron = true;
+				// Debug.Log("You Got Aaron's File");
+			// }else if ((canPickUpDrClaudiaID == true)&& (Input.GetKeyDown(KeyCode.E))) {
+				// GameHandler.itemIdDrClaudia = true;
+				// Debug.Log("You Got Dr Claudia's ID");
+			// }
 			
 			if (Input.GetButtonDown("Talk") && playerInRange){ //input manager talk = spacebar
                 if (dialogueBox.activeInHierarchy){
@@ -45,7 +50,7 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
                    } 
             }
 			
-			if (Input.GetButtonDown("Talk")){
+			if ((Input.GetButtonDown("Talk")) && (canPressSpace == true)){
 				NPCdialogue();
 			}
 			
@@ -63,17 +68,34 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
 			}
 
 			if (primeInt ==2){
-            dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
+				dialogueText.text =  "They each have a labeled tab and some papers inside. Wonder if there's some way you can figure out what's in them...";
+				if (playerInRange == true){
+					if (GameHandler.itemFileAaron == true){
+						primeInt = 5;
+					}
+				}
 			}
 			 
 			if (primeInt ==3){
-            dialogueText.text =  "(press e to pick up a file!)";
+            dialogueText.text =  "(Click to pick up a file!)";
 				if (playerInRange == true){
 					canPickUpFileAaron = true;
+					buttonFiles.SetActive(true);
+					canPressSpace = false;
 				}
 			}
 			
-			if (primeInt == 4){
+			if (primeInt ==4){
+				buttonFiles.SetActive(false);
+				dialogueText.text =  "You got a file!";
+			}
+			
+			if (primeInt == 5){
+				dialogueText.text =  "";
+			}
+			
+			
+			if (primeInt == 6){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 				if (playerInRange == true){
@@ -115,21 +137,43 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
 			}
 			
 			if (primeInt == 40){
-            dialogueText.text = "There are some hooks with things hanging on them in this closet. You feel some various jackets, bags, and a little plastic card on a lanyard.";
+             dialogueText.text = "This is a closet.";
 			}
 			
 			if (primeInt == 41){
+				dialogueText.text = "There are some hooks with things hanging on them. You feel some various jackets, bags, and a little plastic card on a lanyard.";
+				if (playerInRange == true){
+					if (GameHandler.itemIdDrClaudia == true){
+						primeInt = 45;
+					}
+				}
+			}
+			
+			if (primeInt == 42){
             dialogueText.text = "That could be handy if that's what you think it is..";
 			}
 			  
-			if (primeInt == 42){
-            dialogueText.text = "(press e to pick up the ID!)";
+			if (primeInt == 43){
+				dialogueText.text = "(Click to pick up the ID!)";
 				if (playerInRange == true){
 					canPickUpDrClaudiaID = true;
+					buttonID.SetActive(true);
+					canPressSpace = false;
 				}
 			}
 			  
-			if (primeInt == 43){
+			  
+			if (primeInt ==44){
+				buttonID.SetActive(false);
+				dialogueText.text =  "You got an ID!";
+			}
+			
+			if (primeInt ==45){
+				dialogueText.text =  "";
+			}
+			  
+			  
+			if (primeInt == 46){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 				if (playerInRange == true){
@@ -158,7 +202,7 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
                   }
              }
                         
-       private void OnTriggerExit2D(Collider2D other){
+    private void OnTriggerExit2D(Collider2D other){
              if (other.gameObject.tag == "Player") {
                    playerInRange = false;
 				   canPickUpFileAaron = false;
@@ -168,5 +212,26 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
                    //Debug.Log("Player left range");
 				   player.GetComponent<PlayerMoveAround>().MSG_hide(); //MSG #4/4
              }
-       }
+    }
+	   
+	   
+	 public void Button_PickUpFile(){
+		buttonFiles.SetActive(false);
+		NPCdialogue();
+		canPressSpace = true;
+		
+		GameHandler.itemFileAaron = true;
+		Debug.Log("You Got Aaron's File");
+	}
+
+
+	public void Button_PickUpID(){
+		buttonID.SetActive(false);
+		NPCdialogue ();
+		canPressSpace = true;
+
+		GameHandler.itemIdDrClaudia = true;
+		Debug.Log("You Got Dr Claudia's ID");
+	}  
+	      
 }

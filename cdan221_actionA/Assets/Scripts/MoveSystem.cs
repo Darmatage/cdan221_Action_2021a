@@ -37,7 +37,7 @@ public class MoveSystem : MonoBehaviour
             }
         }
 		
-		if (Input.GetKeyDown(KeyCode.E)){
+		if (Input.GetButtonDown("Enter")){
 		GoBack();
         }
     }

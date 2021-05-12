@@ -41,7 +41,7 @@ public class RadioSlider : MonoBehaviour
 	
 	void Update(){
 		
-		if (Input.GetKeyDown(KeyCode.E)){
+		if (Input.GetButtonDown("Enter")){
 			GoBack();
         }
 		

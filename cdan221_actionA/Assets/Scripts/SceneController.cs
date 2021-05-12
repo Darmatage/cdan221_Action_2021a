@@ -59,7 +59,7 @@ public class SceneController : MonoBehaviour
 	
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.E)){
+		if (Input.GetButtonDown("Enter")){
 			SendBackToRoom();
         }
 		
