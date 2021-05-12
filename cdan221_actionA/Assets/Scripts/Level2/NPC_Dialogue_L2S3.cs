@@ -12,7 +12,6 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
 	   public int startPoint = 1;
 	   
 	   public bool canPickUpFileAaron = false;
-	   public bool canPickUpFileSavanna = false;
 	   public bool canPickUpDrClaudiaID = false;
 	   
 	   	public GameObject player; //MSG #1/4
@@ -29,9 +28,6 @@ public class NPC_Dialogue_L2S3 : MonoBehaviour {
 			if ((canPickUpFileAaron == true)&& (Input.GetKeyDown(KeyCode.E))) {
 				GameHandler.itemFileAaron = true;
 				Debug.Log("You Got Aaron's File");
-			}else if ((canPickUpFileSavanna == true)&& (Input.GetKeyDown(KeyCode.E))) {
-				GameHandler.itemFileSavanna = true;
-				Debug.Log("You Got Savanna's File");
 			}else if ((canPickUpDrClaudiaID == true)&& (Input.GetKeyDown(KeyCode.E))) {
 				GameHandler.itemIdDrClaudia = true;
 				Debug.Log("You Got Dr Claudia's ID");

@@ -12,10 +12,12 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
        public int primeInt = 0;
 	   public int startPoint = 1;
 	   public string TapeRecorderScene = "TapeRecorderScene";
+	   public GameObject Level7Staircase;
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
+			  Level7Staircase.SetActive(false);
               //anim.SetBool("Chat", false)
 			  
        }
@@ -42,6 +44,9 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 				NPCdialogue();
 			}
 			
+			if (GameHandler.BasementUnlock == true) {
+				  Level7Staircase.SetActive(true);
+			  }
        }
 
        public void NPCdialogue (){
@@ -70,7 +75,7 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 21){
-            dialogueText.text = "Haha.";
+            dialogueText.text = "Haha!";
 			}
 			  
 			if (primeInt == 22){
@@ -89,6 +94,9 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			
 			if (primeInt == 32){
             dialogueText.text = "And its back has a noticeable scar of crude sewing, strings every which way. Rather than a normal seam, it's as if someone had cut it open.";
+				if (playerInRange == true){
+					GameHandler.BasementUnlock = true;
+				}
 			}
 			
 			if (primeInt == 33){
@@ -110,7 +118,7 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 51){
-            dialogueText.text = "Of course, you know that this boy *is* beloved. But friends and family don't visit patients at this hospital. And his friends upstairs think he's dead.";
+            dialogueText.text = "But friends and family don't visit patients at this hospital. His friends upstairs think he's dead.";
 			}
 			
 			if (primeInt == 52){

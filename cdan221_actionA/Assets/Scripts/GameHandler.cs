@@ -15,15 +15,17 @@ public class GameHandler : MonoBehaviour{
 		
 		public static bool KnowSav = false;
 		
+		public static bool BasementUnlock = false;
+		
 		public static bool MedStudentGone = false;
 		
 		public static bool itemFileLani = false; 
-		public static bool itemFileSavanna = false; 
-		public static bool itemFileJack = false; 
 		public static bool itemFileAaron = false; 
 		public static bool itemIdDrClaudia = false; 
 		public static bool itemIdDrMark = false; 
 		public static bool itemCake = false; 
+		
+		public static bool HasJournal = false;
 		
 		public static bool SafeUnlock = false;
 		public static bool HasKey = false;
@@ -50,12 +52,6 @@ public class GameHandler : MonoBehaviour{
 			 Debug.Log("INVENTORY: \n");
 			if (itemFileLani == true){
                 Debug.Log("Lani Patient File \n");
-			}
-			if (itemFileSavanna == true){
-                Debug.Log("Sav Patient File \n");
-			}
-			if (itemFileJack == true){
-                Debug.Log("Jack Patient File \n");
 			}
 			if (itemFileAaron == true){
                 Debug.Log("Aaron Patient File \n");
