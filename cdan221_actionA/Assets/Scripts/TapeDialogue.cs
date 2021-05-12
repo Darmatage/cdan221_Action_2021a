@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TapeDialogue : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class TapeDialogue : MonoBehaviour
 	public GameObject TapeStartAudio;
 	public GameObject TapeLoopAudio;
 	public GameObject TapeEndAudio;
+	public string ReturnLevel = "Level6Scene7";
 	
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,10 @@ public class TapeDialogue : MonoBehaviour
 		
 		if (Input.GetButtonDown("Talk") && allowSpace){
 			NPCDialogue();
+		}
+		
+		if (Input.GetButtonDown("Enter")){
+			GoBack();
 		}
     }
 	
@@ -93,5 +99,8 @@ public class TapeDialogue : MonoBehaviour
 			allowP = true;
 			primeInt = 0;
 		}
+	}
+	public void GoBack(){
+	SceneManager.LoadScene (ReturnLevel);
 	}
 }

@@ -60,10 +60,6 @@ public class SecondFloorInteractableDoor : MonoBehaviour {
 				SceneManager.LoadScene (levelTwoReturnMap);
 		   } else {SceneManager.LoadScene (levelTwoReturnMap);}
 	   }
-	   
-	   
-	   
-	   
 
        IEnumerator DestroyVFX(GameObject vfx){
               yield return new WaitForSeconds(0.5f);

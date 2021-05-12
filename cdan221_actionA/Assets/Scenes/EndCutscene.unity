@@ -153,7 +153,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 350321669052101848}
   dialogueText: {fileID: 350321668633982203}
   primeInt: 0
-  EndLevel: Level2Scene1
+  EndLevel: EndingScene
 --- !u!4 &1490177230
 Transform:
   m_ObjectHideFlags: 0
