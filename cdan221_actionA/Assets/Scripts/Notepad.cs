@@ -14,8 +14,16 @@ public class Notepad : MonoBehaviour {
         }
 
         public void UpdateNotes(){
-                myNotes = myNotes + " " + inputField.GetComponentInChildren<Text>().text;
+                if (inputField.GetComponentInChildren<Text>().text != ""){
+					myNotes = myNotes + " " + inputField.GetComponentInChildren<Text>().text;
+				}
                 textDisplay.GetComponent<Text>().text = myNotes;
                 inputField.GetComponent<InputField>().text = "";
         }
+		
+		public void ClearNotes(){
+			myNotes = "";
+			UpdateNotes();
+		} 
+		
 }
