@@ -3,20 +3,22 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPC_Dialogue_L1S2 : MonoBehaviour {
-       //public Animator anim;
-       public GameObject dialogueBox;
-       public Text dialogueText;
-       public bool playerInRange = false;
-       public int primeInt = 0;
-	   public int startPoint = 1;
-	   public GameObject player; //MSG #1/4
+public class NPC_Dialogue_L5S1 : MonoBehaviour {
+    //public Animator anim;
+    public GameObject dialogueBox;
+    public Text dialogueText;
+    public bool playerInRange = false;
+    public int primeInt = 0;
+	public int startPoint = 1;
+	public GameObject player; //MSG #1/4
+
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
               //anim.SetBool("Chat", false)
 			  player = GameObject.FindWithTag("Player"); //MSG #2/4
+			  
        }
 
        void Update () {
@@ -51,34 +53,35 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Oh, hey. You came out of 3A, right? I’m Lani. The annoying-voice girl in 3B is Savanna, and in 3C, that’s Jack.";
-				if (playerInRange == true){
-				GameHandler.KnowSav = true;
-				}
+            dialogueText.text = "Oh, goodness. This floor sounds busy.";
 			}
-			
-			if (primeInt == 2){
-            dialogueText.text = "You’ve got some guts breaking the matron’s rules so quickly. Not that it's hard, but be careful with that in the future.";
-			}
-			
-			if (primeInt ==3){
-            dialogueText.text = "So? What are you in for?";
+
+			if (primeInt ==2){
+            dialogueText.text = "Better be careful and listen closely.";
 			}
 			  
+			if (primeInt == 3){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
 			if (primeInt == 4){
-            dialogueText.text = "(.....)";
+            dialogueText.text = "There are some drawers on this bedside table. Stick your hand in there, girl!";
 			}
 
 			if (primeInt ==5){
-            dialogueText.text = "I'm just kidding. You don’t have to tell me. I know some patients don’t like to talk about their incidents.";
+            dialogueText.text = "...Nah. Feels like they're all empty.";
 			}
-			
+			  
 			if (primeInt == 6){
-            dialogueText.text = "I personally don’t mind. It’s kind of funny, actually, but that’s just me. I imagine most people don’t like to hear you joke about being paralyzed.";
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
 			}
 			
 			if (primeInt == 7){
-            dialogueText.text = "Anyway.. I've been here for a long while. The longest out of all of us...like, 8 months, I think. So feel free to confide in me. Or something.";
+            dialogueText.text = "I'd rather not know what she has on here, actually.";
 			}
 			  
 			if (primeInt == 8){
@@ -88,11 +91,11 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			}
 			
 			if (primeInt == 9){
-            dialogueText.text = "It's locked. Feels like there's a keypad on this door...";
+            dialogueText.text = "";
 			}
 			
 			if (primeInt == 10){
-            dialogueText.text = "You should get off this floor if you want to figure out what's going on. Surely there must be a way to get through.";
+            dialogueText.text = "But you can't.";
 			}
 			  
 			if (primeInt == 11){
@@ -101,31 +104,29 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 20){
-            dialogueText.text = "This must be Lani's room...";
+			if (primeInt == 12){
+            dialogueText.text = "This is a vent. It's kind of dusty and gross.";
+			}
+			
+			if (primeInt == 13){
+            dialogueText.text = "Even if you were able to get the panel off, you're not sure if you would want to crawl in there.";
 			}
 			  
-			if (primeInt == 21){
+			if (primeInt == 14){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
-			if (primeInt == 30){
-            dialogueText.text = "This is Jack's room. There's no reason to go in right now.";
-			}
-			  
-			if (primeInt == 31){
-            dialogueBox.SetActive(false);
-			dialogueText.gameObject.SetActive(false);
-			primeInt = 0;
+			if (primeInt == 15){
+            dialogueText.text = "Some sort of remote? It feels like some of the buttons are damaged...";
 			}
 			
-			if (primeInt == 40){
-            dialogueText.text = "This is Savanna's room. There's no reason to go in right now.";
+			if (primeInt == 16){
+            dialogueText.text = "(press e to investigate! drag your hand around with the mouse to unveil what you're feeling.)";
 			}
 			  
-			if (primeInt == 41){
+			if (primeInt == 17){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -137,7 +138,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
                    playerInRange = true;
                    primeInt = 0;
 				   Debug.Log("Hit Space to talk");
-				   player.GetComponent<PlayerMoveAround>().MSG_show();
+				   player.GetComponent<PlayerMoveAround>().MSG_show(); //MSG #3/4
                   }
              }
                         
@@ -147,7 +148,7 @@ public class NPC_Dialogue_L1S2 : MonoBehaviour {
                    dialogueBox.SetActive(false);
 				   dialogueText.gameObject.SetActive(false);
                    //Debug.Log("Player left range");
-				   player.GetComponent<PlayerMoveAround>().MSG_hide();
+				   player.GetComponent<PlayerMoveAround>().MSG_hide(); //MSG #4/4
              }
        }
 }

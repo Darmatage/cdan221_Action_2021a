@@ -104,7 +104,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			  
 			if (primeInt == 31){
-            dialogueText.text = "Man, I can't believe you got yourself! Listen, if you hear doctors, just run away from there! Got it?!";
+            dialogueText.text = "Man, I can't believe you got yourself caught! Listen, if you hear doctors, just run away from there! Got it?!";
 			}
 			  
 			if (primeInt == 32){
@@ -229,7 +229,10 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			
 			
 			if (primeInt == 80){
-            dialogueText.text = " It's Ema! My new 3A bestie, hehehe! How has your adventure been going?"; //Sav Level 2
+            dialogueText.text = " It's Ema! My new 3A bestie, hehehe! How has your adventure been going?"; //Sav Level 3
+				if ((itemSensitive == true)&&(GameHandler.itemCake == true)) {
+						primeInt = 145;
+					}
 			}
 			
 			if (primeInt == 81){
@@ -271,7 +274,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 93){
-            dialogueText.text = "And if something bad happens to you, then we'll never know eachother for real. And that sucks.";
+            dialogueText.text = "And if something bad happens to you, then we'll never know eachother for real...";
 			}
 			
 			if (primeInt == 94){
@@ -327,23 +330,23 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 111){
-            dialogueText.text = "You could be so close to finding Aaron, and she doesn't seem excited at all. It's like she doesn't even care!";
+            dialogueText.text = "...Huh? You're asking *ME* for help, since everyone else is acting crazy??? You're stuck on a door code...";
 			}
 			
 			if (primeInt == 112){
-            dialogueText.text = "And what about us, too?! Don't we deserve to get out of here? That greedy, egotistical matron is keeping us prisoner, and for what?";
+            dialogueText.text = "Um... I'm not really that smart, and I haven't been here as long as the others... So I don't really know a lot, you know~?";
 			}
 					
 			if (primeInt == 113){
-            dialogueText.text = "Damn it... Damn it, damn it. I know Lani cares about us. But keeping somebody trapped isn't protecting them.";
+            dialogueText.text = "Ohh, I could tell you all about my friends though! I'm with them every day after all. Go on, quiz me!";
 			}
 			
 			if (primeInt == 114){
-            dialogueText.text = "...Hey, Ema. You said your memory is really good, yeah? Mine is really bad. Sometimes the others write things down for me.";
+            dialogueText.text = "Jack's birthday is September 9th, 2002! Lani's is February 15th, 2000! Aaron's is... um... Oh, it was in 1998!";
 			}
 			  	
 			if (primeInt == 115){
-            dialogueText.text = "I always thought it was funny, that somebody could help me in the future with a problem I don't even know I'm going to have yet.";
+            dialogueText.text = "What, you were born the same year? That's so crazy! You're really too alike!";
 			}
 			
 			if (primeInt == 116){
@@ -354,6 +357,9 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			
 			if (primeInt == 120){
             dialogueText.text = "Ema. You said you found Claudia’s office..?"; //Lani Level 5
+				if (GameHandler.HasJournal == true) {
+						primeInt = 130;
+					}
 			}
 			
 			if (primeInt == 121){
@@ -383,11 +389,11 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 130){
-            dialogueText.text = "'September 13th, 2019"; //Lani Level 5 if you found the journal
+            dialogueText.text = "You want me to read you a page from this journal? I could do that... This one is from September 13th. 2019."; //Lani Level 5 if you found the journal
 			}
 			
 			if (primeInt == 131){
-            dialogueText.text = "It no longer seems possible to keep this facility running. Some of my colleagues have been urging me to give up and shut the hospital down. Ridiculous!";
+            dialogueText.text = "'It no longer seems possible to keep this facility running. Some of my colleagues have been urging me to give up and shut the hospital down. Ridiculous!";
 			}
 			
 			if (primeInt == 132){
@@ -421,26 +427,85 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 145){
-            dialogueText.text = "...Huh? You're asking *ME* for help??? You're stuck on a door code...?"; //Sav lvl 4
+            dialogueText.text = "No... Freaking.... WAY......!!!"; //Sav Cake
 			}
 			
 			if (primeInt == 146){
-            dialogueText.text = "Um... I'm not really that smart, and I haven't been here as long as the others... So I don't really know a lot, you know~?";
+            dialogueText.text = "YOU GOT THE CAKE!? Oh my god, you really snuck a piece up here for me?!";
 			}
 			  	
 			if (primeInt == 147){
-            dialogueText.text = "";
+            dialogueText.text = "Ohhh, Emaaaaa!! I've missed the taste of forbidden cake! I'm super glad you came here!";
 			}
 			
 			if (primeInt == 148){
-            dialogueText.text = "Is it wrong that I felt that way? I mean… I could have used even one person there for me. If even one single person hadn’t stepped away before I hit the ground… I… ";
+            dialogueText.text = "Well, like... I'm not glad that you got your eyes ripped out or whatever. But I'm soo glad I met you!";
 			}
 			
 			if (primeInt == 149){
-            dialogueText.text = "But, I understand now. She failed to protect Aaron, and.. so did I. It won’t happen again.";
+            dialogueText.text = "Next time we can share with everybody else too, and bring smiles to their faces again!";
 			}
 			
 			if (primeInt == 150){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 160){
+            dialogueText.text = "Doc Claudia’s office? Oh, all I know about it is that she has a key lock on it!"; //Sav Level 5
+			if (GameHandler.HasJournal == true) {
+						primeInt = 170;
+					}
+			}
+			
+			if (primeInt == 161){
+            dialogueText.text = "Aaron had stolen her ID before and gotten in. I dunno where he ever hid it afterwards.";
+			}
+			  	
+			if (primeInt == 162){
+            dialogueText.text = "All I know is that when he came back, he seemed really sad.. I had only just met him at the time, and I was really sad too, you know?";
+			}
+			
+			if (primeInt == 163){
+            dialogueText.text = "My arm hurt really bad. I was so confused, and frustrated, and really scared. I was crying a whole bunch and probably looked really ugly.";
+			}
+			
+			if (primeInt == 164){
+            dialogueText.text = "I was like, I want my mommyyy! Aaron said, they won’t bring your mom to you, I’m sorry. Then we cried together for a really long time.";
+			}
+			
+			if (primeInt == 165){
+            dialogueText.text = "It felt really nice for some reason… but that was forever ago! I hate crying. I’m never gonna cry again!";
+			}
+			
+			if (primeInt == 166){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 170){
+            dialogueText.text = "Ooh, you have some gossip about the Doc? I can read it for you!";
+			}
+			  	
+			if (primeInt == 171){
+            dialogueText.text = "";
+			}
+			
+			if (primeInt == 172){
+            dialogueText.text = "My arm hurt really bad. I was so confused, and frustrated, and really scared. I was crying a whole bunch and probably looked really ugly.";
+			}
+			
+			if (primeInt == 173){
+            dialogueText.text = "I was like, I want my mommyyy! Aaron said, they won’t bring your mom to you, I’m sorry. Then we cried together for a really long time.";
+			}
+			
+			if (primeInt == 174){
+            dialogueText.text = "It felt really nice for some reason… but that was forever ago! I hate crying. I’m never gonna cry again!";
+			}
+			
+			if (primeInt == 175){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

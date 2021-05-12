@@ -27,6 +27,7 @@ public class GameHandler : MonoBehaviour{
 		public static bool itemIdDrMark = false; 
 		public static bool itemCake = false; 
 		
+		public static bool HasJournal = false; 
 		public static bool SafeUnlock = false;
 		public static bool HasKey = false;
 		
