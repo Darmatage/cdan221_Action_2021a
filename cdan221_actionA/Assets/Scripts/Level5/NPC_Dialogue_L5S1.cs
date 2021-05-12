@@ -91,11 +91,14 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 9){
-            dialogueText.text = "";
+            dialogueText.text = "There's a book in here...You run your fingers along the pages, indented by the hard press of a pen.";
 			}
 			
 			if (primeInt == 10){
-            dialogueText.text = "But you can't.";
+            dialogueText.text = "You might need somebody else to read this to you... Maybe another patient would be willing to help.";
+				if (playerInRange == true) {
+					GameHandler.HasJournal = true;
+				}
 			}
 			  
 			if (primeInt == 11){
@@ -105,28 +108,62 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 12){
-            dialogueText.text = "This is a vent. It's kind of dusty and gross.";
+            dialogueText.text = "It's a music box...";
 			}
 			
 			if (primeInt == 13){
-            dialogueText.text = "Even if you were able to get the panel off, you're not sure if you would want to crawl in there.";
+            dialogueText.text = "It plays a soft melody that could put a child to sleep. Or you to sleep, honestly.";
 			}
 			  
 			if (primeInt == 14){
+            dialogueText.text = "You listen to the nostalgic sound, entranced. The song seems unbefitting of the person keeping people prisoner here.";
+			}  
+			  
+			if (primeInt == 15){
+            dialogueText.text = "...Or does it? How should you know. You haven't met her.";
+			}  
+			  
+			if (primeInt == 16){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
-			if (primeInt == 15){
-            dialogueText.text = "Some sort of remote? It feels like some of the buttons are damaged...";
+			if (primeInt == 25){
+            dialogueText.text = "The tv plays quietly.";
 			}
 			
-			if (primeInt == 16){
-            dialogueText.text = "(press e to investigate! drag your hand around with the mouse to unveil what you're feeling.)";
+			if (primeInt == 26){
+            dialogueText.text = "'If anybody knows the whereabouts of'";
 			}
 			  
-			if (primeInt == 17){
+			if (primeInt == 27){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			if (primeInt == 40){
+            dialogueText.text = "Hell yeah! Mints!";
+			}
+			
+			if (primeInt == 41){
+            dialogueText.text = "It's not a waiting room without mints.";
+			}
+			  
+			if (primeInt == 42){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			if (primeInt == 50){
+            dialogueText.text = "These chairs literally feel like nobody has ever sat in them.";
+			}
+			
+			if (primeInt == 51){
+            dialogueText.text = "Nobody probably ever has, because that would imply they came here willingly.";
+			}
+			  
+			if (primeInt == 52){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
