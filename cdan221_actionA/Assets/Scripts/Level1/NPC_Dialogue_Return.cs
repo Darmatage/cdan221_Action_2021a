@@ -486,26 +486,74 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 170){
-            dialogueText.text = "Ooh, you have some gossip about the Doc? I can read it for you!";
+            dialogueText.text = "Ooh, you have some gossip about the Doc? I can read it for you!"; //sav with the journal
 			}
 			  	
 			if (primeInt == 171){
-            dialogueText.text = "";
+            dialogueText.text = "'March 9th, 2021. My staff are beginning to become incompetent.";
 			}
 			
 			if (primeInt == 172){
-            dialogueText.text = "My arm hurt really bad. I was so confused, and frustrated, and really scared. I was crying a whole bunch and probably looked really ugly.";
+            dialogueText.text = "Why is it that the only ones who stick by me are such amateurs, when my colleagues used to be the greatest scientific minds in the country?!";
 			}
 			
 			if (primeInt == 173){
-            dialogueText.text = "I was like, I want my mommyyy! Aaron said, they won’t bring your mom to you, I’m sorry. Then we cried together for a really long time.";
+            dialogueText.text = "These morons completely misunderstand our mission! They’re greedy, lazy, selfish fools.";
 			}
 			
 			if (primeInt == 174){
-            dialogueText.text = "It felt really nice for some reason… but that was forever ago! I hate crying. I’m never gonna cry again!";
+            dialogueText.text = "But who cares. I don’t need them. I’ll do what I need to do on the first floor, and they can do whatever they want with the rest! ";
 			}
 			
 			if (primeInt == 175){
+            dialogueText.text = "My poor Aaron…I’m so sorry. Wake up soon, and we can be a happy family again. I want to play you that song you love so much...'";
+			}
+			
+			if (primeInt == 176){
+            dialogueText.text = "I don’t get it… What is she doing on the nth floor? And, what’s this about Aaron?!";
+			}
+			
+			if (primeInt == 177){
+            dialogueText.text = "She’s talking like she really likes him… but Aaron never had anything good to say about Doc Claudia at all.";
+			}
+			
+			if (primeInt == 178){
+            dialogueText.text = "Ahhh, I don’t get it at all! This is too confusing for me! Buuut, I think I understand how the Doc feels... I want us all to be a happy family too!";
+			}
+			
+			if (primeInt == 179){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			if (primeInt == 185){
+            dialogueText.text = "Doc Claudia’s office? Oh, all I know about it is that she has a key lock on it!"; //Jack Level 5
+			if (GameHandler.HasJournal == true) {
+						primeInt = 200;
+					}
+			}
+			
+			if (primeInt == 186){
+            dialogueText.text = "Aaron had stolen her ID before and gotten in. I dunno where he ever hid it afterwards.";
+			}
+			  	
+			if (primeInt == 187){
+            dialogueText.text = "All I know is that when he came back, he seemed really sad.. I had only just met him at the time, and I was really sad too, you know?";
+			}
+			
+			if (primeInt == 188){
+            dialogueText.text = "My arm hurt really bad. I was so confused, and frustrated, and really scared. I was crying a whole bunch and probably looked really ugly.";
+			}
+			
+			if (primeInt == 189){
+            dialogueText.text = "I was like, I want my mommyyy! Aaron said, they won’t bring your mom to you, I’m sorry. Then we cried together for a really long time.";
+			}
+			
+			if (primeInt == 190){
+            dialogueText.text = "It felt really nice for some reason… but that was forever ago! I hate crying. I’m never gonna cry again!";
+			}
+			
+			if (primeInt == 191){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
