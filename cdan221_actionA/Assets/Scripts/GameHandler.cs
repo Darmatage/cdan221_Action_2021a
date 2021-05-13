@@ -13,7 +13,6 @@ public class GameHandler : MonoBehaviour{
 		public static bool Level2Complete = false;
 		public static bool Level3Complete = false;
 		public static bool Level4Complete = false;
-		public static bool Level5Complete = false;
 
 		public static bool stairCaseUnlocked = false; //use this in other scenes: GameHandler.stairCaseUnlocked = true;
 		public static bool BasementUnlock = false;
