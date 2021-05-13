@@ -25,7 +25,7 @@ public class GameHandler : MonoBehaviour{
 		public static bool itemFileSavanna = false; 
 		public static bool itemFileJack = false; 
 		public static bool itemFileAaron = false; 
-		public static bool itemIdDrClaudia = false; 
+		public static bool itemIdDrClaudia = true; 
 		public static bool itemIdDrMark = false; 
 		public static bool itemCake = false; 
 		

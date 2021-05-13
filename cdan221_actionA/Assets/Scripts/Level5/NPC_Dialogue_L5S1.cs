@@ -21,6 +21,7 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			  dialogueText.gameObject.SetActive(false);
 			  MusicBox.SetActive(false);
 			  XrayRoom.SetActive(false);
+			  ClaudiasOfficeDoor.SetActive(true);
               //anim.SetBool("Chat", false)
 			  player = GameObject.FindWithTag("Player"); //MSG #2/4
 			  
@@ -182,14 +183,14 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			primeInt = 0;
 			}
 			
-			if (primeInt == 51){
+			if (primeInt == 53){
             dialogueText.text = "This door can be unlocked with a key card...";
 				if ((itemSensitive == true)&&(GameHandler.itemIdDrClaudia == true)) {
 						ClaudiasOfficeDoor.SetActive(false);
 					}
 			}
 			  
-			if (primeInt == 52){
+			if (primeInt == 54){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
@@ -213,6 +214,26 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			if (playerInRange == true){
 					GameHandler.RingofKeys = true;
 				}
+			}
+			
+			if (primeInt == 66){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 70){
+            dialogueText.text = "The TV is playing softly. Sounds like a clip from a news channel or something? You think you can make out a name...";
+			}
+			
+			if (primeInt == 71){
+            dialogueText.text = "J KEEFE";
+			}
+			
+			if (primeInt == 72){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
 			}
 		}
 
