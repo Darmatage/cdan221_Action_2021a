@@ -2618,6 +2618,7 @@ MonoBehaviour:
   primeInt: 0
   startPoint: 60
   itemSensitive: 1
+  player: {fileID: 0}
 --- !u!61 &1650405848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3197,7 +3198,8 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 80
-  itemSensitive: 0
+  itemSensitive: 1
+  player: {fileID: 0}
 --- !u!61 &2005708962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3952,6 +3954,7 @@ MonoBehaviour:
   primeInt: 0
   startPoint: 40
   itemSensitive: 1
+  player: {fileID: 0}
 --- !u!4 &7884172622343590896
 Transform:
   m_ObjectHideFlags: 0

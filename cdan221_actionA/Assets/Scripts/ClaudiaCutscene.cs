@@ -33,21 +33,33 @@ public class ClaudiaCutscene : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "Claudia cutscene test.";
+			dialogueText.text = "What are you doing here? Ema.";
 		}
 		if (primeInt == 2){
-			dialogueText.text = "Followed by the sounds of hurried footsteps as patients run for the newly unlocked exits.";
+			dialogueText.text = "You know you’re unwell. It’s unsafe for you to be so far from your room. Return at once, and we can forget all about this.";
 		}
 		if (primeInt == 3){
-			dialogueText.text = "You make your way up to the ground floor and can feel a light breeze on your face.";
+			dialogueText.text = "...No. That’s impossible for you, isn’t it? With that memory of yours.";
 		}
 		if (primeInt == 4){
-			dialogueText.text = "The front door has already been thrown open.";
+			dialogueText.text = "So, what did they say about me? That I’m a mad scientist? A cold-hearted prison warden? Well, let me tell you the truth: ";
 		}
 		if (primeInt == 5){
-			dialogueText.text = "You can hear the familiar voices of your friends grow louder as you walk through the door.";
+			dialogueText.text = "I’m a doctor, and I’m a mother. That’s all there is to it.";
 		}
 		if (primeInt == 6){
+			dialogueText.text = "When a mother sees her child in pain… what else is she supposed to do but protect them? Even if it means going against her child’s wishes.";
+		}
+		if (primeInt == 7){
+			dialogueText.text = "He was unhappy here, yes. He was always unhappy. And the more I tried to help him… the more he resisted. He was careless, and only hurt himself further.";
+		}
+		if (primeInt == 8){
+			dialogueText.text = "So what I did to him wasn’t a punishment. It was only a necessity. This is the only way he’ll stay alive long enough for me to cure him.";
+		}
+		if (primeInt == 9){
+			dialogueText.text = "Do you understand? I only want what's best... for all of you.";
+		}
+		if (primeInt == ){
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			GameHandler.ClaudiaEncountered = true;

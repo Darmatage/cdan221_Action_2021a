@@ -33,21 +33,27 @@ public class BeginningCutscene : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "You can hear lights all over the hospital powering off.";
+			dialogueText.text = "Where...are you?";
 		}
 		if (primeInt == 2){
-			dialogueText.text = "Followed by the sounds of hurried footsteps as patients run for the newly unlocked exits.";
+			dialogueText.text = "Your head hurts... you feel like you can barely move. You slowly get your limbs to move one by one as your body awakens.";
 		}
 		if (primeInt == 3){
-			dialogueText.text = "You make your way up to the ground floor and can feel a light breeze on your face.";
+			dialogueText.text = "What exactly happened to you? It's unusual for you to have any gaps in your memory at all... You've always been rather proud of your skill for remembering things.";
 		}
 		if (primeInt == 4){
-			dialogueText.text = "The front door has already been thrown open.";
+			dialogueText.text = "But nothing comes to mind. And the room is so dark, you can't see anything at all.";
 		}
 		if (primeInt == 5){
-			dialogueText.text = "You can hear the familiar voices of your friends grow louder as you walk through the door.";
+			dialogueText.text = "No... it's not that the room is dark... If you lift a hand to your face, you can feel it. The dried blood soaking through your bandages...";
 		}
 		if (primeInt == 6){
+			dialogueText.text = "You feel yourself begin to panic. You call out for somebody in the room to help you, but no answer comes.";
+		}
+		if (primeInt == 7){
+			dialogueText.text = "You have an awful feeling about this. But let's stay calm for now, and observe your surroundings.";
+		}
+		if (primeInt == 8){
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			SendToEnd();
