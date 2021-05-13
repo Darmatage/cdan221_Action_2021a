@@ -49,9 +49,7 @@ public class SecondFloorInteractableDoor : MonoBehaviour {
 	   public void EnterDoor(){
 		   gh_PlayerReturn.UpdateLocation();
 		   Debug.Log("You entered a door");
-		   if(GameHandler.Level5Complete == true){
-				//Level 6 return here)
-		   } else if (GameHandler.Level4Complete == true){	
+		   if (GameHandler.Level4Complete){	
 				SceneManager.LoadScene (levelFiveReturnMap);
 		   } else if (GameHandler.Level3Complete){
 				SceneManager.LoadScene (levelFourReturnMap);

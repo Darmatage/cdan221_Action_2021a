@@ -41,7 +41,6 @@ public class LockKeypadClickControlLevel5 : MonoBehaviour
 			if (playerCode == correctCode){
 				Debug.Log("Correct!");
 				CanClick = false;
-				GameHandler.Level5Complete = true;
 				KeypadSoundRight.SetActive(true);
 				DownStairsSprite.SetActive(true);
 				StartCoroutine(RightDelay());
