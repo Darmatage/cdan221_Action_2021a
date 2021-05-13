@@ -14,12 +14,13 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 	public bool itemSensitive = false;
 	public GameObject MusicBox;
 	public GameObject ClaudiasOfficeDoor;
-
+	public GameObject XrayRoom;
 
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
 			  MusicBox.SetActive(false);
+			  XrayRoom.SetActive(false);
               //anim.SetBool("Chat", false)
 			  player = GameObject.FindWithTag("Player"); //MSG #2/4
 			  
@@ -192,6 +193,26 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			}
+			
+			if (primeInt == 55){
+            dialogueText.text = "Feels like this door has a standard lock on it.";
+				if (GameHandler.RingofKeys == true) {
+					XrayRoom.SetActive(true);
+				}
+			}
+			  
+			if (primeInt == 56){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
+			
+			if (primeInt == 65){
+            dialogueText.text = "There's a ring of keys here... maybe this could open one of the locked doors in the hall.";
+			if (playerInRange == true){
+					GameHandler.RingofKeys = true;
+				}
 			}
 		}
 

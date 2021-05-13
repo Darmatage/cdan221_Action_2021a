@@ -32,6 +32,7 @@ public class GameHandler : MonoBehaviour{
 		public static bool HasJournal = false; 
 		public static bool SafeUnlock = false;
 		public static bool HasKey = false;
+		public static bool RingofKeys = false;
 		
 		//void Start () { UpdateScore (); }
 		
