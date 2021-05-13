@@ -101,7 +101,7 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 10){
-            dialogueText.text = "You might need somebody else to read this to you... Maybe another patient would be willing to help.";
+            dialogueText.text = "You pick it up. You might need somebody else to read this to you... Maybe another patient would be willing to help.";
 				if (playerInRange == true) {
 					GameHandler.HasJournal = true;
 				}
@@ -210,7 +210,7 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 65){
-            dialogueText.text = "There's a ring of keys here... maybe this could open one of the locked doors in the hall.";
+            dialogueText.text = "You pick up the ring of keys from here. Maybe this could open one of the locked doors in the hall.";
 			if (playerInRange == true){
 					GameHandler.RingofKeys = true;
 				}

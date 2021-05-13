@@ -138,6 +138,10 @@ public class NPC_Dialogue_L6 : MonoBehaviour {
 			}
 			
 			if (primeInt == 61){
+            dialogueText.text = "The sound of that machine means there's a beating heart somewhere here. Go on and find it.";
+			}
+			
+			if (primeInt == 62){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

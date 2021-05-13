@@ -227,10 +227,14 @@ public class NPC_Dialogue_L2S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 64){
-            dialogueText.text = "S-So that was a trick question, right? Did I do good? If you were just trying to make me feel guilty for slacking then it worked, okay!";
+            dialogueText.text = "S-So that was a trick question, right? Did I do good?";
 			}
 			
 			if (primeInt == 65){
+            dialogueText.text = "If you were just trying to make me feel guilty for slacking then it worked, okay!";
+			}
+			
+			if (primeInt == 66){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
