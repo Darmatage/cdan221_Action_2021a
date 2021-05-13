@@ -53,7 +53,7 @@ public class NPC_Dialogue_L1S3 : MonoBehaviour {
 			if (primeInt == 1){
             dialogueText.text = "A new face! Are you from 3A?! That’s so crazy! My friend lived there too! He graffitied those walls so much, it feels like the room never stopped being his.";
 				if (GameHandler.KnowSav == true) {
-						primeInt = 12;
+						primeInt = 11;
 					}
 			}
 			
@@ -85,6 +85,10 @@ public class NPC_Dialogue_L1S3 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
+			}
+
+			if (primeInt ==11){
+            dialogueText.text = "A new face! Are you from 3A?! That’s so crazy! My friend lived there too!";
 			}
 
 			if (primeInt ==12){

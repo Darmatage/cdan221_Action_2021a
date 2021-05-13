@@ -139,14 +139,18 @@ public class NPC_Dialogue_EndingScene : MonoBehaviour {
 			}
 			
 			if (primeInt == 27){
-            dialogueText.text = "But, um. I'm gonna go back in! Ironic, I know, but only for a little bit. There are just some things I've got to get. I want to make sure I don't forget this place.";
+            dialogueText.text = "But, um. I'm gonna go back in! Ironic, I know, but only for a little bit. There are just some things I've got to do...";
 			}
 			
 			if (primeInt == 28){
-            dialogueText.text = "I'll see you afterwards, hopefully. Sometime. Would, ah, that be okay?";
+            dialogueText.text = "I want to make sure I don't forget this place, or.. um, hah, you know. You get it, right?";
 			}
 			
 			if (primeInt == 29){
+            dialogueText.text = "I'll see you afterwards, hopefully. Sometime. Would, ah, that be okay?";
+			}
+			
+			if (primeInt == 30){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
