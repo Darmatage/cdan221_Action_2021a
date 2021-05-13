@@ -277,7 +277,9 @@ public class NPC_Dialogue_L3S1 : MonoBehaviour {
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
-			GoToPills ();
+				if (playerInRange == true){
+					GoToPills ();
+				}
 			}
 		}
 
