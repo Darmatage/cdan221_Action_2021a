@@ -523,38 +523,63 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			primeInt = 0;
 			}
 			if (primeInt == 185){
-            dialogueText.text = "Doc Claudia’s office? Oh, all I know about it is that she has a key lock on it!"; //Jack Level 5
+            dialogueText.text = "I can’t believe you made it so far. The matron’s office is on that floor! "; //Jack Level 5
 			if (GameHandler.HasJournal == true) {
-						primeInt = 200;
+						primeInt = 190;
 					}
 			}
 			
 			if (primeInt == 186){
-            dialogueText.text = "Aaron had stolen her ID before and gotten in. I dunno where he ever hid it afterwards.";
+            dialogueText.text = "Listen, there has to be something there that will tell us how to escape. Or at least something that says where Aaron is!";
 			}
 			  	
 			if (primeInt == 187){
-            dialogueText.text = "All I know is that when he came back, he seemed really sad.. I had only just met him at the time, and I was really sad too, you know?";
+            dialogueText.text = "I’m begging you, Ema. You’ve gotta pull through for us.";
 			}
 			
 			if (primeInt == 188){
-            dialogueText.text = "My arm hurt really bad. I was so confused, and frustrated, and really scared. I was crying a whole bunch and probably looked really ugly.";
-			}
-			
-			if (primeInt == 189){
-            dialogueText.text = "I was like, I want my mommyyy! Aaron said, they won’t bring your mom to you, I’m sorry. Then we cried together for a really long time.";
-			}
-			
-			if (primeInt == 190){
-            dialogueText.text = "It felt really nice for some reason… but that was forever ago! I hate crying. I’m never gonna cry again!";
-			}
-			
-			if (primeInt == 191){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
 			}
 			
+			if (primeInt == 190){
+            dialogueText.text = "A journal entry from this matron?! No way. This ought to be good.";
+			}
+			  	
+			if (primeInt == 191){
+            dialogueText.text = "'June 22nd, 2016 His condition is still getting worse. Why? I have access to some of the best equipment in the world. I can carry through with any procedure.";
+			}
+			
+			if (primeInt == 192){
+            dialogueText.text = "But nothing works. He just continues to suffer";
+			}
+			
+			if (primeInt == 193){
+            dialogueText.text = "This is all wrong…I tried so many ways to fix him, and every time he only seems more broken than before.";
+			}
+			
+			if (primeInt == 194){
+            dialogueText.text = "But nothing works. He just continues to suffer";
+			}
+			
+			if (primeInt == 195){
+            dialogueText.text = "Every ailment can be cured… I’m sure of it. He can be cured! I just haven’t tried hard enough. Until then… I’ll keep him safe.'";
+			}
+			
+			if (primeInt == 196){
+            dialogueText.text = "Gahh, the hell was that?! She makes me so angry! Who is she to decide whether or not somebody’s broken?!";
+			}
+			
+			if (primeInt == 197){
+            dialogueText.text = "I for one don’t care about being safe, or cured! I’ll never be anything other than what I am. He always got that about me… ";
+			}
+			
+			if (primeInt == 198){
+            dialogueBox.SetActive(false);
+			dialogueText.gameObject.SetActive(false);
+			primeInt = 0;
+			}
 		}
 
        private void OnTriggerEnter2D(Collider2D other){
