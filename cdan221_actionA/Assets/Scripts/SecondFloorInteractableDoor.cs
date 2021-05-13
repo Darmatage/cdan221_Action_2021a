@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class SecondFloorInteractableDoor : MonoBehaviour {
 
 	   public string levelTwoReturnMap = "Return_Level2";
-	   public string levelThreeReturnMap = "Return_Level3";
+	   public string levelThreeReturnMap = "Return_Level2";
 	   public string levelFourReturnMap = "Return_Level4";
+	   public string levelFiveReturnMap = "Return_Level5";
 	   private GameHandler_PlayerReturn gh_PlayerReturn;
        //public GameObject pulseVFX;
        //public AudioSource pulseSFX;
@@ -51,7 +52,7 @@ public class SecondFloorInteractableDoor : MonoBehaviour {
 		   if(GameHandler.Level5Complete == true){
 				//Level 6 return here)
 		   } else if (GameHandler.Level4Complete == true){	
-				//Level 5 return here)
+				SceneManager.LoadScene (levelFiveReturnMap);
 		   } else if (GameHandler.Level3Complete){
 				SceneManager.LoadScene (levelFourReturnMap);
 		   } else if (GameHandler.Level2Complete){

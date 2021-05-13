@@ -33,7 +33,7 @@ public class BeginningCutscene : MonoBehaviour
 		primeInt += 1;
 		
 		if (primeInt == 1){
-			dialogueText.text = "You can hear lights all over the hospital powering off.";
+			dialogueText.text = "You can hear lights \"all\" over the hospital powering off.";
 		}
 		if (primeInt == 2){
 			dialogueText.text = "Followed by the sounds of hurried footsteps as patients run for the newly unlocked exits.";
