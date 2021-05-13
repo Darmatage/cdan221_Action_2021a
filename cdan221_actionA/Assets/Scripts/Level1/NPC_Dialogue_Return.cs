@@ -147,7 +147,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 53){
-            dialogueText.text = "A lot of other girls who were a lot more passionate about it, they would have killed to be front and venter like that. So, you know.. ";
+            dialogueText.text = "A lot of other girls who were a lot more passionate about it, they would have killed to be front and center like that. So, you know.. ";
 			}
 			
 			if (primeInt == 54){
@@ -393,7 +393,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 131){
-            dialogueText.text = "'It no longer seems possible to keep this facility running. Some of my colleagues have been urging me to give up and shut the hospital down. Ridiculous!";
+            dialogueText.text = "\"It no longer seems possible to keep this facility running. Some of my colleagues have been urging me to give up and shut the hospital down. Ridiculous!";
 			}
 			
 			if (primeInt == 132){
@@ -401,7 +401,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 					
 			if (primeInt == 133){
-            dialogueText.text = "'The only thing I require for more funding is more patients. I had considered it for a while, anyways. There are so many people who need my protection…'";
+            dialogueText.text = "'The only thing I require for more funding is more patients. I had considered it for a while, anyways. There are so many people who need my protection…\"";
 			}
 			
 			if (primeInt == 134){
@@ -413,7 +413,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 136){
-            dialogueText.text = "I guess you'd probably call it a gilded cage. But it felt like a home.";
+            dialogueText.text = "I guess you'd probably call it a gilded cage.";
 			}
 
 			if (primeInt == 137){
@@ -486,7 +486,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			  	
 			if (primeInt == 171){
-            dialogueText.text = "'March 9th, 2021. My staff are beginning to become incompetent.";
+            dialogueText.text = "\"March 9th, 2021. My staff are beginning to become incompetent.";
 			}
 			
 			if (primeInt == 172){
@@ -502,7 +502,7 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 175){
-            dialogueText.text = "My poor Aaron…I’m so sorry. Wake up soon, and we can be a happy family again. I want to play you that song you love so much...'";
+            dialogueText.text = "My poor Aaron…I’m so sorry. Wake up soon, and we can be a happy family again. I want to play you that song you love so much...\"";
 			}
 			
 			if (primeInt == 176){
@@ -548,11 +548,11 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			  	
 			if (primeInt == 191){
-            dialogueText.text = "'June 22nd, 2016 His condition is still getting worse. Why? I have access to some of the best equipment in the world. I can carry through with any procedure.";
+            dialogueText.text = "\"His condition is still getting worse. Why? I have access to some of the best equipment in the world. I can carry through with any procedure.";
 			}
 			
 			if (primeInt == 192){
-            dialogueText.text = "But nothing works. He just continues to suffer";
+            dialogueText.text = "But nothing works. He just continues to suffer.";
 			}
 			
 			if (primeInt == 193){
@@ -560,22 +560,18 @@ public class NPC_Dialogue_Return : MonoBehaviour {
 			}
 			
 			if (primeInt == 194){
-            dialogueText.text = "But nothing works. He just continues to suffer";
+            dialogueText.text = "Every ailment can be cured… I’m sure of it. He can be cured! I just haven’t tried hard enough. Until then… I’ll keep him safe.\"";
 			}
 			
 			if (primeInt == 195){
-            dialogueText.text = "Every ailment can be cured… I’m sure of it. He can be cured! I just haven’t tried hard enough. Until then… I’ll keep him safe.'";
-			}
-			
-			if (primeInt == 196){
             dialogueText.text = "Gahh, the hell was that?! She makes me so angry! Who is she to decide whether or not somebody’s broken?!";
 			}
 			
-			if (primeInt == 197){
+			if (primeInt == 196){
             dialogueText.text = "I for one don’t care about being safe, or cured! I’ll never be anything other than what I am. He always got that about me… ";
 			}
 			
-			if (primeInt == 198){
+			if (primeInt == 197){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

@@ -59,24 +59,28 @@ public class NPC_Dialogue_L1S4 : MonoBehaviour {
 			if (primeInt ==2){
             dialogueText.text = "...Ema, huh? Well Ema, don't get too cocky just because you walked out an unlocked door. Let's see you get off the floor next. Even I haven't cracked that stupid code..";
 			}
-			  
+			
 			if (primeInt == 3){
-            dialogueText.text = "Speakin of your room, I’ve been wondering when they were gonna fill 3A again. You’re lucky you can’t see the state of the place.";
-			}
-
-			if (primeInt ==4){
-            dialogueText.text = "If there’s one thing Aaron did well, it’s leaving messes that are impossible to clean.";
+            dialogueText.text = "You think you've got what it takes? What are your skills, newbie?";
 			}
 			
-			if (primeInt == 5){
-            dialogueText.text = "Listen, if you like breaking rules, keep this in mind; You have the advantage here. You can't judge this place by it's looks, right? So they can't fool you.";
+			if (primeInt == 4){
+            dialogueText.text = "Your memory... Yeah, okay. I guess that works. You've also got an advantage here, since you can't be fooled by appearances...";
 			}
 			  
-			if (primeInt == 6){
+			if (primeInt == 5){
+            dialogueText.text = "Speaking of, I’ve been wondering when they were gonna fill 3A again. You’re lucky you can’t see the state of the place.";
+			}
+
+			if (primeInt ==6){
+            dialogueText.text = "If there’s one thing Aaron did well, it’s leaving messes that are impossible to clean.";
+			}
+			  
+			if (primeInt == 7){
             dialogueText.text = "Ah. Um... Ha, anyway... Nice to meet you.";
 			}
 			
-			if (primeInt == 7){
+			if (primeInt == 8){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
