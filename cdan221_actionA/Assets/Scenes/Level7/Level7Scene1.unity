@@ -668,6 +668,28 @@ Transform:
   m_Father: {fileID: 1023188097}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &791404065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
+    type: 3}
+  m_PrefabInstance: {fileID: 1834657076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &791404066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791404065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fbbc02e1aaa0c489ad435c231e7529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextLevel: Level7Scene2
+  ClaudiaLevel: ClaudiaCutscene
+  msgPressE: {fileID: 1592178316}
+  canPressE: 0
 --- !u!1 &897507105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,6 +1530,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1592178316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5329970131225067493, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
+    type: 3}
+  m_PrefabInstance: {fileID: 1834657076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597669133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,14 +1987,15 @@ PrefabInstance:
     - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: m_Name
-      value: Interactable_Door (2)
+      value: ClaudiaCutsceneDoor
       objectReference: {fileID: 0}
     - target: {fileID: 5329970132012722159, guid: 3a69c4fbd8d901c44be1f1018d5e8426,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5329970132012722158, guid: 3a69c4fbd8d901c44be1f1018d5e8426, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a69c4fbd8d901c44be1f1018d5e8426, type: 3}
 --- !u!1 &1897333456
 GameObject:

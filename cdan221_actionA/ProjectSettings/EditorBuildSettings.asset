@@ -161,6 +161,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Returns/EndingScene.unity
     guid: 1078cfbe60df523479d468e1fec8eb2e
+  - enabled: 1
+    path: Assets/Scenes/ClaudiaCutscene.unity
+    guid: 5b008f46ad4cf5846bc8205da6077fe4
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

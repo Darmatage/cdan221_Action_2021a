@@ -34,6 +34,8 @@ public class GameHandler : MonoBehaviour{
 		public static bool HasKey = false;
 		public static bool RingofKeys = false;
 		
+		public static bool ClaudiaEncountered = false;
+		
 		//void Start () { UpdateScore (); }
 		
 		void Update(){
