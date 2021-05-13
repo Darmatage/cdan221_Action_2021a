@@ -11,6 +11,7 @@ public class NPC_Dialogue_EndingScene : MonoBehaviour {
        public bool playerInRange = false;
        public int primeInt = 0;
 	   public int startPoint = 1;
+	   public string MainMenu = "MainMenu";
 	public GameObject player; //MSG #1/4
 
        void Start () {
@@ -84,7 +85,11 @@ public class NPC_Dialogue_EndingScene : MonoBehaviour {
 			if (primeInt == 11){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
+					if (playerInRange == true){
+					EndTheGame ();
+					}
 			primeInt = 0;
+			
 			}
 			
 			if (primeInt == 12){
@@ -227,4 +232,8 @@ public class NPC_Dialogue_EndingScene : MonoBehaviour {
 				   player.GetComponent<PlayerMoveAround>().MSG_hide();
              }
        }
+	   
+	       public void EndTheGame(){
+		   SceneManager.LoadScene(MainMenu);
+	}
 }
