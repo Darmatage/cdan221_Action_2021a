@@ -1803,7 +1803,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3107167165226465947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b2e6ee756f11449bbbbcf720f4bdd3, type: 3}
+  m_Script: {fileID: 11500000, guid: cb5c353f8f1a778408713ea6753c4d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 250123242}
@@ -1811,7 +1811,7 @@ MonoBehaviour:
   playerInRange: 0
   primeInt: 0
   startPoint: 1
-  player: {fileID: 299422426}
+  player: {fileID: 0}
 --- !u!4 &3107167166282423546
 Transform:
   m_ObjectHideFlags: 0

@@ -51,27 +51,26 @@ public class NPC_Dialogue_L7 : MonoBehaviour {
 			}
 
 			if (primeInt == 1){
-            dialogueText.text = "Psst! Hey, you!";
+            dialogueText.text = "This is foolish of you, Ema.";
 			}
 
 			if (primeInt ==2){
-            dialogueText.text = "Don't run away. I'm not gonna turn you in. See, you patients and me, we're both trapped here in a way.";
+            dialogueText.text = "Who could possibly help you once you leave this place?";
 			}
 			  
 			if (primeInt == 3){
-            dialogueText.text = "I'm not even real staff. I'm just doing my residency. But still, I think I deserve a little more respect than to be treated like some run of the mill intern!";
+            dialogueText.text = "Nobody out there will want to deal with you. But here, you're safe.";
 			}
 
 			if (primeInt ==4){
-            dialogueText.text = "But it's too late for me now. I'm not allowed to stop doing their dirty work...";
+            dialogueText.text = "Do you really think all of you will survive if you do this?";
 			}
 			
-			if (primeInt == 5){
-            dialogueText.text = "So listen: I won't tell Dr. Claudia you're breaking rules, if you do one thing for me.";
+			if (primeInt ==5){
+            dialogueText.text = "Don't worry, though. You won't succeed. I'll stay here as long as you want until you realize that.";
 			}
 			  
 			if (primeInt == 6){
-            dialogueText.text = "Just steal me one of those icecream cakes they have. The ones they give to patients and staff on their birthdays.";
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;

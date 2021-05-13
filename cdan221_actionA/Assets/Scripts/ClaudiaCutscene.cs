@@ -59,7 +59,7 @@ public class ClaudiaCutscene : MonoBehaviour
 		if (primeInt == 9){
 			dialogueText.text = "Do you understand? I only want what's best... for all of you.";
 		}
-		if (primeInt == ){
+		if (primeInt == 10){
 			dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			GameHandler.ClaudiaEncountered = true;
