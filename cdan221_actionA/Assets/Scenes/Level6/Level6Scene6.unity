@@ -349,12 +349,12 @@ PrefabInstance:
     - target: {fileID: 2642139259743166261, guid: 8502428f6a4fd16498b81a3c914608ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.53
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 2642139259743166261, guid: 8502428f6a4fd16498b81a3c914608ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.67
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 2642139259743166261, guid: 8502428f6a4fd16498b81a3c914608ab,
         type: 3}
@@ -410,11 +410,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8f308272c1384594c9b84948c1d166d4, type: 3}
+      objectReference: {fileID: 8300000, guid: b9b0b3b928be61344b0002de2715441b, type: 3}
     - target: {fileID: 2642139259743166262, guid: 8502428f6a4fd16498b81a3c914608ab,
         type: 3}
       propertyPath: m_Volume
       value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642139259743166262, guid: 8502428f6a4fd16498b81a3c914608ab,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642139259743166262, guid: 8502428f6a4fd16498b81a3c914608ab,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642139259743166262, guid: 8502428f6a4fd16498b81a3c914608ab,
+        type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642139259743166262, guid: 8502428f6a4fd16498b81a3c914608ab,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2642139259743166263, guid: 8502428f6a4fd16498b81a3c914608ab,
         type: 3}
