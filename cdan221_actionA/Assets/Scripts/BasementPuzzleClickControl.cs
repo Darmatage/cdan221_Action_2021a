@@ -39,11 +39,12 @@ public class BasementPuzzleClickControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.E) && totalDigits != 7){
+		if (Input.GetButtonDown("Enter") && totalDigits != 7){
 			GoBack();
         }
 		
-		if (Input.GetKeyDown(KeyCode.R) && totalDigits != 7){
+		//if (Input.GetKeyDown(KeyCode.R) && totalDigits != 7){
+		if (Input.GetButtonDown("Talk") && totalDigits != 7){
 			Reset();
         }
 

@@ -16,6 +16,8 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 	public GameObject ClaudiasOfficeDoor;
 	public GameObject XrayRoom;
 
+	public GameObject theKeys;
+
        void Start () {
               dialogueBox.SetActive(false);
 			  dialogueText.gameObject.SetActive(false);
@@ -24,6 +26,11 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			  ClaudiasOfficeDoor.SetActive(true);
               //anim.SetBool("Chat", false)
 			  player = GameObject.FindWithTag("Player"); //MSG #2/4
+			  
+			  if (GameHandler.RingofKeys == false){
+				  theKeys.SetActive(true);
+			  } else {theKeys.SetActive(false);}
+			  
 			  
        }
 
@@ -210,13 +217,22 @@ public class NPC_Dialogue_L5S1 : MonoBehaviour {
 			}
 			
 			if (primeInt == 65){
-            dialogueText.text = "You pick up the ring of keys from here. Maybe this could open one of the locked doors in the hall.";
-			if (playerInRange == true){
-					GameHandler.RingofKeys = true;
-				}
+				dialogueText.text = "A ring of keys hangs from a hook. ";
 			}
 			
 			if (primeInt == 66){
+				dialogueText.text = "Maybe one of these could open one of the locked doors in the hall.";
+			}
+			
+			if (primeInt == 67){
+            dialogueText.text = "You picked up the keys.";
+			if (playerInRange == true){
+					GameHandler.RingofKeys = true;
+					theKeys.SetActive(false);
+				}
+			}
+			
+			if (primeInt == 68){
             dialogueBox.SetActive(false);
 			dialogueText.gameObject.SetActive(false);
 			primeInt = 0;
